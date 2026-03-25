@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node src/bot.js",
     "orchestrator": "node src/orchestrator.js",
-    "test": "node --test tests/index.test.js"
+    "test": "node --test tests/index.test.js tests/cognition.test.js tests/polish.test.js"
   },
   "keywords": ["minecraft", "mineflayer", "ai", "llm", "bot"],
   "author": "",

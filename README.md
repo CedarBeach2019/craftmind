@@ -53,15 +53,23 @@ AI-powered Minecraft bots with LLM brains, state machines, plugin systems, and m
 └─────────────────────────────────────────────────────┘
 ```
 
-## Setup
+## Quick Start
 
 ```bash
+# Install dependencies
 npm install
-cp .env.example .env
-# Edit .env — set ZAI_API_KEY
-```
 
-## Quick Start
+# Configure environment
+cp .env.example .env
+# Edit .env — set ZAI_API_KEY at minimum
+
+# Run a bot
+node src/bot.js localhost 25565 Cody
+
+# Or with CLI flags
+node src/bot.js --host localhost --port 25565
+node src/bot.js --plugin ./src/plugins/example-plugin.js
+```
 
 ### Single Bot
 
@@ -334,7 +342,7 @@ import { createBot, CraftMindBot, BotStateMachine, CommandRegistry } from 'craft
 npm test
 ```
 
-62 tests covering all modules: LLMClient, PERSONALITIES, BrainHandler, BotStateMachine, CommandRegistry, CraftMindEvents, PluginManager, BotMemory, Config, and Orchestrator.
+159 tests covering all modules: LLMClient, PERSONALITIES, BrainHandler, BotStateMachine, CommandRegistry, CraftMindEvents, PluginManager, BotMemory, Config, Orchestrator, NoveltyDetector, AttentionBudget, BehaviorScript, EmergenceTracker, and Integration tests.
 
 ## Project Structure
 
@@ -355,7 +363,9 @@ craftmind/
 │   │   ├── auto-eat.js
 │   │   ├── player-tracker.js
 │   │   ├── death-tracker.js
-│   │   └── flee-on-danger.js
+│   │   ├── flee-on-danger.js
+│   │   ├── example-plugin.js  # Template plugin
+│   │   └── README.md     # Plugin authoring guide
 │   ├── memory/
 │   │   └── index.js      # Persistent memory
 │   ├── config/
@@ -363,7 +373,9 @@ craftmind/
 │   └── log/
 │       └── index.js      # Structured logging
 ├── tests/
-│   └── index.test.js
+│   ├── index.test.js
+│   ├── cognition.test.js
+│   └── polish.test.js
 ├── examples/
 │   ├── single-bot.js
 │   └── multi-bot.js

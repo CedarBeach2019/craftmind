@@ -31,13 +31,29 @@ const { BotMemory } = require('./memory');
 const { loadConfig, validateConfig } = require('./config');
 const logger = require('./log');
 
-// Built-in plugins
-const autoEat = require('./plugins/auto-eat');
-const playerTracker = require('./plugins/player-tracker');
-const deathTracker = require('./plugins/death-tracker');
-const fleeOnDanger = require('./plugins/flee-on-danger');
+// Built-in plugins (loaded from src/plugins/ directory)
+const fs = require('fs');
+const path = require('path');
 
-const BUILTIN_PLUGINS = [autoEat, playerTracker, deathTracker, fleeOnDanger];
+function loadPluginsFromDir(dir) {
+  const plugins = [];
+  if (!fs.existsSync(dir)) return plugins;
+  for (const file of fs.readdirSync(dir).sort()) {
+    if (file === 'index.js' || file === 'example-plugin.js' || !file.endsWith('.js')) continue;
+    try {
+      const mod = require(path.join(dir, file));
+      const plugin = mod.default || mod;
+      if (plugin && (plugin.init || plugin.load)) {
+        plugins.push(plugin);
+      }
+    } catch (err) {
+      console.warn(`[PluginLoader] Skipping ${file}: ${err.message}`);
+    }
+  }
+  return plugins;
+}
+
+const BUILTIN_PLUGINS = loadPluginsFromDir(__dirname + '/plugins');
 
 /**
  * Create a fully-wired CraftMind bot.
@@ -318,12 +334,25 @@ function createBot(options = {}) {
     moves.allowParkour = config.pathfinding?.allowParkour !== false;
     bot.pathfinder.setMovements(moves);
 
-    // Load built-in + custom plugins
+    // Load built-in + custom plugins (skip bad ones gracefully)
+    const skipSet = new Set(options.skipPlugins || []);
     for (const plugin of BUILTIN_PLUGINS) {
-      plugins.load(plugin, events, commands, bot);
+      if (skipSet.has(plugin.name)) {
+        log.info(`Skipping plugin: ${plugin.name}`);
+        continue;
+      }
+      try {
+        plugins.load(plugin, events, commands, bot);
+      } catch (err) {
+        log.warn(`Failed to load plugin ${plugin.name}: ${err.message}`);
+      }
     }
     for (const plugin of (options.plugins || [])) {
-      plugins.load(plugin, events, commands, bot);
+      try {
+        plugins.load(plugin, events, commands, bot);
+      } catch (err) {
+        log.warn(`Failed to load extra plugin ${plugin.name}: ${err.message}`);
+      }
     }
 
     stateMachine.reset();
@@ -690,13 +719,54 @@ function formatPos(pos) {
 // ── CLI ────────────────────────────────────────────────────────────────────────
 if (require.main === module) {
   const args = process.argv.slice(2);
-  const host = args[0] || 'localhost';
-  const port = parseInt(args[1]) || 25565;
-  const username = args[2] || 'Cody';
-
   require('dotenv').config();
 
+  // Parse CLI arguments
+  let host = 'localhost';
+  let port = 25565;
+  let username = 'Cody';
+  const extraPlugins = [];
+  const skipPlugins = new Set();
+
+  for (let i = 0; i < args.length; i++) {
+    if (args[i] === '--plugin' && args[i + 1]) {
+      extraPlugins.push(args[++i]);
+    } else if (args[i] === '--skip-plugin' && args[i + 1]) {
+      skipPlugins.add(args[++i]);
+    } else if (args[i] === '--host' && args[i + 1]) {
+      host = args[++i];
+    } else if (args[i] === '--port' && args[i + 1]) {
+      port = parseInt(args[++i]) || 25565;
+    } else if (!args[i].startsWith('-') && !host) {
+      host = args[i];
+    }
+  }
+
+  // Legacy positional args: host [port] [username]
+  if (args[0] && !args[0].startsWith('-') && !args.includes('--host')) {
+    host = args[0];
+    if (args[1] && !args[1].startsWith('-')) port = parseInt(args[1]) || 25565;
+    if (args[2] && !args[2].startsWith('-')) username = args[2];
+  }
+
+  // Load extra plugins from CLI
+  const cliPlugins = [];
+  for (const pluginPath of extraPlugins) {
+    try {
+      const mod = require(path.resolve(pluginPath));
+      const plugin = mod.default || mod;
+      if (plugin && (plugin.init || plugin.load)) {
+        cliPlugins.push(plugin);
+      } else {
+        console.warn(`[CLI] Plugin ${pluginPath} has no init/load function, skipping`);
+      }
+    } catch (err) {
+      console.warn(`[CLI] Failed to load plugin ${pluginPath}: ${err.message}`);
+    }
+  }
+
   logger.info(`Connecting to ${host}:${port} as ${username}...`);
+  if (cliPlugins.length) logger.info(`Loading ${cliPlugins.length} extra plugin(s): ${cliPlugins.map(p => p.name || 'anonymous').join(', ')}`);
 
   createBot({
     host,
@@ -704,8 +774,14 @@ if (require.main === module) {
     username,
     personality: username.toLowerCase(),
     llmApiKey: process.env.ZAI_API_KEY,
+    plugins: cliPlugins,
+    skipPlugins,
     onStart(bot) {
       setTimeout(() => {
+        const pluginNames = bot.craftmind._plugins.loaded;
+        if (pluginNames.length > 0) {
+          logger.info(`Connected plugins: ${pluginNames.join(', ')}`);
+        }
         const hasBrain = !!bot.craftmind._brain;
         const brainAvailable = hasBrain && bot.craftmind._brain.available;
         if (brainAvailable) {

@@ -342,13 +342,14 @@ class BotStateMachine extends EventEmitter {
   hookScript(script, actionToState = {}) {
     this._scriptHook = script;
     this._scriptActionMap = actionToState;
-    this._scriptHandler = (action) => {
+    this._scriptHandler = (e) => {
+      const action = e?.action || e;
       const state = actionToState[action];
       if (state) {
         this.transition(state, { action });
       }
     };
-    script.on('action', this._scriptHandler);
+    script.on('executed', this._scriptHandler);
   }
 
   /**
@@ -356,7 +357,7 @@ class BotStateMachine extends EventEmitter {
    */
   unhookScript() {
     if (this._scriptHook && this._scriptHandler) {
-      this._scriptHook.off('action', this._scriptHandler);
+      this._scriptHook.off('executed', this._scriptHandler);
     }
     this._scriptHook = null;
     this._scriptHandler = null;

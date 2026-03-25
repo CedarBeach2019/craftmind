@@ -94,37 +94,35 @@ class NoveltyDetector extends EventEmitter {
     if (m.values.length > 100) m.values.shift();
 
     // Need at least 5 samples before detecting novelty
-    if (m.n < 5) return null;
+    if (m.n < 6) return null;
 
     const std = this._stddev(m);
     if (std === 0) return null;
 
     const sigma = Math.abs(value - m.mean) / std;
-    if (sigma >= this._sigmaThreshold) {
-      const now = Date.now();
-      // Dedup: skip if same key fired recently
-      if (m.lastEvent && (now - m.lastEvent) < this._dedupWindow) return null;
-      m.lastEvent = now;
+    if (sigma < this._sigmaThreshold) return null;
 
-      const severity = this._classifySeverity(sigma);
-      const event = {
-        key,
-        value,
-        sigma: Math.round(sigma * 100) / 100,
-        mean: Math.round(m.mean * 1000) / 1000,
-        std: Math.round(std * 1000) / 1000,
-        severity,
-        timestamp: now,
-        context: context ? { ...context } : (this._stateSnapshot ? { ...this._stateSnapshot } : {}),
-      };
+    // Only enforce dedup and update lastEvent after enough samples for stable stats
+    const now = Date.now();
+    if (m.n >= 10 && m.lastEvent && (now - m.lastEvent) < this._dedupWindow) return null;
+    if (m.n >= 10) m.lastEvent = now;
 
-      this._history.push(event);
-      if (this._history.length > this._maxHistory) this._history = this._history.slice(-this._maxHistory);
-      this._enqueue(event);
-      this.emit('novelty', event);
-      return event;
-    }
-    return null;
+    const event = {
+      key,
+      value,
+      sigma: Math.round(sigma * 100) / 100,
+      mean: Math.round(m.mean * 1000) / 1000,
+      std: Math.round(std * 1000) / 1000,
+      severity: this._classifySeverity(sigma),
+      timestamp: now,
+      context: context ? { ...context } : (this._stateSnapshot ? { ...this._stateSnapshot } : {}),
+    };
+
+    this._history.push(event);
+    if (this._history.length > this._maxHistory) this._history = this._history.slice(-this._maxHistory);
+    this._enqueue(event);
+    this.emit('novelty', event);
+    return event;
   }
 
   /**
@@ -140,6 +138,8 @@ class NoveltyDetector extends EventEmitter {
    * @private
    */
   _classifySeverity(sigma) {
+    // Guard against NaN/Infinity from floating-point edge cases
+    if (!Number.isFinite(sigma)) return SEVERITY.CRITICAL;
     if (sigma >= this._severityThresholds.critical) return SEVERITY.CRITICAL;
     if (sigma >= this._severityThresholds.important) return SEVERITY.IMPORTANT;
     if (sigma >= this._severityThresholds.interesting) return SEVERITY.INTERESTING;
@@ -250,7 +250,8 @@ class NoveltyDetector extends EventEmitter {
   /** @private */
   _stddev(m) {
     if (m.n < 2) return 0;
-    return Math.sqrt(m.m2 / m.n);
+    const variance = Math.max(0, m.m2 / m.n);
+    return Math.sqrt(variance);
   }
 }
 
