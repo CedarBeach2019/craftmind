@@ -18,6 +18,7 @@
  */
 
 const https = require('https');
+const { EventEmitter } = require('events');
 
 // ─── Connection Health Monitor ────────────────────────────────────────────────
 
@@ -178,8 +179,6 @@ class HealthMonitor {
 }
 
 // ─── LLM Client ───────────────────────────────────────────────────────────────
-
-const { EventEmitter } = require('events');
 
 /**
  * Lightweight HTTP client for the z.ai chat-completions API with
