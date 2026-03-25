@@ -1,0 +1,6 @@
+node_modules/
+server/world/
+server/logs/
+server/*.log
+*.class
+.env
