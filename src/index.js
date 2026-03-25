@@ -6,14 +6,15 @@
  * @example
  * const { createBot, PERSONALITIES, Orchestrator } = require('craftmind');
  * const { CommandRegistry, PluginManager, BotMemory } = require('craftmind');
- * const { BotStateMachine } = require('craftmind');
+ * const { BotStateMachine, BUILTIN_STATES } = require('craftmind');
+ * const { HealthMonitor } = require('craftmind');
  */
 
 const { createBot } = require('./bot');
-const { LLMClient, PERSONALITIES, BrainHandler } = require('./brain');
+const { LLMClient, PERSONALITIES, BrainHandler, HealthMonitor } = require('./brain');
 const { Orchestrator, BotAgent } = require('./orchestrator');
-const { CraftMindEvents } = require('./events');
-const { BotStateMachine } = require('./state-machine');
+const { CraftMindEvents, EVENT_TYPES } = require('./events');
+const { BotStateMachine, BUILTIN_STATES } = require('./state-machine');
 const { CommandRegistry } = require('./commands');
 const { PluginManager } = require('./plugins');
 const { BotMemory } = require('./memory');
@@ -32,12 +33,15 @@ module.exports = {
   LLMClient,
   PERSONALITIES,
   BrainHandler,
+  HealthMonitor,
   // Multi-bot
   Orchestrator,
   BotAgent,
   // Systems
   CraftMindEvents,
+  EVENT_TYPES,
   BotStateMachine,
+  BUILTIN_STATES,
   CommandRegistry,
   PluginManager,
   BotMemory,

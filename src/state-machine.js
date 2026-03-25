@@ -1,204 +1,361 @@
 /**
  * @module craftmind/state-machine
- * @description Finite state machine for bot behavior.
+ * @description Finite state machine for CraftMind bot behavior.
  *
- * States: IDLE, FOLLOWING, MINING, BUILDING, COMBAT, FLEEING, NAVIGATING, DEAD
+ * Manages bot state transitions with validation, timeouts, event emission,
+ * hooks for plugin transitions, and support for registering custom states.
  *
- * Each state has entry/exit hooks and optional tick behavior.
- * Transitions can be guarded by predicates for safety.
+ * Built-in states: IDLE, FOLLOWING, NAVIGATING, MINING, BUILDING, FISHING
+ * Plugin states: CASTING, REELING, FIGHTING, LANDING (registered by fishing plugin)
  *
  * @example
- * const fsm = new BotStateMachine();
- * fsm.onStateChange((from, to) => console.log(`${from} → ${to}`));
- * fsm.transition('FOLLOWING'); // IDLE → FOLLOWING
- * fsm.transition('IDLE');      // FOLLOWING → IDLE
- * fsm.transition('COMBAT');    // IDLE → COMBAT
+ * const sm = new BotStateMachine();
+ * sm.onStateChange((from, to) => { ... });
+ * sm.transition('FOLLOWING');
+ * sm.configure('COMBAT', { guard: (from) => from === 'IDLE' });
+ * sm.meta('target', 'Player1');
  */
 
-class BotStateMachine {
-  constructor() {
-    /** @type {Map<string, StateConfig>} */
-    this._states = new Map();
-    /** @type {Set<Function>} */
-    this._listeners = new Set();
-    /** @type {string} */
-    this._current = 'IDLE';
-    /** @type {number} */
-    this._enteredAt = Date.now();
-    /** @type {Map<string, *>} */
-    this._metadata = new Map();
-    /** @type {Function|null} */
-    this._scriptHandler = null;
+const { EventEmitter } = require('events');
 
-    // Register default states
-    for (const name of BotStateMachine.STATES) {
-      this._states.set(name, { name, onEnter: null, onExit: null, guard: null });
+/** All built-in states the bot can be in. */
+const BUILTIN_STATES = [
+  'IDLE',
+  'FOLLOWING',
+  'NAVIGATING',
+  'MINING',
+  'BUILDING',
+  'FISHING',
+];
+
+/** Built-in transition table: maps FROM state to a Set of valid TO states. */
+const BUILTIN_TRANSITIONS = {
+  IDLE: ['FOLLOWING', 'NAVIGATING', 'MINING', 'BUILDING', 'FISHING', 'CASTING', 'COMBAT'],
+  FOLLOWING: ['IDLE', 'NAVIGATING'],
+  NAVIGATING: ['IDLE', 'FOLLOWING'],
+  MINING: ['IDLE'],
+  BUILDING: ['IDLE'],
+  FISHING: ['IDLE', 'CASTING'],
+  CASTING: ['IDLE', 'REELING'],
+  REELING: ['IDLE', 'FIGHTING', 'CASTING'],
+  FIGHTING: ['IDLE', 'LANDING', 'FLEEING'],
+  LANDING: ['IDLE', 'CASTING'],
+  COMBAT: ['IDLE', 'FLEEING'],
+  FLEEING: ['IDLE'],
+};
+
+class BotStateMachine extends EventEmitter {
+  /**
+   * @param {{ timeout?: number, onTimeout?: function(string): void }} [opts]
+   */
+  constructor(opts = {}) {
+    super();
+    /** @type {Map<string, Set<string>>} */
+    this._transitions = new Map();
+    /** @type {Set<string>} */
+    this._states = new Set();
+    /** @type {Map<string, number>} State timeouts in ms. */
+    this._timeouts = new Map();
+    /** @type {Map<string, Object>} State configuration (guards, hooks). */
+    this._configs = new Map();
+    /** @type {Map<string, *>} State metadata. */
+    this._metadata = new Map();
+    /** @type {string|null} */
+    this._state = 'IDLE';
+    /** @type {Object|null} */
+    this._stateData = null;
+    /** @type {string} */
+    this._lastState = 'IDLE';
+    /** @type {number} */
+    this._transitionCount = 0;
+    /** @type {number} */
+    this._defaultTimeout = opts.timeout || 0;
+    /** @type {function|null} */
+    this._onTimeout = opts.onTimeout || null;
+    /** @type {NodeJS.Timeout|null} */
+    this._timeoutTimer = null;
+    /** @type {string[]} Transition history (most recent last). */
+    this._history = [];
+    /** @type {number} Timestamp when current state was entered. */
+    this._stateEnteredAt = Date.now();
+
+    // Register built-in transitions
+    for (const state of BUILTIN_STATES) {
+      this._states.add(state);
+    }
+    for (const [from, toStates] of Object.entries(BUILTIN_TRANSITIONS)) {
+      this._transitions.set(from, new Set(toStates));
+      for (const to of toStates) {
+        if (!this._states.has(to)) {
+          this._states.add(to);
+        }
+      }
     }
   }
 
-  /** All valid state names. */
-  static STATES = Object.freeze([
-    'IDLE',
-    'FOLLOWING',
-    'MINING',
-    'BUILDING',
-    'COMBAT',
-    'FLEEING',
-    'NAVIGATING',
-    'DEAD',
-  ]);
-
   /**
-   * Configure a state with hooks.
-   * @param {string} name
-   * @param {{ onEnter?: Function, onExit?: Function, guard?: (from: string, to: string) => boolean }} config
-   */
-  configure(name, config = {}) {
-    const state = this._states.get(name);
-    if (!state) throw new Error(`Unknown state: ${name}. Valid: ${BotStateMachine.STATES.join(', ')}`);
-    if (config.onEnter) state.onEnter = config.onEnter;
-    if (config.onExit) state.onExit = config.onExit;
-    if (config.guard) state.guard = config.guard;
-  }
-
-  /**
-   * Get the current state.
-   * @returns {string}
+   * Current state name.
+   * @type {string}
    */
   get current() {
-    return this._current;
+    return this._state;
   }
 
   /**
-   * Get time in current state (ms).
-   * @returns {number}
+   * Data associated with the current state.
+   * @type {Object|null}
+   */
+  get stateData() {
+    return this._stateData;
+  }
+
+  /**
+   * Number of transitions since creation or last reset.
+   * @type {number}
+   */
+  get transitionCount() {
+    return this._transitionCount;
+  }
+
+  /**
+   * Time elapsed in the current state in ms.
+   * @type {number}
    */
   get elapsed() {
-    return Date.now() - this._enteredAt;
+    return Date.now() - this._stateEnteredAt;
   }
 
   /**
-   * Get/set state metadata (for carrying data between states).
-   * @param {string} key
-   * @param {*} [value] - If omitted, returns current value.
-   * @returns {*}
+   * Get all registered state names.
+   * @returns {string[]}
    */
-  meta(key, value) {
-    if (value === undefined) return this._metadata.get(key);
-    this._metadata.set(key, value);
+  get states() {
+    return [...this._states];
+  }
+
+  /**
+   * Get all valid transitions from a given state.
+   * @param {string} state
+   * @returns {string[]}
+   */
+  getTransitions(state) {
+    const transitions = this._transitions.get(state);
+    return transitions ? [...transitions] : [];
   }
 
   /**
    * Attempt a state transition.
-   * @param {string} to - Target state name.
-   * @param {*} [context] - Optional context passed to hooks.
-   * @returns {boolean} true if transition succeeded.
+   * @param {string} newState - Target state.
+   * @param {Object} [data={}] - Data to attach to the new state.
+   * @returns {boolean} `true` if the transition was valid and executed.
+   * @throws {Error} If the state is unknown.
    */
-  transition(to, context) {
-    to = to.toUpperCase();
-    if (!this._states.has(to)) {
-      throw new Error(`Unknown state: ${to}. Valid: ${BotStateMachine.STATES.join(', ')}`);
+  transition(newState, data = {}) {
+    const from = this._state;
+
+    // Check if state is known
+    if (!this._states.has(newState)) {
+      throw new Error(`Unknown state: ${newState}`);
     }
 
-    if (to === this._current) return true;
-
-    const targetState = this._states.get(to);
-    if (targetState.guard && !targetState.guard(this._current, to)) {
+    // Allow IDLE from any state (emergency stop)
+    if (newState !== 'IDLE' && !(this._transitions.get(from)?.has(newState))) {
+      console.warn(`[StateMachine] Invalid transition: ${from} → ${newState}`);
+      this.emit('invalidTransition', from, newState, data);
       return false;
     }
 
-    const from = this._current;
-    const fromState = this._states.get(from);
-
-    // Exit current state
-    try {
-      fromState.onExit?.(to, context);
-    } catch (err) {
-      console.error(`[FSM] onExit error (${from}):`, err.message);
+    // Check guard if configured
+    const config = this._configs.get(newState);
+    if (config?.guard && !config.guard(from)) {
+      return false;
     }
 
-    // Transition
-    this._current = to;
-    this._enteredAt = Date.now();
+    // Clear existing timeout
+    this._clearTimeout();
 
-    // Enter new state
-    try {
-      targetState.onEnter?.(from, context);
-    } catch (err) {
-      console.error(`[FSM] onEnter error (${to}):`, err.message);
-    }
-
-    // Notify listeners
-    for (const listener of this._listeners) {
-      try {
-        listener(from, to, context);
-      } catch (err) {
-        console.error('[FSM] listener error:', err.message);
+    // Call exit hook for the state we're leaving
+    const fromConfig = this._configs.get(from);
+    if (fromConfig?.onExit) {
+      try { fromConfig.onExit(newState); } catch (err) {
+        console.error(`[StateMachine] Exit hook error for ${from}: ${err.message}`);
       }
     }
 
+    this._lastState = from;
+    this._state = newState;
+    this._stateData = data;
+    this._stateEnteredAt = Date.now();
+    this._transitionCount++;
+
+    // Record in history
+    this._history.push({ from, to: newState, data: { ...data }, timestamp: Date.now() });
+    if (this._history.length > 100) this._history = this._history.slice(-50);
+
+    // Set timeout if configured
+    this._setTimeout(newState);
+
+    // Call enter hook for the state we're entering
+    if (config?.onEnter) {
+      try { config.onEnter(from); } catch (err) {
+        console.error(`[StateMachine] Enter hook error for ${newState}: ${err.message}`);
+      }
+    }
+
+    this.emit('transition', from, newState, data);
+    this.emit('stateChange', from, newState, data);
     return true;
   }
 
   /**
-   * Register a callback for state changes.
-   * @param {Function} fn - (from: string, to: string, context: *) => void
-   * @returns {Function} Unsubscribe function.
+   * Subscribe to state changes. Returns unsubscribe function.
+   * @param {function(string, string, Object): void} fn - Called with (fromState, toState, data).
+   * @returns {function} Unsubscribe function.
    */
   onStateChange(fn) {
-    this._listeners.add(fn);
-    return () => this._listeners.delete(fn);
+    this.on('transition', fn);
+    return () => this.off('transition', fn);
   }
 
   /**
-   * Check if a transition would be valid (without actually transitioning).
-   * @param {string} to
-   * @returns {boolean}
+   * Configure a state with guards, hooks, and timeout.
+   * @param {string} state - State name.
+   * @param {{ guard?: function(string): boolean, onEnter?: function(string), onExit?: function(string), timeout?: number, from?: string[] }} opts
    */
-  canTransition(to) {
-    to = to.toUpperCase();
-    if (!this._states.has(to)) return false;
-    if (to === this._current) return true;
-    const guard = this._states.get(to).guard;
-    return guard ? guard(this._current, to) : true;
+  configure(state, opts = {}) {
+    if (!this._configs.has(state)) {
+      this._configs.set(state, {});
+    }
+    const config = this._configs.get(state);
+    if (opts.guard !== undefined) config.guard = opts.guard;
+    if (opts.onEnter !== undefined) config.onEnter = opts.onEnter;
+    if (opts.onExit !== undefined) config.onExit = opts.onExit;
+    if (opts.timeout) this._timeouts.set(state, opts.timeout);
+
+    // Register transitions from specified states (plugin integration)
+    if (opts.from) {
+      for (const fromState of opts.from) {
+        if (!this._transitions.has(fromState)) {
+          this._transitions.set(fromState, new Set());
+        }
+        this._transitions.get(fromState).add(state);
+        if (!this._states.has(state)) this._states.add(state);
+        if (!this._states.has(fromState)) this._states.add(fromState);
+      }
+    }
   }
 
   /**
-   * Reset to IDLE state.
+   * Register a custom state (plugin API).
+   * @param {string} state
+   * @param {{ from?: string[], timeout?: number, onEnter?: function, onExit?: function }} [opts]
+   */
+  registerState(state, opts = {}) {
+    if (!this._states.has(state)) {
+      this._states.add(state);
+    }
+    this.configure(state, opts);
+  }
+
+  /**
+   * Get or set state metadata.
+   * @param {string} key
+   * @param {*} [value] - If provided, sets the value. If omitted, returns current value.
+   * @returns {*}
+   */
+  meta(key, value) {
+    if (value !== undefined) {
+      this._metadata.set(key, value);
+      return value;
+    }
+    return this._metadata.get(key);
+  }
+
+  /**
+   * Force transition to a given state (bypasses validation).
+   * Use with caution — only for error recovery.
+   * @param {string} state
+   * @param {Object} [data={}]
+   */
+  forceState(state, data = {}) {
+    this._clearTimeout();
+    const from = this._state;
+    this._lastState = from;
+    this._state = state;
+    this._stateData = data;
+    this._stateEnteredAt = Date.now();
+    this._transitionCount++;
+
+    this._history.push({ from, to: state, data: { ...data }, timestamp: Date.now(), forced: true });
+    this.emit('transition', from, state, data);
+    this.emit('stateChange', from, state, data);
+  }
+
+  /**
+   * Reset the state machine to IDLE.
    */
   reset() {
-    this.transition('IDLE');
+    this._clearTimeout();
+    this._state = 'IDLE';
+    this._stateData = null;
+    this._lastState = 'IDLE';
+    this._transitionCount = 0;
     this._metadata.clear();
+    this._history = [];
+    this._stateEnteredAt = Date.now();
+    this.emit('reset');
   }
 
   /**
-   * Register a behavior script that can trigger state transitions.
-   * When the script executes an action matching a registered mapping,
-   * the FSM transitions to the corresponding state.
-   * @param {import('./behavior-script').BehaviorScript} script
-   * @param {Object.<string, string>} actionToState - Maps action names to state names.
+   * Get transition history.
+   * @param {{ limit?: number, from?: string, to?: string }} [opts]
+   * @returns {Array<{from: string, to: string, data: Object, timestamp: number}>}
    */
-  hookScript(script, actionToState) {
-    this._scriptHook = { script, actionToState };
-    this._scriptHandler = ({ action }) => {
-      const targetState = actionToState[action];
-      if (targetState) {
-        this.transition(targetState, { triggeredBy: action });
+  getHistory(opts = {}) {
+    let h = this._history;
+    if (opts.from) h = h.filter(e => e.from === opts.from);
+    if (opts.to) h = h.filter(e => e.to === opts.to);
+    if (opts.limit) h = h.slice(-opts.limit);
+    return h;
+  }
+
+  /**
+   * Check if a transition is valid without side effects.
+   * Can be called with just `to` (uses current state as `from`), or both `from` and `to`.
+   * @param {string} to - Target state.
+   * @param {string} [from] - Source state (defaults to current).
+   * @returns {boolean}
+   */
+  canTransition(to, from) {
+    const fromState = from || this._state;
+    if (to === 'IDLE') return true;
+    const config = this._configs.get(to);
+    if (config?.guard && !config.guard(fromState)) return false;
+    return this._transitions.get(fromState)?.has(to) || false;
+  }
+
+  // ── Private ──
+
+  _setTimeout(state) {
+    const timeout = this._timeouts.get(state) || this._defaultTimeout;
+    if (!timeout) return;
+    this._timeoutTimer = setTimeout(() => {
+      console.warn(`[StateMachine] State ${state} timed out after ${timeout}ms`);
+      this.emit('timeout', state, this._stateData);
+      if (this._onTimeout) {
+        this._onTimeout(state);
+      } else {
+        this.transition('IDLE', { reason: 'timeout' });
       }
-    };
-    script.on('executed', this._scriptHandler);
+    }, timeout);
   }
 
-  /**
-   * Remove any registered behavior script hook.
-   */
-  unhookScript() {
-    if (this._scriptHook && this._scriptHandler) {
-      this._scriptHook.script.off('executed', this._scriptHandler);
+  _clearTimeout() {
+    if (this._timeoutTimer) {
+      clearTimeout(this._timeoutTimer);
+      this._timeoutTimer = null;
     }
-    this._scriptHook = null;
-    this._scriptHandler = null;
   }
 }
 
-module.exports = { BotStateMachine };
+module.exports = { BotStateMachine, BUILTIN_STATES, BUILTIN_TRANSITIONS };

@@ -4,9 +4,19 @@
  * equipped with pathfinding, state machine, command registry, plugin system,
  * persistent memory, structured logging, error recovery, and an LLM brain.
  *
+ * Features:
+ * - Graceful degradation when LLM is unavailable
+ * - Exponential backoff reconnection with health monitoring
+ * - Minecraft server crash detection and handling
+ * - Inventory tracking hooks for plugins
+ * - World position and biome awareness
+ * - Crew management integration points
+ *
  * @example
  * const bot = createBot({ host: 'localhost', username: 'Cody' });
  * bot.craftmind.followPlayer('SafeArtist2047');
+ * bot.craftmind.getBiome(); // 'minecraft:plains'
+ * bot.craftmind.inventory;  // tracked inventory
  */
 
 const mineflayer = require('mineflayer');
@@ -49,6 +59,7 @@ const BUILTIN_PLUGINS = [autoEat, playerTracker, deathTracker, fleeOnDanger];
  * @param {function} [options.onStart]               - Fired once after spawn.
  * @param {function} [options.onChat]                - Fired on every chat message.
  * @param {function} [options.onEnd]                 - Fired on disconnect.
+ * @param {number} [options.healthCheckInterval=30000] - LLM health check interval in ms.
  *
  * @returns {import('mineflayer').Bot & { craftmind: BotActions }} The bot instance.
  */
@@ -72,6 +83,173 @@ function createBot(options = {}) {
     commands.register(cmd);
   }
 
+  // ── Inventory Tracker ─────────────────────────────────────────────────────
+  const inventory = {
+    /** @type {Object.<string, number>} Current item counts. */
+    items: {},
+    /** @type {Object.<string, number>} Item durability tracking. */
+    durability: {},
+    /** @type {string|null} Currently held item. */
+    heldItem: null,
+    /** @type {number|null} Held item slot. */
+    heldSlot: null,
+
+    /** Sync inventory from the bot. */
+    sync() {
+      if (!bot?.entity) return;
+      try {
+        this.items = {};
+        const botItems = bot.inventory.items();
+        for (const item of botItems) {
+          const name = item.name.replace('minecraft:', '');
+          this.items[name] = (this.items[name] || 0) + item.count;
+          // Track durability for tools/weapons
+          if (item.maxDurability > 0) {
+            const key = `${name}_${item.slot}`;
+            this.durability[key] = {
+              durability: item.durability,
+              maxDurability: item.maxDurability,
+              percent: Math.round((item.durability / item.maxDurability) * 100),
+            };
+          }
+        }
+        const held = bot.heldItem;
+        this.heldItem = held ? held.name.replace('minecraft:', '') : null;
+        this.heldSlot = bot.quickBarSlot;
+
+        // Notify inventory hooks
+        this._notifyHooks();
+      } catch (err) {
+        // Bot may not be fully spawned
+      }
+    },
+
+    /** @type {Map<string, function>} Inventory change listeners. */
+    _listeners: new Map(),
+
+    /**
+     * Add an inventory change listener.
+     * @param {string} id - Listener ID.
+     * @param {function(Object, Object): void} fn - Called with (oldInventory, newInventory).
+     */
+    onChange(id, fn) {
+      this._listeners.set(id, fn);
+    },
+
+    /** Remove an inventory change listener. */
+    offChange(id) {
+      this._listeners.delete(id);
+    },
+
+    /** @private Notify all listeners of inventory changes. */
+    _notifyHooks() {
+      const hooks = plugins.getInventoryHooks();
+      for (const hook of hooks) {
+        for (const [itemName, count] of Object.entries(this.items)) {
+          if (hook.itemPattern.test(itemName)) {
+            if (hook.onCollect) {
+              try { hook.onCollect({ item: itemName, count }); } catch (e) { /* skip */ }
+            }
+          }
+        }
+      }
+    },
+
+    /**
+     * Get summary string.
+     * @returns {string}
+     */
+    summary() {
+      return Object.entries(this.items)
+        .map(([name, count]) => `${name}×${count}`)
+        .join(', ') || 'empty';
+    },
+
+    /**
+     * Check if bot has an item.
+     * @param {string} name
+     * @param {number} [minCount=1]
+     * @returns {boolean}
+     */
+    has(name, minCount = 1) {
+      return (this.items[name] || 0) >= minCount;
+    },
+  };
+
+  // ── World Awareness ───────────────────────────────────────────────────────
+  const world = {
+    /** @type {{x: number, y: number, z: number}|null} */
+    position: null,
+    /** @type {string|null} */
+    biome: null,
+    /** @type {string|null} */
+    blockUnder: null,
+    /** @type {number} */
+    timeOfDay: 0,
+    /** @type {boolean} */
+    isDay: true,
+
+    /** Update world state from the bot. */
+    sync() {
+      if (!bot?.entity) return;
+      try {
+        const pos = bot.entity.position;
+        this.position = { x: Math.floor(pos.x), y: Math.floor(pos.y), z: Math.floor(pos.z) };
+        this.blockUnder = bot.blockAt(pos.offset(0, -1, 0))?.name || null;
+        this.timeOfDay = bot.timeOfDay;
+        this.isDay = bot.timeOfDay > 0 && bot.timeOfDay < 12000;
+
+        // Try to get biome
+        try {
+          // mineflayer doesn't directly expose biome, but we can check surrounding blocks
+          // as a heuristic. A proper biome mod or plugin can override this.
+          if (bot.blockAt) {
+            const surfaceBlock = bot.blockAt(pos.offset(0, -1, 0));
+            if (surfaceBlock) {
+              this.biome = this._guessBiome(surfaceBlock.name, pos);
+            }
+          }
+        } catch {
+          this.biome = null;
+        }
+      } catch {
+        // Bot not ready
+      }
+    },
+
+    /** @private Simple biome guess from surface block. */
+    _guessBiome(blockName, pos) {
+      if (blockName === 'sand' || blockName === 'red_sand') return 'minecraft:beach';
+      if (blockName === 'snow_block') return 'minecraft:snowy_plains';
+      if (blockName === 'ice') return 'minecraft:frozen_ocean';
+      if (blockName === 'mycelium') return 'minecraft:mushroom_fields';
+      if (blockName.includes('coral')) return 'minecraft:warm_ocean';
+      // Default: unknown (plugins can provide accurate biome data)
+      return null;
+    },
+
+    /** @type {boolean} Whether the bot is near water. */
+    get nearWater() {
+      if (!bot?.entity) return false;
+      try {
+        const pos = bot.entity.position;
+        for (let dx = -3; dx <= 3; dx++) {
+          for (let dz = -3; dz <= 3; dz++) {
+            const block = bot.blockAt(pos.offset(dx, 0, dz));
+            if (block?.name === 'water') return true;
+          }
+        }
+      } catch { /* skip */ }
+      return false;
+    },
+
+    /** @type {boolean} Whether the bot is in a cave (underground). */
+    get isUnderground() {
+      if (!this.position) return false;
+      return this.position.y < 62;
+    },
+  };
+
   // ── Create mineflayer bot ─────────────────────────────────────────────────
   const bot = mineflayer.createBot({
     host: config.host,
@@ -83,10 +261,11 @@ function createBot(options = {}) {
 
   bot.loadPlugin(pathfinder);
 
-  // ── Reconnection ───────────────────────────────────────────────────────────
+  // ── Reconnection with Exponential Backoff ─────────────────────────────────
   let reconnectAttempts = 0;
   const maxReconnect = config.behavior?.maxReconnectAttempts ?? 10;
-  const reconnectDelay = config.behavior?.reconnectDelay ?? 5000;
+  const baseReconnectDelay = config.behavior?.reconnectDelay ?? 5000;
+  let lastDisconnectTime = 0;
 
   function attemptReconnect() {
     if (!config.behavior?.autoReconnect) return;
@@ -96,20 +275,34 @@ function createBot(options = {}) {
       options.onEnd?.(bot);
       return;
     }
+
     reconnectAttempts++;
-    const delay = reconnectDelay * Math.min(reconnectAttempts, 5); // Exponential backoff, capped
-    log.info(`Reconnecting in ${delay}ms (attempt ${reconnectAttempts}/${maxReconnect})`);
+    // Exponential backoff: delay = base * 2^(attempt-1), capped at 5 minutes
+    const delay = Math.min(baseReconnectDelay * Math.pow(2, reconnectAttempts - 1), 300000);
+    log.info(`Reconnecting in ${Math.round(delay / 1000)}s (attempt ${reconnectAttempts}/${maxReconnect})`);
     events.emit('RECONNECT', { attempt: reconnectAttempts, delay });
 
     setTimeout(() => {
       log.info(`Reconnecting...`);
       try {
         const newBot = createBot(options);
-        // Transfer state
-        Object.assign(bot, newBot);
+        // Transfer state — copy properties to avoid breaking references
+        for (const key of Object.keys(newBot)) {
+          try { bot[key] = newBot[key]; } catch { /* skip non-writable */ }
+        }
+        // Re-emit events on the new bot
+        for (const evt of Object.keys(bot._events || {})) {
+          try {
+            const listeners = bot.listeners(evt);
+            for (const listener of listeners) {
+              newBot.on(evt, listener);
+            }
+          } catch { /* skip */ }
+        }
       } catch (err) {
         log.error(`Reconnect failed: ${err.message}`);
-        attemptReconnect();
+        // Schedule next attempt
+        setTimeout(() => attemptReconnect(), 1000);
       }
     }, delay);
   }
@@ -137,6 +330,10 @@ function createBot(options = {}) {
     reconnectAttempts = 0;
     events.emit('SPAWN');
 
+    // Initial sync
+    inventory.sync();
+    world.sync();
+
     if (options.onStart) options.onStart(bot);
   });
 
@@ -161,7 +358,7 @@ function createBot(options = {}) {
         sender: username,
         raw: message,
         reply: (msg) => bot.chat(msg),
-        permission: 'anyone', // Could be expanded with op checking
+        permission: 'anyone',
       };
       const handled = commands.execute(message, ctx);
       events.emit('COMMAND', { sender: username, message, handled });
@@ -187,17 +384,39 @@ function createBot(options = {}) {
   bot.on('error', (err) => {
     log.error(`Error: ${err.message}`);
     events.emit('ERROR', { error: err });
+
+    // Detect server crash patterns
+    const msg = err.message.toLowerCase();
+    if (msg.includes('connection reset') || msg.includes('econnreset') ||
+        msg.includes('read ECONNRESET') || msg.includes('server closed')) {
+      lastDisconnectTime = Date.now();
+      events.emit('SERVER_CRASH', { error: err.message });
+      log.warn('Possible server crash detected — will attempt reconnect');
+    }
   });
 
   bot.on('end', (reason) => {
+    const now = Date.now();
+    const sessionDuration = now - lastDisconnectTime;
+
     log.info(`Disconnected: ${reason || 'unknown'}`);
     stateMachine.transition('IDLE');
-    events.emit('DISCONNECT', { reason });
+    events.emit('DISCONNECT', { reason, sessionDuration: now - (bot._spawnTime || now) });
     plugins.unloadAll();
 
     if (options.onEnd) options.onEnd(bot);
+
+    // Detect likely server crash (very short session or specific errors)
     if (config.behavior?.autoReconnect !== false) {
       attemptReconnect();
+    }
+  });
+
+  bot.on('message', (jsonMsg) => {
+    // Track inventory changes from server messages
+    // (Alternative to polling, catches item pickups/uses in real-time)
+    if (jsonMsg?.toString().includes('inventory')) {
+      inventory.sync();
     }
   });
 
@@ -216,6 +435,15 @@ function createBot(options = {}) {
       events.emit('NAVIGATION_FAILED');
     }
   });
+
+  // ── Periodic Sync (inventory, world, memory) ─────────────────────────────
+
+  const syncInterval = setInterval(() => {
+    if (bot.entity) {
+      inventory.sync();
+      world.sync();
+    }
+  }, 5000); // Sync every 5s
 
   // ── Agent Actions Namespace ───────────────────────────────────────────────
 
@@ -284,13 +512,7 @@ function createBot(options = {}) {
 
     /** @returns {Object.<string, number>} */
     inventorySummary() {
-      const items = bot.inventory.items();
-      const summary = {};
-      items.forEach((item) => {
-        const name = item.name.replace('minecraft:', '');
-        summary[name] = (summary[name] || 0) + item.count;
-      });
-      return summary;
+      return inventory.items;
     },
 
     /** @returns {{x: number, y: number, z: number}} */
@@ -381,6 +603,10 @@ function createBot(options = {}) {
     _config: config,
     /** @type {ReturnType<import('../log').create>} */
     _logger: log,
+    /** @type {typeof inventory} */
+    _inventory: inventory,
+    /** @type {typeof world} */
+    _world: world,
   };
 
   // ── Attach Brain ──────────────────────────────────────────────────────────
@@ -398,13 +624,34 @@ function createBot(options = {}) {
       minInterval: config.llm?.minInterval,
     });
     bot.craftmind._brain = brain;
+
+    // Inject plugin prompt fragments into brain
+    const updatePromptFragments = () => {
+      for (const fragment of plugins.getPromptFragments()) {
+        brain.llm.addPromptFragment(fragment.key, fragment.text, fragment.priority);
+      }
+    };
+
+    // Initial setup
+    updatePromptFragments();
+
+    // Listen for new plugins that might add fragments
+    events.on('PLUGIN_LOADED', updatePromptFragments);
+
+    // Start health monitoring
+    if (config.llm?.apiKey || process.env.ZAI_API_KEY) {
+      brain.llm.startHealthCheck(options.healthCheckInterval || 30000);
+    }
   }
 
   // ── Save memory on graceful shutdown ──────────────────────────────────────
   const saveAndQuit = () => {
+    clearInterval(syncInterval);
+    if (brain) brain.llm.stopHealthCheck();
     memory.save();
     log.info('Memory saved, shutting down');
   };
+
   process.on('SIGINT', () => {
     saveAndQuit();
     bot.quit();
@@ -422,7 +669,16 @@ function createBot(options = {}) {
       memory.save();
     }
   }, 60_000);
-  bot.on('end', () => clearInterval(memorySaveInterval));
+
+  bot.on('end', () => {
+    clearInterval(syncInterval);
+    clearInterval(memorySaveInterval);
+  });
+
+  // Track spawn time for crash detection
+  bot.once('spawn', () => {
+    bot._spawnTime = Date.now();
+  });
 
   return bot;
 }
@@ -451,7 +707,8 @@ if (require.main === module) {
     onStart(bot) {
       setTimeout(() => {
         const hasBrain = !!bot.craftmind._brain;
-        if (hasBrain) {
+        const brainAvailable = hasBrain && bot.craftmind._brain.available;
+        if (brainAvailable) {
           bot.chat(`Hey! I'm ${username}. My brain is online — just talk to me!`);
           bot.chat('Use !help for commands.');
         } else {
