@@ -126,6 +126,20 @@ createBot({ username: 'Cody', plugins: [require('./my-plugin')] });
 | `player-tracker` | Records and remembers players the bot encounters |
 | `death-tracker` | Tracks deaths, updates state machine on death/respawn |
 | `flee-on-danger` | Flees from lava and low-health situations |
+| `combat` | Engages hostile mobs, fights back with melee attacks |
+| `auto-equip` | Automatically equips the best available armor and weapons |
+| `auto-respawn` | Instantly respawns after death with no delay |
+| `wanderer` | Autonomous exploration — roams, mines, and gathers resources |
+
+### Agent Framework
+
+A universal agent system for multi-step planning and execution:
+
+- **Action Planner** — LLM-powered decomposition of goals into action sequences
+- **Decision Engine** — Evaluates context and selects next action
+- **Action Executor** — Executes planned actions against the Minecraft world
+- **Session Recorder** — Logs agent sessions for review and iteration
+- **Comparative Evaluator** — Compare agent performance across runs
 
 ## API Reference
 
@@ -203,20 +217,19 @@ Priority: defaults → `craftmind.config.js` → `CRAFTMIND_*` env vars → runt
 | `CRAFTMIND_LLM_MODEL` | LLM model name | — |
 | `CRAFTMIND_LOG_LEVEL` | Log verbosity | `info` |
 
-## Repository Links
-
-CraftMind is an ecosystem of plugins and tools:
+## CraftMind Ecosystem
 
 | Repo | Description |
 |------|-------------|
 | [**craftmind**](https://github.com/CedarBeach2019/craftmind) | 🤖 Core bot framework |
 | [craftmind-fishing](https://github.com/CedarBeach2019/craftmind-fishing) | 🎣 Sitka Sound fishing RPG |
 | [craftmind-studio](https://github.com/CedarBeach2019/craftmind-studio) | 🎬 AI filmmaking engine |
-| [craftmind-ranch](https://github.com/CedarBeach2019/craftmind-ranch) | 🐄 Animal husbandry simulation |
-| [craftmind-herding](https://github.com/CedarBeach2019/craftmind-herding) | 🐑 Livestock herding AI |
-| [craftmind-circuits](https://github.com/CedarBeach2019/craftmind-circuits) | ⚡ Redstone circuit design |
 | [craftmind-courses](https://github.com/CedarBeach2019/craftmind-courses) | 📚 In-game learning system |
 | [craftmind-researcher](https://github.com/CedarBeach2019/craftmind-researcher) | 🔬 AI research assistant |
+| [craftmind-herding](https://github.com/CedarBeach2019/craftmind-herding) | 🐑 Livestock herding AI |
+| [craftmind-circuits](https://github.com/CedarBeach2019/craftmind-circuits) | ⚡ Redstone circuit design |
+| [craftmind-ranch](https://github.com/CedarBeach2019/craftmind-ranch) | 🌾 Genetic animal breeding |
+| [craftmind-discgolf](https://github.com/CedarBeach2019/craftmind-discgolf) | 🥏 Disc golf simulation |
 
 ## License
 

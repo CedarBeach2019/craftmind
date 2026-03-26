@@ -1,0 +1,16 @@
+{
+  "players": {},
+  "places": {},
+  "builds": {},
+  "resources": {},
+  "deaths": 1,
+  "deathCauses": [
+    {
+      "cause": "death event",
+      "timestamp": "2026-03-26T05:37:52.691Z"
+    }
+  ],
+  "meta": {},
+  "lastSession": "2026-03-26T06:26:08.267Z",
+  "scriptHistory": []
+}

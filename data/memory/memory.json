@@ -176,8 +176,92 @@
       },
       "time": "2026-03-26T02:05:25.131Z",
       "timestamp": 1774490725131
+    },
+    {
+      "type": "player_chat",
+      "data": {
+        "player": "MagnusandMouse",
+        "message": "what are you doing fight"
+      },
+      "tags": [
+        "social"
+      ],
+      "time": "2026-03-26T02:12:30.436Z",
+      "timestamp": 1774491150436
+    },
+    {
+      "type": "planned_day",
+      "data": {
+        "going": true,
+        "reason": "Good day to fish."
+      },
+      "time": "2026-03-26T02:12:40.360Z",
+      "timestamp": 1774491160360
+    },
+    {
+      "type": "planned_day",
+      "data": {
+        "going": true,
+        "reason": "Good day to fish."
+      },
+      "time": "2026-03-26T02:12:55.371Z",
+      "timestamp": 1774491175371
+    },
+    {
+      "type": "planned_day",
+      "data": {
+        "going": true,
+        "reason": "Good day to fish."
+      },
+      "time": "2026-03-26T02:25:47.364Z",
+      "timestamp": 1774491947364
+    },
+    {
+      "type": "planned_day",
+      "data": {
+        "going": true,
+        "reason": "Good day to fish."
+      },
+      "time": "2026-03-26T02:26:02.371Z",
+      "timestamp": 1774491962371
+    },
+    {
+      "type": "planned_day",
+      "data": {
+        "going": true,
+        "reason": "Good day to fish."
+      },
+      "time": "2026-03-26T02:29:17.438Z",
+      "timestamp": 1774492157438
+    },
+    {
+      "type": "planned_day",
+      "data": {
+        "going": true,
+        "reason": "Good day to fish."
+      },
+      "time": "2026-03-26T04:18:20.463Z",
+      "timestamp": 1774498700463
+    },
+    {
+      "type": "planned_day",
+      "data": {
+        "going": true,
+        "reason": "Good day to fish."
+      },
+      "time": "2026-03-26T04:28:16.707Z",
+      "timestamp": 1774499296707
+    },
+    {
+      "type": "planned_day",
+      "data": {
+        "going": true,
+        "reason": "Good day to fish."
+      },
+      "time": "2026-03-26T04:32:40.070Z",
+      "timestamp": 1774499560070
     }
   ],
   "rules": [],
-  "savedAt": "2026-03-26T02:08:20.123Z"
+  "savedAt": "2026-03-26T06:28:51.576Z"
 }
