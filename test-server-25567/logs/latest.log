@@ -1,179 +1,1484 @@
-[21:33:45] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[21:33:52] [ServerMain/INFO]: Loaded 1370 recipes
-[21:33:53] [ServerMain/INFO]: Loaded 1481 advancements
-[21:33:53] [Server thread/INFO]: Starting minecraft server version 1.21.4
-[21:33:53] [Server thread/INFO]: Loading properties
-[21:33:53] [Server thread/INFO]: Default game type: SURVIVAL
-[21:33:53] [Server thread/INFO]: Generating keypair
-[21:33:53] [Server thread/INFO]: Starting Minecraft server on *:25567
-[21:33:54] [Server thread/INFO]: Using epoll channel type
-[21:33:54] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[21:33:54] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[21:33:54] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[21:33:54] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[21:33:54] [Server thread/INFO]: Preparing level "craftmind"
-[21:33:55] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[21:34:00] [Worker-Main-4/INFO]: Preparing spawn area: 0%
-[21:34:00] [Worker-Main-4/INFO]: Preparing spawn area: 0%
-[21:34:00] [Worker-Main-4/INFO]: Preparing spawn area: 0%
-[21:34:00] [Worker-Main-4/INFO]: Preparing spawn area: 0%
-[21:34:00] [Worker-Main-4/INFO]: Preparing spawn area: 0%
-[21:34:00] [Worker-Main-4/INFO]: Preparing spawn area: 0%
-[21:34:00] [Worker-Main-4/INFO]: Preparing spawn area: 0%
-[21:34:00] [Worker-Main-4/INFO]: Preparing spawn area: 0%
-[21:34:00] [Worker-Main-4/INFO]: Preparing spawn area: 0%
-[21:34:00] [Worker-Main-4/INFO]: Preparing spawn area: 0%
-[21:34:00] [Worker-Main-4/INFO]: Preparing spawn area: 0%
-[21:34:00] [Worker-Main-4/INFO]: Preparing spawn area: 0%
-[21:34:01] [Worker-Main-4/INFO]: Preparing spawn area: 16%
-[21:34:01] [Worker-Main-3/INFO]: Preparing spawn area: 71%
-[21:34:02] [Worker-Main-3/INFO]: Preparing spawn area: 71%
-[21:34:04] [Worker-Main-3/INFO]: Preparing spawn area: 71%
-[21:34:04] [Worker-Main-3/INFO]: Preparing spawn area: 71%
-[21:34:04] [Worker-Main-3/INFO]: Preparing spawn area: 71%
-[21:34:04] [Worker-Main-3/INFO]: Preparing spawn area: 71%
-[21:34:04] [Worker-Main-3/INFO]: Preparing spawn area: 71%
-[21:34:05] [Worker-Main-3/INFO]: Preparing spawn area: 71%
-[21:34:05] [Worker-Main-5/INFO]: Preparing spawn area: 71%
-[21:34:08] [Worker-Main-3/INFO]: Preparing spawn area: 71%
-[21:34:08] [Worker-Main-3/INFO]: Preparing spawn area: 71%
-[21:34:08] [Worker-Main-3/INFO]: Preparing spawn area: 71%
-[21:34:08] [Worker-Main-3/INFO]: Preparing spawn area: 71%
-[21:34:08] [Worker-Main-3/INFO]: Preparing spawn area: 71%
-[21:34:09] [Worker-Main-3/INFO]: Preparing spawn area: 71%
-[21:34:09] [Worker-Main-3/INFO]: Preparing spawn area: 71%
-[21:34:09] [Worker-Main-3/INFO]: Preparing spawn area: 71%
-[21:34:11] [Worker-Main-3/INFO]: Preparing spawn area: 71%
-[21:34:11] [Worker-Main-3/INFO]: Preparing spawn area: 71%
-[21:34:11] [Worker-Main-3/INFO]: Preparing spawn area: 71%
-[21:34:11] [Worker-Main-2/INFO]: Preparing spawn area: 71%
-[21:34:12] [Worker-Main-3/INFO]: Preparing spawn area: 71%
-[21:34:12] [Worker-Main-4/INFO]: Preparing spawn area: 81%
-[21:34:13] [Worker-Main-3/INFO]: Preparing spawn area: 81%
-[21:34:13] [Worker-Main-4/INFO]: Preparing spawn area: 81%
-[21:34:14] [Worker-Main-2/INFO]: Preparing spawn area: 81%
-[21:34:15] [Worker-Main-5/INFO]: Preparing spawn area: 83%
-[21:34:15] [Server thread/INFO]: Time elapsed: 19787 ms
-[21:34:15] [Server thread/INFO]: Done (20.809s)! For help, type "help"
-[21:34:15] [Server thread/INFO]: Starting remote control listener
-[21:34:15] [Server thread/INFO]: Thread RCON Listener started
-[21:34:15] [Server thread/INFO]: RCON running on 0.0.0.0:25577
-[21:34:57] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
-[21:34:57] [Server thread/INFO]: [Rcon: Set the time to 6000]
-[21:34:57] [RCON Client /127.0.0.1 #2/INFO]: Thread RCON Client /127.0.0.1 shutting down
-[21:35:13] [Server thread/INFO]: Cody_B[/127.0.0.1:33560] logged in with entity id 2 at (0.5, 63.0, 0.5)
-[21:35:13] [Server thread/INFO]: Cody_B joined the game
-[21:35:15] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2079ms or 41 ticks behind
-[21:35:16] [Server thread/INFO]: [Not Secure] <Cody_B> Hey! I spawned. Use !help for commands.
-[21:35:26] [Server thread/INFO]: [Not Secure] <Cody_B> *gets rod ready*
-[21:35:45] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 15748ms or 314 ticks behind
-[21:36:08] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 8034ms or 160 ticks behind
-[21:39:49] [Server thread/INFO]: [Not Secure] <Cody_B> Getting out of here!
-[21:39:49] [Server thread/INFO]: Cody_B lost connection: Disconnected
-[21:39:49] [Server thread/INFO]: Cody_B left the game
-[21:40:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
-[21:40:44] [Server thread/INFO]: [Rcon: Successfully filled 28 block(s)]
-[21:40:44] [Server thread/INFO]: [Rcon: Successfully filled 28 block(s)]
-[21:40:44] [Server thread/INFO]: [Rcon: Changed the block at -2, 65, 1]
-[21:40:44] [Server thread/INFO]: [Rcon: Set the time to 6000]
-[21:40:44] [Server thread/INFO]: [Rcon: Gamerule doDaylightCycle is now set to: false]
-[21:40:44] [Server thread/INFO]: [Rcon: Gamerule doMobSpawning is now set to: false]
-[21:40:44] [RCON Client /127.0.0.1 #3/INFO]: Thread RCON Client /127.0.0.1 shutting down
-[21:40:49] [Server thread/INFO]: Server empty for 60 seconds, pausing
-[21:42:26] [Server thread/INFO]: Cody_B[/127.0.0.1:49584] logged in with entity id 767 at (-97.7, 61.31659558612759, -24.7)
-[21:42:26] [Server thread/INFO]: Cody_B joined the game
-[21:42:29] [Server thread/INFO]: [Not Secure] <Cody_B> Hey! I spawned. Use !help for commands.
-[21:42:35] [Server thread/INFO]: [Not Secure] <Cody_B> *adjusts gear*
-[21:42:38] [Server thread/INFO]: [Not Secure] <Cody_B> *gets rod ready*
-[21:56:58] [Server thread/INFO]: Cody_B lost connection: Disconnected
-[21:56:58] [Server thread/INFO]: Cody_B left the game
-[21:57:57] [Server thread/INFO]: Cody_B[/127.0.0.1:57496] logged in with entity id 944 at (-97.7, 60.48118972932462, -24.7)
-[21:57:57] [Server thread/INFO]: Cody_B joined the game
-[21:57:59] [Server thread/INFO]: [Not Secure] <Cody_B> Hey! I spawned. Use !help for commands.
-[22:02:41] [Server thread/INFO]: Cody_B lost connection: You logged in from another location
-[22:02:41] [Server thread/INFO]: Cody_B left the game
-[22:02:41] [Server thread/WARN]: handleDisconnection() called twice
-[22:02:42] [Server thread/INFO]: Cody_B[/127.0.0.1:40174] logged in with entity id 1006 at (-97.7, 63.520661224349624, -24.7)
-[22:02:42] [Server thread/INFO]: Cody_B joined the game
-[22:02:45] [Server thread/INFO]: [Not Secure] <Cody_B> Hey! I spawned. Use !help for commands.
-[22:11:00] [Server thread/INFO]: Cody_B lost connection: Disconnected
-[22:11:00] [Server thread/INFO]: Cody_B left the game
-[22:11:19] [Server thread/INFO]: Cody_B[/127.0.0.1:45166] logged in with entity id 1069 at (-97.7, 60.80644641464935, -24.7)
-[22:11:19] [Server thread/INFO]: Cody_B joined the game
-[22:11:22] [Server thread/INFO]: [Not Secure] <Cody_B> Hey! I spawned. Use !help for commands.
-[22:11:29] [Server thread/INFO]: [Not Secure] <Cody_B> Water temp's 48 degrees. Right in the zone.
-[22:13:50] [Server thread/INFO]: [Not Secure] <Cody_B> Getting out of here!
-[22:13:50] [Server thread/INFO]: Cody_B lost connection: Disconnected
-[22:13:50] [Server thread/INFO]: Cody_B left the game
-[22:14:50] [Server thread/INFO]: Server empty for 60 seconds, pausing
-[22:19:51] [Server thread/INFO]: Cody_B[/127.0.0.1:33248] logged in with entity id 1126 at (-97.7, 62.91136264401695, -24.7)
-[22:19:51] [Server thread/INFO]: Cody_B joined the game
-[22:19:53] [Server thread/INFO]: [Not Secure] <Cody_B> Hey! I spawned. Use !help for commands.
-[22:19:56] [Server thread/INFO]: [Not Secure] <Cody_B> *checks lines*
-[22:20:01] [Server thread/INFO]: [Not Secure] <Cody_B> Running a flasher and hoochie today. Classic setup.
-[22:23:51] [Server thread/INFO]: [Not Secure] <Cody_B> Maybe I should try a different spot...
-[22:24:26] [Server thread/INFO]: [Not Secure] <Cody_B> *watches the horizon*
-[22:24:33] [Server thread/INFO]: [Not Secure] <Cody_B> Maybe I should try a different spot...
-[22:24:59] [Server thread/INFO]: [Not Secure] <Cody_B> *checks lines*
-[22:25:46] [Server thread/INFO]: [Not Secure] <Cody_B> They're just not biting today.
-[22:25:50] [Server thread/INFO]: [Not Secure] <Cody_B> *adjusts gear*
-[22:25:53] [Server thread/INFO]: [Not Secure] <Cody_B> *adjusts gear*
-[22:26:18] [Server thread/INFO]: [Not Secure] <Cody_B> *watches the horizon*
-[22:26:59] [Server thread/INFO]: [Not Secure] <Cody_B> They're just not biting today.
-[22:27:09] [Server thread/INFO]: [Not Secure] <Cody_B> Patience. They'll come around.
-[22:27:22] [Server thread/INFO]: [Not Secure] <Cody_B> Maybe I should try a different spot...
-[22:29:27] [Server thread/INFO]: [Not Secure] <Cody_B> Maybe I should try a different spot...
-[22:29:52] [Server thread/INFO]: [Not Secure] <Cody_B> *watches the horizon*
-[22:30:36] [Server thread/INFO]: [Not Secure] <Cody_B> *watches the horizon*
-[22:31:18] [Server thread/INFO]: [Not Secure] <Cody_B> *adjusts gear*
-[22:31:21] [Server thread/INFO]: [Not Secure] <Cody_B> *adjusts gear*
-[22:31:30] [Server thread/INFO]: [Not Secure] <Cody_B> Maybe I should try a different spot...
-[22:32:18] [Server thread/INFO]: [Not Secure] <Cody_B> Maybe I should try a different spot...
-[22:32:51] [Server thread/INFO]: [Not Secure] <Cody_B> *checks lines*
-[22:33:42] [Server thread/INFO]: [Not Secure] <Cody_B> Patience. They'll come around.
-[22:34:12] [Server thread/INFO]: [Not Secure] <Cody_B> *checks lines*
-[22:34:29] [Server thread/INFO]: [Not Secure] <Cody_B> *adjusts gear*
-[22:34:39] [Server thread/INFO]: [Not Secure] <Cody_B> *watches the horizon*
-[22:35:05] [Server thread/INFO]: [Not Secure] <Cody_B> *adjusts gear*
-[22:35:32] [Server thread/INFO]: Cody_B lost connection: Disconnected
-[22:35:32] [Server thread/INFO]: Cody_B left the game
-[22:36:22] [Server thread/INFO]: Cody_B[/127.0.0.1:51756] logged in with entity id 1823 at (108.72170544993044, 62.28438633494086, 75.0906608592472)
-[22:36:22] [Server thread/INFO]: Cody_B joined the game
-[22:36:24] [Server thread/INFO]: [Not Secure] <Cody_B> Hey! I spawned. Use !help for commands.
-[22:36:32] [Server thread/INFO]: [Not Secure] <Cody_B> Getting started.
-[22:36:36] [Server thread/INFO]: [Not Secure] <Cody_B> Good spot here.
-[22:36:39] [Server thread/INFO]: [Not Secure] <Cody_B> Let's see what's biting.
-[22:36:43] [Server thread/INFO]: [Not Secure] <Cody_B> Here we go.
-[22:36:48] [Server thread/INFO]: [Not Secure] <Cody_B> Should've brought a thermos.
-[22:36:51] [Server thread/INFO]: [Not Secure] <Cody_B> Yes! Finally.
-[22:36:55] [Server thread/INFO]: [Not Secure] <Cody_B> Yes! Finally.
-[22:36:58] [Server thread/INFO]: [Not Secure] <Cody_B> You ever try night fishing?
-[22:37:02] [Server thread/INFO]: [Not Secure] <Cody_B> One more cast.
-[22:37:06] [Server thread/INFO]: [Not Secure] <Cody_B> This is why I love it out here.
-[22:37:10] [Server thread/INFO]: [Not Secure] <Cody_B> Dry spell.
-[22:37:14] [Server thread/INFO]: [Not Secure] <Cody_B> Still here though. Wouldn't be anywhere else.
-[22:37:18] [Server thread/INFO]: [Not Secure] <Cody_B> Alright.
-[22:37:21] [Server thread/INFO]: [Not Secure] <Cody_B> Quiet morning.
-[22:37:25] [Server thread/INFO]: [Not Secure] <Cody_B> Quiet morning.
-[22:37:30] [Server thread/INFO]: [Not Secure] <Cody_B> *stretches* Getting stiff.
-[22:37:35] [Server thread/INFO]: [Not Secure] <Cody_B> Quiet morning.
-[22:37:40] [Server thread/INFO]: [Not Secure] <Cody_B> Hmm. They moved on.
-[22:37:44] [Server thread/INFO]: [Not Secure] <Cody_B> Fish on! This one's fighting.
-[22:37:50] [Server thread/INFO]: [Not Secure] <Cody_B> Fish on! This one's fighting.
-[22:37:54] [Server thread/INFO]: [Not Secure] <Cody_B> Dry spell.
-[22:37:58] [Server thread/INFO]: [Not Secure] <Cody_B> Fish on! This one's fighting.
-[22:38:01] [Server thread/INFO]: [Not Secure] <Cody_B> There we go. Knew this spot was good.
-[22:38:05] [Server thread/INFO]: [Not Secure] <Cody_B> *casts*
-[22:38:09] [Server thread/INFO]: [Not Secure] <Cody_B> Alright.
-[22:38:12] [Server thread/INFO]: [Not Secure] <Cody_B> You know what they say about Sitka fishing...
-[22:38:17] [Server thread/INFO]: [Not Secure] <Cody_B> Takes a special kind of person to enjoy this.
-[22:38:20] [Server thread/INFO]: [Not Secure] <Cody_B> Should've brought a thermos.
-[22:38:25] [Server thread/INFO]: [Not Secure] <Cody_B> Quiet morning.
-[22:38:29] [Server thread/INFO]: [Not Secure] <Cody_B> *casts*
-[22:38:33] [Server thread/INFO]: [Not Secure] <Cody_B> Here we go.
-[22:38:37] [Server thread/INFO]: [Not Secure] <Cody_B> Let's see what's biting.
-[22:38:39] [Server thread/INFO]: Cody_B lost connection: Disconnected
-[22:38:39] [Server thread/INFO]: Cody_B left the game
-[22:39:39] [Server thread/INFO]: Server empty for 60 seconds, pausing
-[22:45:58] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
-[22:45:58] [RCON Client /127.0.0.1 #4/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:00:33] [Server thread/INFO]: [Not Secure] <Cody_B> Another for the cooler.
+[00:00:38] [Server thread/INFO]: [Not Secure] <Cody_B> Mike's boat's in dry dock again. Transmission trouble.
+[00:00:42] [Server thread/INFO]: [Not Secure] <Cody_B> I believe it.
+[00:01:10] [Server thread/INFO]: [Not Secure] <Cody_B> Jigging works better when the tide is slack.
+[00:01:39] [Server thread/INFO]: [Not Secure] <Cody_B> Right in the corner—perfect hookset.
+[00:01:45] [Server thread/INFO]: [Not Secure] <Cody_B> Remember when the Russian Bishop's House was still falling apart? Glad they fixed it up.
+[00:01:48] [Server thread/INFO]: [Not Secure] <Cody_B> You got that right.
+[00:01:54] [Server thread/INFO]: [Not Secure] <Cody_B> That'll do.
+[00:02:00] [Server thread/INFO]: [Not Secure] <Cody_B> Keep your drag loose—kings run hard here.
+[00:02:22] [Server thread/INFO]: [Not Secure] <Cody_B> Let it sink to bottom, then three cranks up.
+[00:02:26] [Server thread/INFO]: [Not Secure] <Cody_B> No kidding?
+[00:02:47] [Server thread/INFO]: [Not Secure] <Cody_B> The dock does not owe me anything.
+[00:02:51] [Server thread/INFO]: [Not Secure] <Cody_B> Dangit, snagged on the pilings again.
+[00:03:01] [Server thread/INFO]: [Not Secure] <Cody_B> I believe it.
+[00:03:17] [Server thread/INFO]: [Not Secure] <Cody_B> Gotcha.
+[00:03:20] [Server thread/INFO]: [Not Secure] <Cody_B> That's the third hook today. Bottom's hungry.
+[00:03:27] [Server thread/INFO]: [Not Secure] <Cody_B> The whole waterfront burned in '66. Rebuilt everything you see.
+[00:03:46] [Server thread/INFO]: [Not Secure] <Cody_B> Well, gave it a shot.
+[00:03:51] [Server thread/INFO]: [Not Secure] <Cody_B> Water's calm.
+[00:03:58] [Server thread/INFO]: [Not Secure] <Cody_B> Black bear crossed Halibut Point Road yesterday. Big fella.
+[00:04:17] [Server thread/INFO]: [Not Secure] <Cody_B> Well, gave it a shot.
+[00:04:28] [Server thread/INFO]: [Not Secure] <Cody_B> Cleared up nice. Can see Edgecumbe's whole snowcap.
+[00:04:31] [Server thread/INFO]: [Not Secure] <Cody_B> No kidding?
+[00:05:06] [Server thread/INFO]: [Not Secure] <Cody_B> Nothing. They are being picky today.
+[00:05:12] [Server thread/INFO]: [Not Secure] <Cody_B> Water's calm.
+[00:05:58] [Server thread/INFO]: [Not Secure] <Cody_B> Lost another Pixie to the kelp bed.
+[00:06:05] [Server thread/INFO]: [Not Secure] <Cody_B> New seafood truck on Lincoln Street—halibut is fresh.
+[00:06:26] [Server thread/INFO]: [Not Secure] <Cody_B> Hey, not bad!
+[00:06:30] [Server thread/INFO]: [Not Secure] <Cody_B> Dangit, snagged on the pilings again.
+[00:06:37] [Server thread/INFO]: [Not Secure] <Cody_B> Saw a humpback breeching off Japonski this morning. Full breach.
+[00:06:41] [Server thread/INFO]: [Not Secure] <Cody_B> No kidding?
+[00:07:14] [Server thread/INFO]: [Not Secure] <Cody_B> Gotcha.
+[00:07:37] [Server thread/INFO]: [Not Secure] <Cody_B> Gotcha.
+[00:07:43] [Server thread/INFO]: [Not Secure] <Cody_B> Water's calm.
+[00:07:49] [Server thread/INFO]: [Not Secure] <Cody_B> Heard the charter guys limited out by Biorka yesterday.
+[00:08:38] [Server thread/INFO]: [Not Secure] <Cody_B> Nice little one.
+[00:08:44] [Server thread/INFO]: [Not Secure] <Cody_B> New seafood truck on Lincoln Street—halibut is fresh.
+[00:08:47] [Server thread/INFO]: [Not Secure] <Cody_B> Another for the cooler.
+[00:08:56] [Server thread/INFO]: [Not Secure] <Cody_B> Ain't that the truth.
+[00:09:16] [Server thread/INFO]: [Not Secure] <Cody_B> Well, gave it a shot.
+[00:09:21] [Server thread/INFO]: [Not Secure] <Cody_B> Sun's out but that east wind's still chilly.
+[00:10:06] [Server thread/INFO]: [Not Secure] <Cody_B> Eagle's nest up in that spruce by Swan Lake. Two chicks this year.
+[00:10:52] [Server thread/INFO]: [Not Secure] <Cody_B> Solid hit.
+[00:11:32] [Server thread/INFO]: [Not Secure] <Cody_B> The dock does not owe me anything.
+[00:11:54] [Server thread/INFO]: [Not Secure] <Cody_B> Getting my gear ready.
+[00:11:54] [Server thread/INFO]: [Not Secure] <Cody_B> Fishing. Don't jinx it.
+[00:11:54] [Server thread/INFO]: [Not Secure] <Cody_B> Patience.
+[00:11:55] [Server thread/INFO]: [Not Secure] <Cody_B> Getting my gear ready.
+[00:11:55] [Server thread/INFO]: [Not Secure] <Cody_B> Here we go.
+[00:11:57] [Server thread/INFO]: [Not Secure] <Cody_B> OKAY HERE WE GO!
+[00:12:04] [Server thread/INFO]: [Not Secure] <Cody_B> Nothing biting.
+[00:12:05] [Server thread/INFO]: Cody_B drowned
+[00:12:08] [Server thread/INFO]: [Not Secure] <Cody_B> 🎣 Sitka Sound — ☁️ Overcast, ↘ Outgoing Tide. Type !help for commands, or just talk to me.
+[00:12:24] [Server thread/INFO]: [Not Secure] <Cody_B> *shifts weight*
+[00:12:38] [Server thread/INFO]: [Not Secure] <Cody_B> Is it getting dark?
+[00:12:41] [Server thread/INFO]: [Not Secure] <Cody_B> Getting out of here!
+[00:12:41] [Server thread/INFO]: Cody_B lost connection: Disconnected
+[00:12:41] [Server thread/INFO]: Cody_B left the game
+[00:13:41] [Server thread/INFO]: Server empty for 60 seconds, pausing
+[00:38:17] [Server thread/INFO]: Cody_B[/127.0.0.1:45834] logged in with entity id 4019 at (-40.95377073440604, 62.87030541747415, -25.587001958826917)
+[00:38:17] [Server thread/INFO]: Cody_B joined the game
+[00:38:19] [Server thread/INFO]: [Not Secure] <Cody_B> Hey! I spawned. Use !help for commands.
+[00:38:25] [Server thread/INFO]: [Not Secure] <Cody_B> *watches the horizon*
+[00:38:47] [Server thread/INFO]: [Not Secure] <Cody_B> Good.
+[00:39:13] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:39:13] [Server thread/INFO]: [Rcon: Gave 1 [Fishing Rod] to Cody_B]
+[00:39:13] [RCON Client /127.0.0.1 #6/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:41:38] [Server thread/INFO]: [Not Secure] <Cody_B> Getting my gear ready.
+[00:41:38] [Server thread/INFO]: [Not Secure] <Cody_B> Fishing. Don't jinx it.
+[00:41:45] [Server thread/INFO]: [Not Secure] <Cody_B> Dry run.
+[00:41:46] [Server thread/INFO]: [Not Secure] <Cody_B> Decent. But I caught a 40-pounder right here in '97.
+[00:42:20] [Server thread/INFO]: [Not Secure] <Cody_B> Pro tip: don't fish against the wind.
+[00:43:15] [Server thread/INFO]: [Not Secure] <Cody_B> Always cast upstream.
+[00:43:49] [Server thread/INFO]: [Not Secure] <Cody_B> Back in my day we didn't have these fancy rods.
+[00:44:07] [Server thread/INFO]: [Not Secure] <Cody_B> See? Patience. That's all it takes.
+[00:44:34] [Server thread/INFO]: [Not Secure] <Cody_B> I've waited longer for worse fish.
+[00:45:02] [Server thread/INFO]: [Not Secure] <Cody_B> Took the bait clean. Respect.
+[00:45:07] [Server thread/INFO]: [Not Secure] <Cody_B> Could be hours yet. That's fishing.
+[00:45:12] [Server thread/INFO]: [Not Secure] <Cody_B> Patience. The fish don't run on your schedule.
+[00:45:30] [Server thread/INFO]: [Not Secure] <Cody_B> Tide's not right yet. Give it an hour.
+[00:45:33] [Server thread/INFO]: [Not Secure] <Cody_B> Decent. But I caught a 40-pounder right here in '97.
+[00:45:40] [Server thread/INFO]: [Not Secure] <Cody_B> Tide's not right yet. Give it an hour.
+[00:46:28] [Server thread/INFO]: [Not Secure] <Cody_B> Used to be you couldn't keep them off the hook here.
+[00:46:32] [Server thread/INFO]: [Not Secure] <Cody_B> See? Patience. That's all it takes.
+[00:47:20] [Server thread/INFO]: [Not Secure] <Cody_B> See? Patience. That's all it takes.
+[00:47:26] [Server thread/INFO]: [Not Secure] <Cody_B> Let me tell you about the winter of '92...
+[00:47:46] [Server thread/INFO]: [Not Secure] <Cody_B> Back when the runs were thick, you'd get three of these before breakfast.
+[00:48:12] [Server thread/INFO]: [Not Secure] <Cody_B> Good weight on that one. Healthy stock.
+[00:48:19] [Server thread/INFO]: [Not Secure] <Cody_B> That's a feeder king. Nice.
+[00:48:24] [Server thread/INFO]: [Not Secure] <Cody_B> Good color on that one. Wild fish for sure.
+[00:48:30] [Server thread/INFO]: [Not Secure] <Cody_B> That's a feeder king. Nice.
+[00:48:35] [Server thread/INFO]: [Not Secure] <Cody_B> Time to change the bait.
+[00:48:46] [Server thread/INFO]: [Not Secure] <Cody_B> That's a feeder king. Nice.
+[00:48:50] [Server thread/INFO]: [Not Secure] <Cody_B> That's why you troll the edge.
+[00:48:56] [Server thread/INFO]: [Not Secure] <Cody_B> Solid hookset. He's in the box.
+[00:49:01] [Server thread/INFO]: [Not Secure] <Cody_B> *checks downrigger cable*
+[00:49:09] [Server thread/INFO]: [Not Secure] <Cody_B> Got my limit yesterday. Today's just for fun.
+[00:49:13] [Server thread/INFO]: [Not Secure] <Cody_B> Might need to swap to a green flasher.
+[00:49:17] [Server thread/INFO]: [Not Secure] <Cody_B> Headed to the smoker with this one.
+[00:49:21] [Server thread/INFO]: [Not Secure] <Cody_B> Good color on that one. Wild fish for sure.
+[00:49:27] [Server thread/INFO]: [Not Secure] <Cody_B> Bright chromer. Ocean-fresh.
+[00:49:34] [Server thread/INFO]: [Not Secure] <Cody_B> The herring are thick in the channel.
+[00:49:38] [Server thread/INFO]: [Not Secure] <Cody_B> Headed to the smoker with this one.
+[00:49:43] [Server thread/INFO]: [Not Secure] <Cody_B> Good color on that one. Wild fish for sure.
+[00:49:50] [Server thread/INFO]: [Not Secure] <Cody_B> *adjusts speed* Two knots, maybe two and a half.
+[00:49:55] [Server thread/INFO]: [Not Secure] <Cody_B> Solid hookset. He's in the box.
+[00:49:59] [Server thread/INFO]: [Not Secure] <Cody_B> Spent an hour on that drift. Zilch.
+[00:50:04] [Server thread/INFO]: [Not Secure] <Cody_B> Hoochie did its job.
+[00:50:09] [Server thread/INFO]: [Not Secure] <Cody_B> Bright chromer. Ocean-fresh.
+[00:50:15] [Server thread/INFO]: [Not Secure] <Cody_B> Maybe try mooching instead.
+[00:50:20] [Server thread/INFO]: [Not Secure] <Cody_B> Bright chromer. Ocean-fresh.
+[00:50:26] [Server thread/INFO]: [Not Secure] <Cody_B> Retie that leader.
+[00:51:04] [Server thread/INFO]: Cody_B drowned
+[00:51:07] [Server thread/INFO]: [Not Secure] <Cody_B> 🎣 Sitka Sound — 🌧️ Rain, ▼ Low Tide. Type !help for commands, or just talk to me.
+[00:51:21] [Server thread/INFO]: [Not Secure] <Cody_B> This dock has seen some sunsets.
+[00:51:31] [Server thread/INFO]: [Not Secure] <Cody_B> Heard the ferry's running late again.
+[00:51:44] [Server thread/INFO]: [Not Secure] <Cody_B> My wife says I fish too much. I said "that's a lot of bass."
+[00:52:02] [Server thread/INFO]: [Not Secure] <Cody_B> The harbor's quiet today. I like that.
+[00:52:22] [Server thread/INFO]: [Not Secure] <Cody_B> Why did the fisherman fall asleep? He was a rock bass.
+[00:52:52] [Server thread/INFO]: [Not Secure] <Cody_B> *checks watch* Time flies when you're not catching.
+[00:53:03] [Server thread/INFO]: [Not Secure] <Cody_B> Sitka in the spring. Can't beat it.
+[00:53:09] [Server thread/INFO]: [Not Secure] <Cody_B> Secret's in the retrieve speed. Too fast, they spook.
+[00:53:22] [Server thread/INFO]: [Not Secure] <Cody_B> Why did the fisherman fall asleep? He was a rock bass.
+[00:53:26] [Server thread/INFO]: [Not Secure] <Cody_B> Wind shifted overnight. Different drift now.
+[00:53:34] [Server thread/INFO]: [Not Secure] <Cody_B> Half the catch is showing up at the right time.
+[00:54:06] [Server thread/INFO]: [Not Secure] <Cody_B> Fish on! There we go.
+[00:54:25] [Server thread/INFO]: [Not Secure] <Cody_B> Nice out here. Even the tourists are quiet.
+[00:54:29] [Server thread/INFO]: [Not Secure] <Cody_B> Old Peters finally sold his boat. End of an era.
+[00:54:38] [Server thread/INFO]: [Not Secure] <Cody_B> If the gulls are sitting, the fish are deep.
+[00:54:44] [Server thread/INFO]: [Not Secure] <Cody_B> Fish on! There we go.
+[00:54:48] [Server thread/INFO]: [Not Secure] <Cody_B> The harbor's quiet today. I like that.
+[00:54:57] [Server thread/INFO]: [Not Secure] <Cody_B> Fish on! There we go.
+[00:55:14] [Server thread/INFO]: [Not Secure] <Cody_B> *checks watch* Time flies when you're not catching.
+[00:55:32] [Server thread/INFO]: [Not Secure] <Cody_B> My wife says I fish too much. I said "that's a lot of bass."
+[00:55:44] [Server thread/INFO]: [Not Secure] <Cody_B> Skunked again. Classic.
+[00:55:48] [Server thread/INFO]: [Not Secure] <Cody_B> The fish union called a strike, apparently.
+[00:55:56] [Server thread/INFO]: [Not Secure] <Cody_B> Clear skies today. Got lucky.
+[00:56:04] [Server thread/INFO]: [Not Secure] <Cody_B> Old Peters finally sold his boat. End of an era.
+[00:56:08] [Server thread/INFO]: [Not Secure] <Cody_B> Dark water's where the big ones hide.
+[00:56:14] [Server thread/INFO]: [Not Secure] <Cody_B> Whale spout off the point. Tourist season's starting.
+[00:56:20] [Server thread/INFO]: [Not Secure] <Cody_B> See? Patience pays.
+[00:56:31] [Server thread/INFO]: [Not Secure] <Cody_B> Wind shifted overnight. Different drift now.
+[00:56:36] [Server thread/INFO]: [Not Secure] <Cody_B> I don't always fish. But when I do, I exaggerate.
+[00:56:42] [Server thread/INFO]: [Not Secure] <Cody_B> This dock has seen some sunsets.
+[00:56:58] [Server thread/INFO]: [Not Secure] <Cody_B> Saw a bald eagle circling earlier. Good sign.
+[00:57:05] [Server thread/INFO]: [Not Secure] <Cody_B> Clear skies today. Got lucky.
+[00:57:12] [Server thread/INFO]: [Not Secure] <Cody_B> The harbor's quiet today. I like that.
+[00:57:18] [Server thread/INFO]: [Not Secure] <Cody_B> If fishing was easy, they'd call it catching.
+[00:57:24] [Server thread/INFO]: [Not Secure] <Cody_B> The harbor's quiet today. I like that.
+[00:57:30] [Server thread/INFO]: [Not Secure] <Cody_B> My wife says I fish too much. I said "that's a lot of bass."
+[00:57:42] [Server thread/INFO]: [Not Secure] <Cody_B> That's going on the grill tonight.
+[00:57:50] [Server thread/INFO]: [Not Secure] <Cody_B> Well, it's the fishing, not the catching.
+[00:57:56] [Server thread/INFO]: [Not Secure] <Cody_B> Whale spout off the point. Tourist season's starting.
+[00:58:01] [Server thread/INFO]: [Not Secure] <Cody_B> Fish on! There we go.
+[00:58:10] [Server thread/INFO]: [Not Secure] <Cody_B> Rain's coming. You can taste it.
+[00:58:16] [Server thread/INFO]: [Not Secure] <Cody_B> Nothing. Story of my life.
+[00:58:25] [Server thread/INFO]: [Not Secure] <Cody_B> The fish union called a strike, apparently.
+[00:58:31] [Server thread/INFO]: [Not Secure] <Cody_B> Sun should be coming around the mountain soon.
+[00:58:39] [Server thread/INFO]: [Not Secure] <Cody_B> Saw a bald eagle circling earlier. Good sign.
+[00:58:46] [Server thread/INFO]: [Not Secure] <Cody_B> If the gulls are sitting, the fish are deep.
+[00:58:52] [Server thread/INFO]: [Not Secure] <Cody_B> Not bad! The dock's been kind today.
+[00:59:03] [Server thread/INFO]: [Not Secure] <Cody_B> Saw a bald eagle circling earlier. Good sign.
+[00:59:22] [Server thread/INFO]: [Not Secure] <Cody_B> This dock has seen some sunsets.
+[00:59:31] [Server thread/INFO]: [Not Secure] <Cody_B> Bright chrome on that one. Ocean fresh.
+[00:59:39] [Server thread/INFO]: [Not Secure] <Cody_B> Heard the ferry's running late again.
+[00:59:45] [Server thread/INFO]: [Not Secure] <Cody_B> Dry run. They're being picky today.
+[00:59:49] [Server thread/INFO]: [Not Secure] <Cody_B> Secret's in the retrieve speed. Too fast, they spook.
+[00:59:54] [Server thread/INFO]: [Not Secure] <Cody_B> Not bad! The dock's been kind today.
+[01:00:01] [Server thread/INFO]: [Not Secure] <Cody_B> Saw a bald eagle circling earlier. Good sign.
+[01:00:06] [Server thread/INFO]: [Not Secure] <Cody_B> Wind shifted overnight. Different drift now.
+[01:00:12] [Server thread/INFO]: [Not Secure] <Cody_B> Old Peters finally sold his boat. End of an era.
+[01:00:16] [Server thread/INFO]: [Not Secure] <Cody_B> Heard the ferry's running late again.
+[01:00:22] [Server thread/INFO]: [Not Secure] <Cody_B> Nothing. But hey, the view's free.
+[01:00:28] [Server thread/INFO]: [Not Secure] <Cody_B> The fish union called a strike, apparently.
+[01:00:32] [Server thread/INFO]: [Not Secure] <Cody_B> The harbor's quiet today. I like that.
+[01:00:41] [Server thread/INFO]: [Not Secure] <Cody_B> Nothing. But hey, the view's free.
+[01:00:51] [Server thread/INFO]: [Not Secure] <Cody_B> Dark water's where the big ones hide.
+[01:00:55] [Server thread/INFO]: [Not Secure] <Cody_B> Got one! Not bad for a Thursday.
+[01:01:01] [Server thread/INFO]: [Not Secure] <Cody_B> Why did the fisherman fall asleep? He was a rock bass.
+[01:01:07] [Server thread/INFO]: [Not Secure] <Cody_B> This dock has seen some sunsets.
+[01:01:14] [Server thread/INFO]: [Not Secure] <Cody_B> Old Peters finally sold his boat. End of an era.
+[01:01:22] [Server thread/INFO]: [Not Secure] <Cody_B> Barometer's dropping. Fish know it too.
+[01:01:28] [Server thread/INFO]: [Not Secure] <Cody_B> Skunked again. Classic.
+[01:01:33] [Server thread/INFO]: [Not Secure] <Cody_B> Bright chrome on that one. Ocean fresh.
+[01:01:36] [Server thread/INFO]: [Not Secure] <Cody_B> Nice out here. Even the tourists are quiet.
+[01:01:42] [Server thread/INFO]: [Not Secure] <Cody_B> The fish union called a strike, apparently.
+[01:01:46] [Server thread/INFO]: [Not Secure] <Cody_B> This dock has seen some sunsets.
+[01:01:50] [Server thread/INFO]: [Not Secure] <Cody_B> Fish on! There we go.
+[01:01:57] [Server thread/INFO]: [Not Secure] <Cody_B> Old Peters finally sold his boat. End of an era.
+[01:02:04] [Server thread/INFO]: [Not Secure] <Cody_B> Anyone want coffee? I brought a thermos.
+[01:02:10] [Server thread/INFO]: [Not Secure] <Cody_B> Saw a bald eagle circling earlier. Good sign.
+[01:02:17] [Server thread/INFO]: [Not Secure] <Cody_B> See? Patience pays.
+[01:02:29] [Server thread/INFO]: [Not Secure] <Cody_B> Rain's coming. You can taste it.
+[01:02:37] [Server thread/INFO]: [Not Secure] <Cody_B> Got one! Not bad for a Thursday.
+[01:02:45] [Server thread/INFO]: [Not Secure] <Cody_B> Clear skies today. Got lucky.
+[01:03:00] [Server thread/INFO]: [Not Secure] <Cody_B> I don't always fish. But when I do, I exaggerate.
+[01:03:06] [Server thread/INFO]: [Not Secure] <Cody_B> If fishing was easy, they'd call it catching.
+[01:03:13] [Server thread/INFO]: [Not Secure] <Cody_B> Anyone want coffee? I brought a thermos.
+[01:03:17] [Server thread/INFO]: [Not Secure] <Cody_B> I don't always fish. But when I do, I exaggerate.
+[01:03:23] [Server thread/INFO]: [Not Secure] <Cody_B> Nothing. Story of my life.
+[01:03:28] [Server thread/INFO]: [Not Secure] <Cody_B> Not bad! The dock's been kind today.
+[01:03:33] [Server thread/INFO]: [Not Secure] <Cody_B> Well, it's the fishing, not the catching.
+[01:03:37] [Server thread/INFO]: [Not Secure] <Cody_B> Bright chrome on that one. Ocean fresh.
+[01:03:45] [Server thread/INFO]: [Not Secure] <Cody_B> Sea otter floated right past me this morning.
+[01:03:48] [Server thread/INFO]: [Not Secure] <Cody_B> The harbor's quiet today. I like that.
+[01:03:51] [Server thread/INFO]: [Not Secure] <Cody_B> Decent pull. Respect to the fish.
+[01:03:54] [Server thread/INFO]: [Not Secure] <Cody_B> Rain's coming. You can taste it.
+[01:04:02] [Server thread/INFO]: [Not Secure] <Cody_B> I could do this every day. Oh wait, I do.
+[01:04:09] [Server thread/INFO]: [Not Secure] <Cody_B> Got one! Not bad for a Thursday.
+[01:04:20] [Server thread/INFO]: [Not Secure] <Cody_B> New coffee shop opened on Lincoln Street. Not bad.
+[01:04:31] [Server thread/INFO]: [Not Secure] <Cody_B> Skunked again. Classic.
+[01:04:35] [Server thread/INFO]: [Not Secure] <Cody_B> Nothing. Story of my life.
+[01:04:40] [Server thread/INFO]: [Not Secure] <Cody_B> Fish on! There we go.
+[01:04:51] [Server thread/INFO]: [Not Secure] <Cody_B> Dark water's where the big ones hide.
+[01:04:59] [Server thread/INFO]: [Not Secure] <Cody_B> Barometer's dropping. Fish know it too.
+[01:05:04] [Server thread/INFO]: [Not Secure] <Cody_B> Nice out here. Even the tourists are quiet.
+[01:05:09] [Server thread/INFO]: [Not Secure] <Cody_B> See? Patience pays.
+[01:05:15] [Server thread/INFO]: [Not Secure] <Cody_B> This dock has seen some sunsets.
+[01:05:21] [Server thread/INFO]: [Not Secure] <Cody_B> Fish are like opinions — everyone's got one.
+[01:05:25] [Server thread/INFO]: [Not Secure] <Cody_B> I could do this every day. Oh wait, I do.
+[01:05:31] [Server thread/INFO]: [Not Secure] <Cody_B> Clear skies today. Got lucky.
+[01:05:37] [Server thread/INFO]: [Not Secure] <Cody_B> See? Patience pays.
+[01:05:41] [Server thread/INFO]: [Not Secure] <Cody_B> Fish on! There we go.
+[01:05:47] [Server thread/INFO]: [Not Secure] <Cody_B> Got one! Not bad for a Thursday.
+[01:05:52] [Server thread/INFO]: [Not Secure] <Cody_B> Not bad! The dock's been kind today.
+[01:05:56] [Server thread/INFO]: [Not Secure] <Cody_B> This dock has seen some sunsets.
+[01:06:03] [Server thread/INFO]: [Not Secure] <Cody_B> Saw a bald eagle circling earlier. Good sign.
+[01:06:06] [Server thread/INFO]: [Not Secure] <Cody_B> Someone tagged the boardwalk. Downtown's changing.
+[01:06:15] [Server thread/INFO]: [Not Secure] <Cody_B> Secret's in the retrieve speed. Too fast, they spook.
+[01:06:18] [Server thread/INFO]: [Not Secure] <Cody_B> Fish on! There we go.
+[01:06:22] [Server thread/INFO]: [Not Secure] <Cody_B> I could do this every day. Oh wait, I do.
+[01:06:25] [Server thread/INFO]: [Not Secure] <Cody_B> Someone tagged the boardwalk. Downtown's changing.
+[01:06:28] [Server thread/INFO]: [Not Secure] <Cody_B> New coffee shop opened on Lincoln Street. Not bad.
+[01:06:34] [Server thread/INFO]: [Not Secure] <Cody_B> Fish on! There we go.
+[01:06:45] [Server thread/INFO]: [Not Secure] <Cody_B> The harbor's quiet today. I like that.
+[01:06:48] [Server thread/INFO]: [Not Secure] <Cody_B> This dock has seen some sunsets.
+[01:06:54] [Server thread/INFO]: [Not Secure] <Cody_B> You ever just sit and listen to the water?
+[01:07:02] [Server thread/INFO]: [Not Secure] <Cody_B> Dark water's where the big ones hide.
+[01:07:08] [Server thread/INFO]: [Not Secure] <Cody_B> That's going on the grill tonight.
+[01:07:13] [Server thread/INFO]: [Not Secure] <Cody_B> Seals are out. Means the herring are running.
+[01:07:18] [Server thread/INFO]: [Not Secure] <Cody_B> Bright chrome on that one. Ocean fresh.
+[01:07:31] [Server thread/INFO]: [Not Secure] <Cody_B> Skunked again. Classic.
+[01:07:43] [Server thread/INFO]: [Not Secure] <Cody_B> Nothing. Story of my life.
+[01:07:47] [Server thread/INFO]: [Not Secure] <Cody_B> Not bad! The dock's been kind today.
+[01:07:51] [Server thread/INFO]: [Not Secure] <Cody_B> That's going on the grill tonight.
+[01:07:57] [Server thread/INFO]: [Not Secure] <Cody_B> If the gulls are sitting, the fish are deep.
+[01:08:05] [Server thread/INFO]: [Not Secure] <Cody_B> Sitka in the spring. Can't beat it.
+[01:08:16] [Server thread/INFO]: [Not Secure] <Cody_B> Nothing. Story of my life.
+[01:08:23] [Server thread/INFO]: [Not Secure] <Cody_B> Got one! Not bad for a Thursday.
+[01:08:28] [Server thread/INFO]: [Not Secure] <Cody_B> Not bad! The dock's been kind today.
+[01:08:35] [Server thread/INFO]: [Not Secure] <Cody_B> *checks watch* Time flies when you're not catching.
+[01:08:42] [Server thread/INFO]: [Not Secure] <Cody_B> Nice out here. Even the tourists are quiet.
+[01:08:45] [Server thread/INFO]: [Not Secure] <Cody_B> Rain's coming. You can taste it.
+[01:08:59] [Server thread/INFO]: [Not Secure] <Cody_B> Fish on! There we go.
+[01:09:18] [Server thread/INFO]: [Not Secure] <Cody_B> Nice out here. Even the tourists are quiet.
+[01:09:30] [Server thread/INFO]: [Not Secure] <Cody_B> Making a pass toward the rockpile.
+[01:09:34] [Server thread/INFO]: [Not Secure] <Cody_B> Water temp's holding at 48. Not bad.
+[01:09:38] [Server thread/INFO]: [Not Secure] <Cody_B> Maybe try mooching instead.
+[01:09:41] [Server thread/INFO]: [Not Secure] <Cody_B> Spent an hour on that drift. Zilch.
+[01:09:45] [Server thread/INFO]: [Not Secure] <Cody_B> Might need to swap to a green flasher.
+[01:09:49] [Server thread/INFO]: [Not Secure] <Cody_B> Need to get past the kelp line.
+[01:09:53] [Server thread/INFO]: [Not Secure] <Cody_B> Headed to the smoker with this one.
+[01:09:57] [Server thread/INFO]: [Not Secure] <Cody_B> Watch for the tide change — that's when they move.
+[01:10:00] [Server thread/INFO]: [Not Secure] <Cody_B> Switched to a flasher — see if that helps.
+[01:10:03] [Server thread/INFO]: [Not Secure] <Cody_B> Water temp's holding at 48. Not bad.
+[01:10:07] [Server thread/INFO]: [Not Secure] <Cody_B> Headed to the smoker with this one.
+[01:10:10] [Server thread/INFO]: [Not Secure] <Cody_B> Spent an hour on that drift. Zilch.
+[01:10:13] [Server thread/INFO]: [Not Secure] <Cody_B> Hoochie did its job.
+[01:10:18] [Server thread/INFO]: [Not Secure] <Cody_B> Need to check the gear after this pass.
+[01:10:23] [Server thread/INFO]: [Not Secure] <Cody_B> Coho! They fight mean but they're delicious.
+[01:10:26] [Server thread/INFO]: [Not Secure] <Cody_B> That's why you troll the edge.
+[01:10:30] [Server thread/INFO]: [Not Secure] <Cody_B> Might need to swap to a green flasher.
+[01:10:34] [Server thread/INFO]: [Not Secure] <Cody_B> Running a blue label hoochie today.
+[01:10:38] [Server thread/INFO]: [Not Secure] <Cody_B> That's a feeder king. Nice.
+[01:10:43] [Server thread/INFO]: [Not Secure] <Cody_B> Solid hookset. He's in the box.
+[01:10:47] [Server thread/INFO]: [Not Secure] <Cody_B> Maybe try mooching instead.
+[01:10:50] [Server thread/INFO]: [Not Secure] <Cody_B> Solid hookset. He's in the box.
+[01:10:53] [Server thread/INFO]: [Not Secure] <Cody_B> Hoochie did its job.
+[01:10:58] [Server thread/INFO]: [Not Secure] <Cody_B> Switched to a flasher — see if that helps.
+[01:11:03] [Server thread/INFO]: [Not Secure] <Cody_B> Coho! They fight mean but they're delicious.
+[01:11:08] [Server thread/INFO]: [Not Secure] <Cody_B> Running a blue label hoochie today.
+[01:11:12] [Server thread/INFO]: [Not Secure] <Cody_B> Current's ripping. Hard to hold depth.
+[01:11:15] [Server thread/INFO]: [Not Secure] <Cody_B> Hoochie did its job.
+[01:11:21] [Server thread/INFO]: [Not Secure] <Cody_B> Short strike. They're just nipping.
+[01:11:25] [Server thread/INFO]: [Not Secure] <Cody_B> Watch for the tide change — that's when they move.
+[01:11:29] [Server thread/INFO]: [Not Secure] <Cody_B> Trolling for kings out past the breakwater.
+[01:11:32] [Server thread/INFO]: [Not Secure] <Cody_B> Trolling for kings out past the breakwater.
+[01:11:41] [Server thread/INFO]: [Not Secure] <Cody_B> Dragging a herring behind a dodger.
+[01:11:44] [Server thread/INFO]: [Not Secure] <Cody_B> Water temp's holding at 48. Not bad.
+[01:11:48] [Server thread/INFO]: [Not Secure] <Cody_B> Headed to the smoker with this one.
+[01:11:51] [Server thread/INFO]: [Not Secure] <Cody_B> Headed to the smoker with this one.
+[01:11:54] [Server thread/INFO]: [Not Secure] <Cody_B> Need to drop deeper.
+[01:11:58] [Server thread/INFO]: [Not Secure] <Cody_B> Solid hookset. He's in the box.
+[01:12:01] [Server thread/INFO]: [Not Secure] <Cody_B> Need to drop deeper.
+[01:12:05] [Server thread/INFO]: [Not Secure] <Cody_B> Sharp hooks only. I check every time.
+[01:12:10] [Server thread/INFO]: [Not Secure] <Cody_B> Gear might be fouled. Need to pull it.
+[01:12:13] [Server thread/INFO]: [Not Secure] <Cody_B> Water temp's holding at 48. Not bad.
+[01:12:17] [Server thread/INFO]: [Not Secure] <Cody_B> Switched to a flasher — see if that helps.
+[01:12:22] [Server thread/INFO]: [Not Secure] <Cody_B> Solid hookset. He's in the box.
+[01:12:26] [Server thread/INFO]: [Not Secure] <Cody_B> Need to check the gear after this pass.
+[01:12:32] [Server thread/INFO]: [Not Secure] <Cody_B> Copper spoons have been producing.
+[01:12:35] [Server thread/INFO]: [Not Secure] <Cody_B> Switched to a flasher — see if that helps.
+[01:12:40] [Server thread/INFO]: [Not Secure] <Cody_B> *checks downrigger cable*
+[01:12:43] [Server thread/INFO]: [Not Secure] <Cody_B> Sharp hooks only. I check every time.
+[01:12:49] [Server thread/INFO]: [Not Secure] <Cody_B> Retie that leader.
+[01:12:55] [Server thread/INFO]: [Not Secure] <Cody_B> Coho! They fight mean but they're delicious.
+[01:13:00] [Server thread/INFO]: [Not Secure] <Cody_B> Headed to the smoker with this one.
+[01:13:04] [Server thread/INFO]: [Not Secure] <Cody_B> Coho! They fight mean but they're delicious.
+[01:13:07] [Server thread/INFO]: [Not Secure] <Cody_B> Hoochie did its job.
+[01:13:11] [Server thread/INFO]: [Not Secure] <Cody_B> That's a feeder king. Nice.
+[01:13:14] [Server thread/INFO]: [Not Secure] <Cody_B> Making a pass toward the rockpile.
+[01:13:17] [Server thread/INFO]: [Not Secure] <Cody_B> Copper spoons have been producing.
+[01:13:22] [Server thread/INFO]: [Not Secure] <Cody_B> Solid hookset. He's in the box.
+[01:13:29] [Server thread/INFO]: [Not Secure] <Cody_B> Coho! They fight mean but they're delicious.
+[01:13:35] [Server thread/INFO]: [Not Secure] <Cody_B> Hoochie did its job.
+[01:13:39] [Server thread/INFO]: [Not Secure] <Cody_B> Heading toward the cape for the afternoon pull.
+[01:13:43] [Server thread/INFO]: [Not Secure] <Cody_B> Maybe try mooching instead.
+[01:13:47] [Server thread/INFO]: [Not Secure] <Cody_B> *checks downrigger cable*
+[01:13:50] [Server thread/INFO]: [Not Secure] <Cody_B> Need to check the gear after this pass.
+[01:13:55] [Server thread/INFO]: [Not Secure] <Cody_B> Hoochie did its job.
+[01:13:59] [Server thread/INFO]: [Not Secure] <Cody_B> Downrigger's set at 45 feet.
+[01:14:06] [Server thread/INFO]: [Not Secure] <Cody_B> Water temp's holding at 48. Not bad.
+[01:14:15] [Server thread/INFO]: [Not Secure] <Cody_B> Copper spoons have been producing.
+[01:14:21] [Server thread/INFO]: [Not Secure] <Cody_B> Water temp's holding at 48. Not bad.
+[01:14:26] [Server thread/INFO]: [Not Secure] <Cody_B> Current's ripping. Hard to hold depth.
+[01:14:35] [Server thread/INFO]: [Not Secure] <Cody_B> Wrong tide. Fish aren't moving.
+[01:14:39] [Server thread/INFO]: [Not Secure] <Cody_B> Trolling for kings out past the breakwater.
+[01:14:43] [Server thread/INFO]: [Not Secure] <Cody_B> Time to change the bait.
+[01:14:48] [Server thread/INFO]: [Not Secure] <Cody_B> Solid hookset. He's in the box.
+[01:14:51] [Server thread/INFO]: [Not Secure] <Cody_B> Making a pass toward the rockpile.
+[01:14:55] [Server thread/INFO]: [Not Secure] <Cody_B> Need to check the gear after this pass.
+[01:14:59] [Server thread/INFO]: [Not Secure] <Cody_B> Maybe try mooching instead.
+[01:15:03] [Server thread/INFO]: [Not Secure] <Cody_B> Need to check the gear after this pass.
+[01:15:08] [Server thread/INFO]: [Not Secure] <Cody_B> Short strike. They're just nipping.
+[01:15:12] [Server thread/INFO]: [Not Secure] <Cody_B> Switched to a flasher — see if that helps.
+[01:15:18] [Server thread/INFO]: [Not Secure] <Cody_B> Running a blue label hoochie today.
+[01:15:28] [Server thread/INFO]: [Not Secure] <Cody_B> Need to check the gear after this pass.
+[01:15:32] [Server thread/INFO]: [Not Secure] <Cody_B> Short strike. They're just nipping.
+[01:15:39] [Server thread/INFO]: [Not Secure] <Cody_B> Got my limit yesterday. Today's just for fun.
+[01:15:44] [Server thread/INFO]: [Not Secure] <Cody_B> Sharp hooks only. I check every time.
+[01:15:49] [Server thread/INFO]: [Not Secure] <Cody_B> Dragging a herring behind a dodger.
+[01:15:53] [Server thread/INFO]: [Not Secure] <Cody_B> Wrong tide. Fish aren't moving.
+[01:15:57] [Server thread/INFO]: [Not Secure] <Cody_B> Watch for the tide change — that's when they move.
+[01:16:00] [Server thread/INFO]: [Not Secure] <Cody_B> Hoochie did its job.
+[01:16:04] [Server thread/INFO]: [Not Secure] <Cody_B> Dragging a herring behind a dodger.
+[01:16:08] [Server thread/INFO]: [Not Secure] <Cody_B> Coho! They fight mean but they're delicious.
+[01:16:14] [Server thread/INFO]: [Not Secure] <Cody_B> Coho! They fight mean but they're delicious.
+[01:16:18] [Server thread/INFO]: [Not Secure] <Cody_B> Running a blue label hoochie today.
+[01:16:24] [Server thread/INFO]: [Not Secure] <Cody_B> Waste of time.
+[01:16:31] [Server thread/INFO]: [Not Secure] <Cody_B> One more cast. Then I'm done.
+[01:16:34] [Server thread/INFO]: [Not Secure] <Cody_B> I should've stayed home.
+[01:16:43] [Server thread/INFO]: [Not Secure] <Cody_B> *rubs eyes*
+[01:17:02] [Server thread/INFO]: [Not Secure] <Cody_B> Getting coffee.
+[01:17:08] [Server thread/INFO]: [Not Secure] <Cody_B> Mm.
+[01:17:17] [Server thread/INFO]: [Not Secure] <Cody_B> Give me a second.
+[01:17:25] [Server thread/INFO]: [Not Secure] <Cody_B> Of course.
+[01:17:33] [Server thread/INFO]: [Not Secure] <Cody_B> Alright, fine.
+[01:17:43] [Server thread/INFO]: [Not Secure] <Cody_B> Took long enough.
+[01:17:46] [Server thread/INFO]: [Not Secure] <Cody_B> *stretches back*
+[01:18:38] [Server thread/INFO]: [Not Secure] <Cody_B> Let's see what's biting.
+[01:18:53] [Server thread/INFO]: [Not Secure] <Cody_B> Yes! Finally.
+[01:19:00] [Server thread/INFO]: [Not Secure] <Cody_B> *casts*
+[01:19:04] [Server thread/INFO]: [Not Secure] <Cody_B> This is why I love it out here.
+[01:19:08] [Server thread/INFO]: [Not Secure] <Cody_B> Alright.
+[01:19:23] [Server thread/INFO]: [Not Secure] <Cody_B> Boom! First cast even.
+[01:19:30] [Server thread/INFO]: [Not Secure] <Cody_B> Alright.
+[01:19:41] [Server thread/INFO]: [Not Secure] <Cody_B> Lines in.
+[01:19:45] [Server thread/INFO]: [Not Secure] <Cody_B> Hey, check that out.
+[01:19:48] [Server thread/INFO]: [Not Secure] <Cody_B> Weather's looking good for halibut.
+[01:19:59] [Server thread/INFO]: [Not Secure] <Cody_B> Should've brought a thermos.
+[01:20:05] [Server thread/INFO]: [Not Secure] <Cody_B> Good spot here.
+[01:20:11] [Server thread/INFO]: [Not Secure] <Cody_B> Let's see what's biting.
+[01:20:14] [Server thread/INFO]: [Not Secure] <Cody_B> Hey, check that out.
+[01:20:24] [Server thread/INFO]: [Not Secure] <Cody_B> Good spot here.
+[01:20:29] [Server thread/INFO]: [Not Secure] <Cody_B> Maybe I need a different bait.
+[01:20:32] [Server thread/INFO]: [Not Secure] <Cody_B> The trick is patience. And coffee.
+[01:20:40] [Server thread/INFO]: [Not Secure] <Cody_B> There we go. Knew this spot was good.
+[01:20:44] [Server thread/INFO]: [Not Secure] <Cody_B> Alright.
+[01:20:48] [Server thread/INFO]: [Not Secure] <Cody_B> You ever try night fishing?
+[01:20:52] [Server thread/INFO]: [Not Secure] <Cody_B> Lines in.
+[01:21:06] [Server thread/INFO]: [Not Secure] <Cody_B> You know what they say about Sitka fishing...
+[01:21:22] [Server thread/INFO]: [Not Secure] <Cody_B> There we go. Knew this spot was good.
+[01:21:28] [Server thread/INFO]: [Not Secure] <Cody_B> Hey, check that out.
+[01:21:34] [Server thread/INFO]: [Not Secure] <Cody_B> Patience is the game.
+[01:21:38] [Server thread/INFO]: [Not Secure] <Cody_B> One more cast.
+[01:21:44] [Server thread/INFO]: [Not Secure] <Cody_B> This is why I love it out here.
+[01:21:47] [Server thread/INFO]: [Not Secure] <Cody_B> *holds up catch*
+[01:21:51] [Server thread/INFO]: [Not Secure] <Cody_B> *looks at mountains* Never gets old.
+[01:21:56] [Server thread/INFO]: [Not Secure] <Cody_B> Nothing. Story of my life.
+[01:22:03] [Server thread/INFO]: [Not Secure] <Cody_B> *stretches* Getting stiff.
+[01:22:06] [Server thread/INFO]: [Not Secure] <Cody_B> *looks at mountains* Never gets old.
+[01:22:11] [Server thread/INFO]: [Not Secure] <Cody_B> Patience is the game.
+[01:22:15] [Server thread/INFO]: [Not Secure] <Cody_B> Lines in.
+[01:22:18] [Server thread/INFO]: [Not Secure] <Cody_B> There we go. Knew this spot was good.
+[01:22:25] [Server thread/INFO]: [Not Secure] <Cody_B> Here we go.
+[01:22:29] [Server thread/INFO]: [Not Secure] <Cody_B> Solid fish. Respect.
+[01:22:32] [Server thread/INFO]: [Not Secure] <Cody_B> *stretches* Getting stiff.
+[01:22:40] [Server thread/INFO]: [Not Secure] <Cody_B> Nothing. Story of my life.
+[01:22:44] [Server thread/INFO]: [Not Secure] <Cody_B> Good spot here.
+[01:22:48] [Server thread/INFO]: [Not Secure] <Cody_B> Getting started.
+[01:22:54] [Server thread/INFO]: [Not Secure] <Cody_B> Here we go.
+[01:22:59] [Server thread/INFO]: [Not Secure] <Cody_B> Here we go.
+[01:23:04] [Server thread/INFO]: [Not Secure] <Cody_B> There we go. Knew this spot was good.
+[01:23:08] [Server thread/INFO]: [Not Secure] <Cody_B> Alright.
+[01:23:12] [Server thread/INFO]: [Not Secure] <Cody_B> *looks at mountains* Never gets old.
+[01:23:17] [Server thread/INFO]: [Not Secure] <Cody_B> Getting out of here!
+[01:23:18] [Server thread/INFO]: Cody_B lost connection: Disconnected
+[01:23:18] [Server thread/INFO]: Cody_B left the game
+[01:24:18] [Server thread/INFO]: Server empty for 60 seconds, pausing
+[01:30:34] [Server thread/INFO]: Cody_B[/127.0.0.1:48418] logged in with entity id 4869 at (772.0043240836405, 62.282141016899196, -670.8075580933198)
+[01:30:34] [Server thread/INFO]: Cody_B joined the game
+[01:30:36] [Server thread/INFO]: [Not Secure] <Cody_B> Hey! I spawned. Use !help for commands.
+[01:30:46] [Server thread/INFO]: [Not Secure] <Cody_B> More.
+[01:30:54] [Server thread/INFO]: [Not Secure] <Cody_B> Fine.
+[01:30:58] [Server thread/INFO]: [Not Secure] <Cody_B> Yes.
+[01:32:39] [Server thread/INFO]: [Not Secure] <Cody_B> Right.
+[01:32:50] [Server thread/INFO]: [Not Secure] <Cody_B> Deep.
+[01:33:41] [Server thread/INFO]: [Not Secure] <Cody_B> Ah.
+[01:34:39] [Server thread/INFO]: [Not Secure] <Cody_B> Fine.
+[01:34:55] [Server thread/INFO]: [Not Secure] <Cody_B> No.
+[01:36:09] [Server thread/INFO]: [Not Secure] <Cody_B> Deep.
+[01:36:30] [Server thread/INFO]: Cody_B was slain by Drowned
+[01:36:33] [Server thread/INFO]: [Not Secure] <Cody_B> 🎣 Sitka Sound — ☁️ Overcast, ▲ High Tide. Type !help for commands, or just talk to me.
+[01:36:49] [Server thread/INFO]: [Not Secure] <Cody_B> Lost another Pixie to the kelp bed.
+[01:36:55] [Server thread/INFO]: [Not Secure] <Cody_B> Used to be cannery noise day and night. Different kind of quiet now.
+[01:37:26] [Server thread/INFO]: [Not Secure] <Cody_B> Remember when the Russian Bishop's House was still falling apart? Glad they fixed it up.
+[01:37:44] [Server thread/INFO]: [Not Secure] <Cody_B> Feel that tap-tap? Do not set the hook yet.
+[01:37:47] [Server thread/INFO]: [Not Secure] <Cody_B> Weather's part of the deal up here.
+[01:38:01] [Server thread/INFO]: [Not Secure] <Cody_B> There we go.
+[01:38:13] [Server thread/INFO]: [Not Secure] <Cody_B> I come here for the peace and quiet. And to get away from my peace and quiet.
+[01:38:28] [Server thread/INFO]: [Not Secure] <Cody_B> Keep 'em coming.
+[01:38:49] [Server thread/INFO]: [Not Secure] <Cody_B> Fish are not biting? Must be the fisherman.
+[01:38:55] [Server thread/INFO]: [Not Secure] <Cody_B> Nothing. They are being picky today.
+[01:39:02] [Server thread/INFO]: [Not Secure] <Cody_B> Dry cast.
+[01:39:17] [Server thread/INFO]: [Not Secure] <Cody_B> Keep your drag loose—kings run hard here.
+[01:39:20] [Server thread/INFO]: [Not Secure] <Cody_B> I believe it.
+[01:39:29] [Server thread/INFO]: [Not Secure] <Cody_B> Good day to be out here.
+[01:39:36] [Server thread/INFO]: [Not Secure] <Cody_B> That'll do.
+[01:39:44] [Server thread/INFO]: [Not Secure] <Cody_B> There we go.
+[01:39:50] [Server thread/INFO]: [Not Secure] <Cody_B> Tourist season's starting early this year.
+[01:40:28] [Server thread/INFO]: [Not Secure] <Cody_B> Fish are not biting? Must be the fisherman.
+[01:40:39] [Server thread/INFO]: [Not Secure] <Cody_B> Fog's gonna roll in off the sound by evening.
+[01:40:44] [Server thread/INFO]: [Not Secure] <Cody_B> Nice little one.
+[01:41:08] [Server thread/INFO]: [Not Secure] <Cody_B> Need to retie this leader. Got carried away talking.
+[01:41:19] [Server thread/INFO]: [Not Secure] <Cody_B> There we go.
+[01:41:25] [Server thread/INFO]: [Not Secure] <Cody_B> Gotcha.
+[01:41:31] [Server thread/INFO]: [Not Secure] <Cody_B> Mike's boat's in dry dock again. Transmission trouble.
+[01:41:40] [Server thread/INFO]: [Not Secure] <Cody_B> Two.
+[01:41:44] [Server thread/INFO]: [Not Secure] <Cody_B> Dangit, snagged on the pilings again.
+[01:41:50] [Server thread/INFO]: [Not Secure] <Cody_B> The whole waterfront burned in '66. Rebuilt everything you see.
+[01:41:54] [Server thread/INFO]: [Not Secure] <Cody_B> That's Sitka for you.
+[01:42:01] [Server thread/INFO]: [Not Secure] <Cody_B> Here.
+[01:42:05] [Server thread/INFO]: [Not Secure] <Cody_B> No rush.
+[01:42:20] [Server thread/INFO]: [Not Secure] <Cody_B> New seafood truck on Lincoln Street—halibut is fresh.
+[01:42:42] [Server thread/INFO]: [Not Secure] <Cody_B> Weather's part of the deal up here.
+[01:42:53] [Server thread/INFO]: [Not Secure] <Cody_B> The dock does not owe me anything.
+[01:42:58] [Server thread/INFO]: [Not Secure] <Cody_B> Cold.
+[01:43:03] [Server thread/INFO]: [Not Secure] <Cody_B> The dock does not owe me anything.
+[01:43:07] [Server thread/INFO]: [Not Secure] <Cody_B> Right.
+[01:43:15] [Server thread/INFO]: [Not Secure] <Cody_B> Dry cast.
+[01:43:38] [Server thread/INFO]: [Not Secure] <Cody_B> Dry cast.
+[01:43:57] [Server thread/INFO]: [Not Secure] <Cody_B> Alright!
+[01:44:03] [Server thread/INFO]: [Not Secure] <Cody_B> Saw a humpback breeching off Japonski this morning. Full breach.
+[01:44:12] [Server thread/INFO]: [Not Secure] <Cody_B> My grandpa worked at the old sawmill where the college is now.
+[01:44:52] [Server thread/INFO]: [Not Secure] <Cody_B> Hey, not bad!
+[01:45:02] [Server thread/INFO]: [Not Secure] <Cody_B> Weather's part of the deal up here.
+[01:45:18] [Server thread/INFO]: [Not Secure] <Cody_B> Gotcha.
+[01:45:26] [Server thread/INFO]: [Not Secure] <Cody_B> Another for the cooler.
+[01:45:46] [Server thread/INFO]: [Not Secure] <Cody_B> I come here for the peace and quiet. And to get away from my peace and quiet.
+[01:46:02] [Server thread/INFO]: [Not Secure] <Cody_B> Hm.
+[01:46:05] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[01:46:05] [Server thread/INFO]: [Rcon: Gave 1 [Fishing Rod] to Cody_B]
+[01:46:05] [RCON Client /127.0.0.1 #7/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[01:46:08] [Server thread/INFO]: [Not Secure] <Cody_B> There we go.
+[01:46:13] [Server thread/INFO]: [Not Secure] <Cody_B> Fish are not biting? Must be the fisherman.
+[01:46:17] [Server thread/INFO]: [Not Secure] <Cody_B> Right in the corner—perfect hookset.
+[01:46:22] [Server thread/INFO]: [Not Secure] <Cody_B> Sun's out but that east wind's still chilly.
+[01:46:36] [Server thread/INFO]: [Not Secure] <Cody_B> New seafood truck on Lincoln Street—halibut is fresh.
+[01:46:52] [Server thread/INFO]: [Not Secure] <Cody_B> Good day to be out here.
+[01:46:58] [Server thread/INFO]: [Not Secure] <Cody_B> This is my exercise program: lifting beers and reeling fish.
+[01:47:01] [Server thread/INFO]: [Not Secure] <Cody_B> Well, gave it a shot.
+[01:47:14] [Server thread/INFO]: [Not Secure] <Cody_B> Cleared up nice. Can see Edgecumbe's whole snowcap.
+[01:47:17] [Server thread/INFO]: [Not Secure] <Cody_B> That's Sitka for you.
+[01:47:28] [Server thread/INFO]: [Not Secure] <Cody_B> Just the gulls and us.
+[01:47:33] [Server thread/INFO]: [Not Secure] <Cody_B> Sheldon Jackson used to have that old tramp steamer tied up here.
+[01:48:10] [Server thread/INFO]: [Not Secure] <Cody_B> Let it sink to bottom, then three cranks up.
+[01:48:13] [Server thread/INFO]: [Not Secure] <Cody_B> Ain't that the truth.
+[01:48:25] [Server thread/INFO]: [Not Secure] <Cody_B> Hey, not bad!
+[01:48:32] [Server thread/INFO]: [Not Secure] <Cody_B> Eagle's nest up in that spruce by Swan Lake. Two chicks this year.
+[01:48:35] [Server thread/INFO]: [Not Secure] <Cody_B> I believe it.
+[01:48:44] [Server thread/INFO]: [Not Secure] <Cody_B> This is my exercise program: lifting beers and reeling fish.
+[01:48:59] [Server thread/INFO]: [Not Secure] <Cody_B> Sea lions hauled out on the buoy by the Coast Guard station.
+[01:49:02] [Server thread/INFO]: [Not Secure] <Cody_B> I believe it.
+[01:49:05] [Server thread/INFO]: [Not Secure] <Cody_B> Alright!
+[01:49:13] [Server thread/INFO]: [Not Secure] <Cody_B> Water's calm.
+[01:49:21] [Server thread/INFO]: [Not Secure] <Cody_B> Nice little one.
+[01:49:26] [Server thread/INFO]: [Not Secure] <Cody_B> Cleared up nice. Can see Edgecumbe's whole snowcap.
+[01:50:03] [Server thread/INFO]: [Not Secure] <Cody_B> Another for the cooler.
+[01:50:17] [Server thread/INFO]: [Not Secure] <Cody_B> Another for the cooler.
+[01:50:23] [Server thread/INFO]: [Not Secure] <Cody_B> Mike's boat's in dry dock again. Transmission trouble.
+[01:50:33] [Server thread/INFO]: [Not Secure] <Cody_B> Just the gulls and us.
+[01:50:40] [Server thread/INFO]: [Not Secure] <Cody_B> Moving on.
+[01:50:53] [Server thread/INFO]: [Not Secure] <Cody_B> Tourist season's starting early this year.
+[01:50:57] [Server thread/INFO]: [Not Secure] <Cody_B> You got that right.
+[01:51:00] [Server thread/INFO]: [Not Secure] <Cody_B> Another for the cooler.
+[01:51:08] [Server thread/INFO]: [Not Secure] <Cody_B> Hey, not bad!
+[01:51:16] [Server thread/INFO]: [Not Secure] <Cody_B> Right in the corner—perfect hookset.
+[01:51:22] [Server thread/INFO]: [Not Secure] <Cody_B> Quiet today.
+[01:51:28] [Server thread/INFO]: [Not Secure] <Cody_B> Saw a humpback breeching off Japonski this morning. Full breach.
+[01:51:32] [Server thread/INFO]: [Not Secure] <Cody_B> No kidding?
+[01:51:41] [Server thread/INFO]: [Not Secure] <Cody_B> This is my exercise program: lifting beers and reeling fish.
+[01:51:44] [Server thread/INFO]: [Not Secure] <Cody_B> Same thing happened to me last week.
+[01:51:48] [Server thread/INFO]: [Not Secure] <Cody_B> There we go.
+[01:51:54] [Server thread/INFO]: [Not Secure] <Cody_B> Sun feels good.
+[01:52:09] [Server thread/INFO]: [Not Secure] <Cody_B> Gotcha.
+[01:52:21] [Server thread/INFO]: [Not Secure] <Cody_B> Feel that tap-tap? Do not set the hook yet.
+[01:52:24] [Server thread/INFO]: [Not Secure] <Cody_B> Ain't that the truth.
+[01:52:33] [Server thread/INFO]: [Not Secure] <Cody_B> Used to be cannery noise day and night. Different kind of quiet now.
+[01:52:37] [Server thread/INFO]: [Not Secure] <Cody_B> That's Sitka for you.
+[01:52:49] [Server thread/INFO]: [Not Secure] <Cody_B> Now.
+[01:53:12] [Server thread/INFO]: [Not Secure] <Cody_B> Nothing. They are being picky today.
+[01:53:16] [Server thread/INFO]: [Not Secure] <Cody_B> Need to retie this leader. Got carried away talking.
+[01:53:24] [Server thread/INFO]: [Not Secure] <Cody_B> Feel that tap-tap? Do not set the hook yet.
+[01:53:33] [Server thread/INFO]: [Not Secure] <Cody_B> Tourist season's starting early this year.
+[01:53:39] [Server thread/INFO]: [Not Secure] <Cody_B> Good fighter on that one.
+[01:53:46] [Server thread/INFO]: [Not Secure] <Cody_B> Water's calm.
+[01:54:00] [Server thread/INFO]: [Not Secure] <Cody_B> Good day to be out here.
+[01:54:09] [Server thread/INFO]: [Not Secure] <Cody_B> Well, gave it a shot.
+[01:54:15] [Server thread/INFO]: [Not Secure] <Cody_B> Saw a humpback breeching off Japonski this morning. Full breach.
+[01:54:18] [Server thread/INFO]: [Not Secure] <Cody_B> That'll do.
+[01:54:26] [Server thread/INFO]: [Not Secure] <Cody_B> Pass me another from the cooler, would ya?
+[01:54:31] [Server thread/INFO]: [Not Secure] <Cody_B> My wife says I love fishing more than her. I said, 'I love you more than golf.'
+[01:54:34] [Server thread/INFO]: [Not Secure] <Cody_B> Keep 'em coming.
+[01:54:40] [Server thread/INFO]: [Not Secure] <Cody_B> Mike's boat's in dry dock again. Transmission trouble.
+[01:54:50] [Server thread/INFO]: [Not Secure] <Cody_B> Tide's running fast today. Six-knot current at the narrows.
+[01:54:53] [Server thread/INFO]: [Not Secure] <Cody_B> Nice little one.
+[01:54:59] [Server thread/INFO]: [Not Secure] <Cody_B> Dry cast.
+[01:55:12] [Server thread/INFO]: [Not Secure] <Cody_B> Sheldon Jackson used to have that old tramp steamer tied up here.
+[01:55:15] [Server thread/INFO]: [Not Secure] <Cody_B> Dry cast.
+[01:55:22] [Server thread/INFO]: [Not Secure] <Cody_B> No rush.
+[01:55:34] [Server thread/INFO]: [Not Secure] <Cody_B> Used to be cannery noise day and night. Different kind of quiet now.
+[01:55:40] [Server thread/INFO]: [Not Secure] <Cody_B> Another for the cooler.
+[01:55:49] [Server thread/INFO]: [Not Secure] <Cody_B> Solid hit.
+[01:55:55] [Server thread/INFO]: [Not Secure] <Cody_B> My luck is so bad, if I fell in the water, I'd come up with a boot.
+[01:55:58] [Server thread/INFO]: [Not Secure] <Cody_B> There we go.
+[01:56:04] [Server thread/INFO]: [Not Secure] <Cody_B> No rush.
+[01:56:10] [Server thread/INFO]: [Not Secure] <Cody_B> Fish are not biting? Must be the fisherman.
+[01:56:35] [Server thread/INFO]: [Not Secure] <Cody_B> Done.
+[01:56:46] [Server thread/INFO]: [Not Secure] <Cody_B> Dinner's looking better.
+[01:56:51] [Server thread/INFO]: [Not Secure] <Cody_B> This is my exercise program: lifting beers and reeling fish.
+[01:56:55] [Server thread/INFO]: [Not Secure] <Cody_B> The dock does not owe me anything.
+[01:57:01] [Server thread/INFO]: [Not Secure] <Cody_B> Sea lions hauled out on the buoy by the Coast Guard station.
+[01:57:04] [Server thread/INFO]: [Not Secure] <Cody_B> Gotcha.
+[01:57:11] [Server thread/INFO]: [Not Secure] <Cody_B> Jigging works better when the tide is slack.
+[01:57:14] [Server thread/INFO]: [Not Secure] <Cody_B> Right in the corner—perfect hookset.
+[01:57:23] [Server thread/INFO]: [Not Secure] <Cody_B> Gotcha.
+[01:57:28] [Server thread/INFO]: [Not Secure] <Cody_B> River otters been raiding crab pots again. Cheeky little thieves.
+[01:57:38] [Server thread/INFO]: [Not Secure] <Cody_B> Mike's boat's in dry dock again. Transmission trouble.
+[01:57:42] [Server thread/INFO]: [Not Secure] <Cody_B> Ain't that the truth.
+[01:57:45] [Server thread/INFO]: [Not Secure] <Cody_B> Nice little one.
+[01:57:51] [Server thread/INFO]: [Not Secure] <Cody_B> My wife says I love fishing more than her. I said, 'I love you more than golf.'
+[01:57:59] [Server thread/INFO]: [Not Secure] <Cody_B> Eagle's nest up in that spruce by Swan Lake. Two chicks this year.
+[01:58:03] [Server thread/INFO]: [Not Secure] <Cody_B> You got that right.
+[01:58:06] [Server thread/INFO]: [Not Secure] <Cody_B> Dry cast.
+[01:58:14] [Server thread/INFO]: [Not Secure] <Cody_B> Just the gulls and us.
+[01:58:19] [Server thread/INFO]: [Not Secure] <Cody_B> I come here for the peace and quiet. And to get away from my peace and quiet.
+[01:58:30] [Server thread/INFO]: [Not Secure] <Cody_B> That'll do.
+[01:58:36] [Server thread/INFO]: [Not Secure] <Cody_B> Mike's boat's in dry dock again. Transmission trouble.
+[01:58:42] [Server thread/INFO]: [Not Secure] <Cody_B> Dry cast.
+[01:58:57] [Server thread/INFO]: [Not Secure] <Cody_B> I come here for the peace and quiet. And to get away from my peace and quiet.
+[01:59:06] [Server thread/INFO]: [Not Secure] <Cody_B> The whole waterfront burned in '66. Rebuilt everything you see.
+[01:59:09] [Server thread/INFO]: [Not Secure] <Cody_B> You got that right.
+[01:59:35] [Server thread/INFO]: [Not Secure] <Cody_B> That'll do.
+[01:59:41] [Server thread/INFO]: [Not Secure] <Cody_B> Gotcha.
+[01:59:53] [Server thread/INFO]: [Not Secure] <Cody_B> Dangit, snagged on the pilings again.
+[02:00:00] [Server thread/INFO]: [Not Secure] <Cody_B> Sea lions hauled out on the buoy by the Coast Guard station.
+[02:00:04] [Server thread/INFO]: [Not Secure] <Cody_B> I believe it.
+[02:00:07] [Server thread/INFO]: [Not Secure] <Cody_B> Keep 'em coming.
+[02:00:14] [Server thread/INFO]: [Not Secure] <Cody_B> Good day to be out here.
+[02:00:22] [Server thread/INFO]: [Not Secure] <Cody_B> Dinner's looking better.
+[02:00:28] [Server thread/INFO]: [Not Secure] <Cody_B> Eagle's nest up in that spruce by Swan Lake. Two chicks this year.
+[02:00:32] [Server thread/INFO]: [Not Secure] <Cody_B> That's Sitka for you.
+[02:00:35] [Server thread/INFO]: [Not Secure] <Cody_B> Mm.
+[02:00:54] [Server thread/INFO]: [Not Secure] <Cody_B> Ah.
+[02:00:58] [Server thread/INFO]: [Not Secure] <Cody_B> Right.
+[02:01:06] [Server thread/INFO]: [Not Secure] <Cody_B> Right in the corner—perfect hookset.
+[02:01:12] [Server thread/INFO]: [Not Secure] <Cody_B> I come here for the peace and quiet. And to get away from my peace and quiet.
+[02:01:15] [Server thread/INFO]: [Not Secure] <Cody_B> Moving on.
+[02:01:20] [Server thread/INFO]: [Not Secure] <Cody_B> My grandpa worked at the old sawmill where the college is now.
+[02:01:24] [Server thread/INFO]: [Not Secure] <Cody_B> Another for the cooler.
+[02:01:31] [Server thread/INFO]: [Not Secure] <Cody_B> Moving on.
+[02:01:39] [Server thread/INFO]: [Not Secure] <Cody_B> Sun feels good.
+[02:01:44] [Server thread/INFO]: [Not Secure] <Cody_B> My wife says I love fishing more than her. I said, 'I love you more than golf.'
+[02:01:47] [Server thread/INFO]: [Not Secure] <Cody_B> You got that right.
+[02:01:51] [Server thread/INFO]: [Not Secure] <Cody_B> Right in the corner—perfect hookset.
+[02:01:55] [Server thread/INFO]: [Not Secure] <Cody_B> Lost another Pixie to the kelp bed.
+[02:02:02] [Server thread/INFO]: [Not Secure] <Cody_B> I come here for the peace and quiet. And to get away from my peace and quiet.
+[02:02:10] [Server thread/INFO]: [Not Secure] <Cody_B> Mike's boat's in dry dock again. Transmission trouble.
+[02:02:14] [Server thread/INFO]: [Not Secure] <Cody_B> Weather's part of the deal up here.
+[02:02:30] [Server thread/INFO]: [Not Secure] <Cody_B> Feel that tap-tap? Do not set the hook yet.
+[02:02:36] [Server thread/INFO]: [Not Secure] <Cody_B> Need to retie this leader. Got carried away talking.
+[02:02:43] [Server thread/INFO]: [Not Secure] <Cody_B> The whole waterfront burned in '66. Rebuilt everything you see.
+[02:02:47] [Server thread/INFO]: [Not Secure] <Cody_B> Moving on.
+[02:02:52] [Server thread/INFO]: [Not Secure] <Cody_B> My luck is so bad, if I fell in the water, I'd come up with a boot.
+[02:02:56] [Server thread/INFO]: [Not Secure] <Cody_B> No kidding?
+[02:03:04] [Server thread/INFO]: [Not Secure] <Cody_B> Fish are not biting? Must be the fisherman.
+[02:03:08] [Server thread/INFO]: [Not Secure] <Cody_B> That's Sitka for you.
+[02:03:18] [Server thread/INFO]: [Not Secure] <Cody_B> Pass me another from the cooler, would ya?
+[02:03:24] [Server thread/INFO]: [Not Secure] <Cody_B> The whole waterfront burned in '66. Rebuilt everything you see.
+[02:03:27] [Server thread/INFO]: [Not Secure] <Cody_B> You got that right.
+[02:03:35] [Server thread/INFO]: [Not Secure] <Cody_B> This is my exercise program: lifting beers and reeling fish.
+[02:03:38] [Server thread/INFO]: [Not Secure] <Cody_B> Dinner's looking better.
+[02:03:58] [Server thread/INFO]: [Not Secure] <Cody_B> They're talking about fixing the SeaMart dock finally.
+[02:04:08] [Server thread/INFO]: [Not Secure] <Cody_B> I like a green-and-white hoochie for silvers.
+[02:04:11] [Server thread/INFO]: [Not Secure] <Cody_B> No kidding?
+[02:04:17] [Server thread/INFO]: [Not Secure] <Cody_B> My line's frayed—should've checked it yesterday.
+[02:04:26] [Server thread/INFO]: [Not Secure] <Cody_B> Another for the cooler.
+[02:04:35] [Server thread/INFO]: [Not Secure] <Cody_B> Tell me about it.
+[02:04:45] [Server thread/INFO]: [Not Secure] <Cody_B> Sun feels good.
+[02:04:52] [Server thread/INFO]: [Not Secure] <Cody_B> Right in the corner—perfect hookset.
+[02:04:57] [Server thread/INFO]: [Not Secure] <Cody_B> Fog's gonna roll in off the sound by evening.
+[02:05:01] [Server thread/INFO]: [Not Secure] <Cody_B> Weather's part of the deal up here.
+[02:05:09] [Server thread/INFO]: [Not Secure] <Cody_B> Barometer's dropping. Might get some rain tomorrow.
+[02:05:25] [Server thread/INFO]: [Not Secure] <Cody_B> Done.
+[02:05:32] [Server thread/INFO]: [Not Secure] <Cody_B> Two.
+[02:05:35] [Server thread/INFO]: [Not Secure] <Cody_B> There we go.
+[02:05:42] [Server thread/INFO]: [Not Secure] <Cody_B> There we go.
+[02:05:48] [Server thread/INFO]: [Not Secure] <Cody_B> The whole waterfront burned in '66. Rebuilt everything you see.
+[02:05:56] [Server thread/INFO]: [Not Secure] <Cody_B> Black bear crossed Halibut Point Road yesterday. Big fella.
+[02:06:07] [Server thread/INFO]: [Not Secure] <Cody_B> No rush.
+[02:06:13] [Server thread/INFO]: [Not Secure] <Cody_B> Used to be cannery noise day and night. Different kind of quiet now.
+[02:06:16] [Server thread/INFO]: [Not Secure] <Cody_B> That's Sitka for you.
+[02:06:26] [Server thread/INFO]: [Not Secure] <Cody_B> Tide's running fast today. Six-knot current at the narrows.
+[02:06:43] [Server thread/INFO]: [Not Secure] <Cody_B> Fog's gonna roll in off the sound by evening.
+[02:06:46] [Server thread/INFO]: [Not Secure] <Cody_B> I believe it.
+[02:07:01] [Server thread/INFO]: [Not Secure] <Cody_B> Saw a humpback breeching off Japonski this morning. Full breach.
+[02:07:11] [Server thread/INFO]: [Not Secure] <Cody_B> There we go.
+[02:07:16] [Server thread/INFO]: [Not Secure] <Cody_B> Barometer's dropping. Might get some rain tomorrow.
+[02:07:25] [Server thread/INFO]: [Not Secure] <Cody_B> They're talking about fixing the SeaMart dock finally.
+[02:07:28] [Server thread/INFO]: [Not Secure] <Cody_B> That's Sitka for you.
+[02:07:39] [Server thread/INFO]: [Not Secure] <Cody_B> Think I'll try a different spot tomorrow.
+[02:07:47] [Server thread/INFO]: [Not Secure] <Cody_B> Moving on.
+[02:07:54] [Server thread/INFO]: [Not Secure] <Cody_B> The whole waterfront burned in '66. Rebuilt everything you see.
+[02:08:02] [Server thread/INFO]: [Not Secure] <Cody_B> One.
+[02:08:07] [Server thread/INFO]: [Not Secure] <Cody_B> Another for the cooler.
+[02:08:13] [Server thread/INFO]: [Not Secure] <Cody_B> Used to be cannery noise day and night. Different kind of quiet now.
+[02:08:24] [Server thread/INFO]: [Not Secure] <Cody_B> Good day to be out here.
+[02:08:31] [Server thread/INFO]: [Not Secure] <Cody_B> My luck is so bad, if I fell in the water, I'd come up with a boot.
+[02:08:35] [Server thread/INFO]: [Not Secure] <Cody_B> You got that right.
+[02:08:47] [Server thread/INFO]: [Not Secure] <Cody_B> Mm.
+[02:08:56] [Server thread/INFO]: [Not Secure] <Cody_B> One.
+[02:09:04] [Server thread/INFO]: [Not Secure] <Cody_B> Now.
+[02:09:10] [Server thread/INFO]: [Not Secure] <Cody_B> That'll do.
+[02:09:18] [Server thread/INFO]: [Not Secure] <Cody_B> No rush.
+[02:09:24] [Server thread/INFO]: [Not Secure] <Cody_B> Fish are not biting? Must be the fisherman.
+[02:09:28] [Server thread/INFO]: [Not Secure] <Cody_B> Weather's part of the deal up here.
+[02:09:38] [Server thread/INFO]: [Not Secure] <Cody_B> Water's calm.
+[02:09:44] [Server thread/INFO]: [Not Secure] <Cody_B> Eagle's nest up in that spruce by Swan Lake. Two chicks this year.
+[02:09:47] [Server thread/INFO]: [Not Secure] <Cody_B> Keep 'em coming.
+[02:09:53] [Server thread/INFO]: [Not Secure] <Cody_B> Keep your drag loose—kings run hard here.
+[02:09:57] [Server thread/INFO]: [Not Secure] <Cody_B> Tell me about it.
+[02:10:06] [Server thread/INFO]: [Not Secure] <Cody_B> My grandpa worked at the old sawmill where the college is now.
+[02:10:38] [Server thread/INFO]: [Not Secure] <Cody_B> Alright!
+[02:10:44] [Server thread/INFO]: [Not Secure] <Cody_B> Moving on.
+[02:10:58] [Server thread/INFO]: [Not Secure] <Cody_B> Saw a humpback breeching off Japonski this morning. Full breach.
+[02:11:02] [Server thread/INFO]: [Not Secure] <Cody_B> You got that right.
+[02:11:12] [Server thread/INFO]: [Not Secure] <Cody_B> Think I'll try a different spot tomorrow.
+[02:11:18] [Server thread/INFO]: [Not Secure] <Cody_B> Black bear crossed Halibut Point Road yesterday. Big fella.
+[02:11:26] [Server thread/INFO]: [Not Secure] <Cody_B> Black bear crossed Halibut Point Road yesterday. Big fella.
+[02:11:29] [Server thread/INFO]: [Not Secure] <Cody_B> I believe it.
+[02:11:38] [Server thread/INFO]: [Not Secure] <Cody_B> Fog's gonna roll in off the sound by evening.
+[02:11:46] [Server thread/INFO]: [Not Secure] <Cody_B> Eagle's nest up in that spruce by Swan Lake. Two chicks this year.
+[02:11:50] [Server thread/INFO]: [Not Secure] <Cody_B> Good fighter on that one.
+[02:11:58] [Server thread/INFO]: [Not Secure] <Cody_B> Water's calm.
+[02:12:04] [Server thread/INFO]: [Not Secure] <Cody_B> Sheldon Jackson used to have that old tramp steamer tied up here.
+[02:12:14] [Server thread/INFO]: [Not Secure] <Cody_B> Alright!
+[02:12:21] [Server thread/INFO]: [Not Secure] <Cody_B> The whole waterfront burned in '66. Rebuilt everything you see.
+[02:12:30] [Server thread/INFO]: [Not Secure] <Cody_B> Good day to be out here.
+[02:12:36] [Server thread/INFO]: [Not Secure] <Cody_B> Fish are not biting? Must be the fisherman.
+[02:12:46] [Server thread/INFO]: [Not Secure] <Cody_B> Pass me another from the cooler, would ya?
+[02:12:51] [Server thread/INFO]: [Not Secure] <Cody_B> My wife says I love fishing more than her. I said, 'I love you more than golf.'
+[02:12:55] [Server thread/INFO]: [Not Secure] <Cody_B> Tell me about it.
+[02:13:05] [Server thread/INFO]: [Not Secure] <Cody_B> Right.
+[02:13:12] [Server thread/INFO]: [Not Secure] <Cody_B> Black bear crossed Halibut Point Road yesterday. Big fella.
+[02:13:15] [Server thread/INFO]: [Not Secure] <Cody_B> Same thing happened to me last week.
+[02:13:32] [Server thread/INFO]: [Not Secure] <Cody_B> Sun's out but that east wind's still chilly.
+[02:13:35] [Server thread/INFO]: [Not Secure] <Cody_B> No kidding?
+[02:13:57] [Server thread/INFO]: [Not Secure] <Cody_B> Dry cast.
+[02:14:05] [Server thread/INFO]: [Not Secure] <Cody_B> Think I'll try a different spot tomorrow.
+[02:14:11] [Server thread/INFO]: [Not Secure] <Cody_B> Mike's boat's in dry dock again. Transmission trouble.
+[02:14:19] [Server thread/INFO]: [Not Secure] <Cody_B> Hm.
+[02:14:25] [Server thread/INFO]: [Not Secure] <Cody_B> Good.
+[02:15:03] [Server thread/INFO]: [Not Secure] <Cody_B> Used to be cannery noise day and night. Different kind of quiet now.
+[02:15:09] [Server thread/INFO]: [Not Secure] <Cody_B> That'll do.
+[02:15:17] [Server thread/INFO]: [Not Secure] <Cody_B> Just the gulls and us.
+[02:15:23] [Server thread/INFO]: [Not Secure] <Cody_B> River otters been raiding crab pots again. Cheeky little thieves.
+[02:15:31] [Server thread/INFO]: [Not Secure] <Cody_B> Fine.
+[02:15:35] [Server thread/INFO]: [Not Secure] <Cody_B> Getting out of here!
+[02:15:35] [Server thread/INFO]: Cody_B lost connection: Disconnected
+[02:15:35] [Server thread/INFO]: Cody_B left the game
+[02:16:35] [Server thread/INFO]: Server empty for 60 seconds, pausing
+[02:46:51] [Server thread/INFO]: Cody_B[/127.0.0.1:45630] logged in with entity id 5500 at (-279.7, 62.53350079999999, -520.7)
+[02:46:51] [Server thread/INFO]: Cody_B joined the game
+[02:46:53] [Server thread/INFO]: [Not Secure] <Cody_B> Hey! I spawned. Use !help for commands.
+[02:46:56] [Server thread/INFO]: [Not Secure] <Cody_B> Getting my gear ready.
+[02:46:56] [Server thread/INFO]: [Not Secure] <Cody_B> Here we go.
+[02:47:02] [Server thread/INFO]: [Not Secure] <Cody_B> Used to be sunny here. I'm sure of it.
+[02:47:10] [Server thread/INFO]: [Not Secure] <Cody_B> Nothing biting.
+[02:47:20] [Server thread/INFO]: [Not Secure] <Cody_B> *wipes rain from reel*
+[02:47:48] [Server thread/INFO]: [Not Secure] <Cody_B> Used to be sunny here. I'm sure of it.
+[02:47:52] [Server thread/INFO]: [Not Secure] <Cody_B> Swapping to the heavier line. Weather's rough.
+[02:48:14] [Server thread/INFO]: [Not Secure] <Cody_B> Fish are smarter than me today. And the weather.
+[02:48:19] [Server thread/INFO]: [Not Secure] <Cody_B> Need to waterproof these hooks.
+[02:48:33] [Server thread/INFO]: [Not Secure] <Cody_B> Rain means the tourist boats stay in. I'll take it.
+[02:48:36] [Server thread/INFO]: [Not Secure] <Cody_B> *wipes rain from reel*
+[02:48:59] [Server thread/INFO]: [Not Secure] <Cody_B> Weather app said "light drizzle." Liar.
+[02:49:03] [Server thread/INFO]: [Not Secure] <Cody_B> *pulls hood tighter*
+[02:49:28] [Server thread/INFO]: [Not Secure] <Cody_B> Fish tastes the same whether you're wet or dry.
+[02:49:57] [Server thread/INFO]: [Not Secure] <Cody_B> *stares at water judgmentally*
+[02:50:02] [Server thread/INFO]: [Not Secure] <Cody_B> *pulls hood tighter*
+[02:50:24] [Server thread/INFO]: [Not Secure] <Cody_B> Hah! Take that, weather.
+[02:50:29] [Server thread/INFO]: [Not Secure] <Cody_B> *wipes rain from reel*
+[02:50:50] [Server thread/INFO]: [Not Secure] <Cody_B> Raingear's holding up. Barely.
+[02:50:54] [Server thread/INFO]: [Not Secure] <Cody_B> *pulls hood tighter*
+[02:51:24] [Server thread/INFO]: [Not Secure] <Cody_B> See? Fish don't care about your forecast.
+[02:51:54] [Server thread/INFO]: [Not Secure] <Cody_B> Fish tastes the same whether you're wet or dry.
+[02:51:59] [Server thread/INFO]: [Not Secure] <Cody_B> *pulls hood tighter*
+[02:52:03] [Server thread/INFO]: [Not Secure] <Cody_B> See? Fish don't care about your forecast.
+[02:52:08] [Server thread/INFO]: [Not Secure] <Cody_B> *wipes rain from reel*
+[02:52:12] [Server thread/INFO]: [Not Secure] <Cody_B> Not bad for conditions like this.
+[02:52:28] [Server thread/INFO]: [Not Secure] <Cody_B> Fish tastes the same whether you're wet or dry.
+[02:52:34] [Server thread/INFO]: [Not Secure] <Cody_B> *wipes rain from reel*
+[02:52:39] [Server thread/INFO]: [Not Secure] <Cody_B> My gear's going to rust if this keeps up.
+[02:52:43] [Server thread/INFO]: [Not Secure] <Cody_B> *checks line for fraying*
+[02:52:46] [Server thread/INFO]: [Not Secure] <Cody_B> Even in the rain, I still got it.
+[02:52:54] [Server thread/INFO]: [Not Secure] <Cody_B> Not bad for conditions like this.
+[02:52:59] [Server thread/INFO]: [Not Secure] <Cody_B> Better retie this. Rain weakens the knot.
+[02:53:05] [Server thread/INFO]: [Not Secure] <Cody_B> Humpback blow! Due east, past the channel marker.
+[02:53:12] [Server thread/INFO]: [Not Secure] <Cody_B> Patience. They'll come around.
+[02:53:16] [Server thread/INFO]: [Not Secure] <Cody_B> Dall porpoise surfing the wake of a tour boat. Gorgeous.
+[02:53:26] [Server thread/INFO]: [Not Secure] <Cody_B> Quiet morning.
+[02:53:38] [Server thread/INFO]: [Not Secure] <Cody_B> Need to re-tie that leader. Frayed from last trip.
+[02:53:43] [Server thread/INFO]: [Not Secure] <Cody_B> Wrong phase of the tide. Fish aren't moving yet.
+[02:54:16] [Server thread/INFO]: [Not Secure] <Cody_B> Coho! Put him on ice.
+[02:54:20] [Server thread/INFO]: [Not Secure] <Cody_B> Harbor's half-empty. Everyone's out on the water already.
+[02:54:32] [Server thread/INFO]: [Not Secure] <Cody_B> Water temp's 48 degrees. Right in the zone.
+[02:54:57] [Server thread/INFO]: [Not Secure] <Cody_B> My father used to say: a bad day fishing beats a good day working.
+[02:55:20] [Server thread/INFO]: [Not Secure] <Cody_B> Water temp's 48 degrees. Right in the zone.
+[02:55:29] [Server thread/INFO]: [Not Secure] <Cody_B> Look at the color on that. Wild, no doubt.
+[02:55:43] [Server thread/INFO]: [Not Secure] <Cody_B> Bright chromer. Ocean-bright. That's the money fish.
+[02:55:53] [Server thread/INFO]: [Not Secure] <Cody_B> Clean hookset. He's in the box.
+[02:56:01] [Server thread/INFO]: [Not Secure] <Cody_B> Somebody asked me once why I still fish. I said "because I don't know how to stop."
+[02:56:18] [Server thread/INFO]: [Not Secure] <Cody_B> Water temp's 48 degrees. Right in the zone.
+[02:56:23] [Server thread/INFO]: [Not Secure] <Cody_B> Solid pull. Gear held.
+[02:56:30] [Server thread/INFO]: [Not Secure] <Cody_B> Solid pull. Gear held.
+[02:56:35] [Server thread/INFO]: [Not Secure] <Cody_B> Best bait? Patience. Second best? Fresh herring.
+[02:56:43] [Server thread/INFO]: [Not Secure] <Cody_B> Running a flasher and hoochie today. Classic setup.
+[02:56:48] [Server thread/INFO]: [Not Secure] <Cody_B> That's what a properly tuned setup gets you.
+[02:56:52] [Server thread/INFO]: [Not Secure] <Cody_B> Spring comes slow in Sitka. But it comes.
+[02:57:00] [Server thread/INFO]: [Not Secure] <Cody_B> Solid pull. Gear held.
+[02:57:06] [Server thread/INFO]: [Not Secure] <Cody_B> Sky's that color. Weather's coming in four hours.
+[02:57:11] [Server thread/INFO]: [Not Secure] <Cody_B> That's what a properly tuned setup gets you.
+[02:57:15] [Server thread/INFO]: [Not Secure] <Cody_B> Now THAT's a fish. Haven't seen one like that in years.
+[02:57:19] [Server thread/INFO]: [Not Secure] <Cody_B> Running a flasher and hoochie today. Classic setup.
+[02:57:24] [Server thread/INFO]: [Not Secure] <Cody_B> Too bright out there. They're holding deep.
+[02:57:29] [Server thread/INFO]: [Not Secure] <Cody_B> The old hands still work. Not bad for an old man.
+[02:57:34] [Server thread/INFO]: [Not Secure] <Cody_B> The light's changing. Silver hour coming.
+[02:57:37] [Server thread/INFO]: [Not Secure] <Cody_B> Sky's that color. Weather's coming in four hours.
+[02:57:41] [Server thread/INFO]: [Not Secure] <Cody_B> Look at the color on that. Wild, no doubt.
+[02:57:46] [Server thread/INFO]: [Not Secure] <Cody_B> Different kind of quiet today. The mountains feel closer.
+[02:57:50] [Server thread/INFO]: [Not Secure] <Cody_B> *adjusts throttle* Two knots. Maybe two and a half.
+[02:57:54] [Server thread/INFO]: [Not Secure] <Cody_B> Look at the color on that. Wild, no doubt.
+[02:58:01] [Server thread/INFO]: [Not Secure] <Cody_B> That's a feeder king. Nice color.
+[02:58:08] [Server thread/INFO]: [Not Secure] <Cody_B> Downrigger's at 45 feet. See what's down there.
+[02:58:13] [Server thread/INFO]: [Not Secure] <Cody_B> Good flash on that one. Wild, not hatchery.
+[02:58:20] [Server thread/INFO]: [Not Secure] <Cody_B> Bright chromer. Ocean-bright. That's the money fish.
+[02:58:25] [Server thread/INFO]: [Not Secure] <Cody_B> Patience. The fish run on their schedule.
+[02:58:31] [Server thread/INFO]: [Not Secure] <Cody_B> Spring comes slow in Sitka. But it comes.
+[02:58:39] [Server thread/INFO]: [Not Secure] <Cody_B> Look at the color on that. Wild, no doubt.
+[02:58:42] [Server thread/INFO]: [Not Secure] <Cody_B> Coho! Put him on ice.
+[02:58:51] [Server thread/INFO]: [Not Secure] <Cody_B> Clean catch. The river provides.
+[02:58:56] [Server thread/INFO]: [Not Secure] <Cody_B> Switched to a glow spoon. Low light conditions.
+[02:59:00] [Server thread/INFO]: [Not Secure] <Cody_B> Watch the birds. When they dive, the bait's up, and the fish follow.
+[02:59:08] [Server thread/INFO]: [Not Secure] <Cody_B> Worst storm I ever fished in was '96. Lost three pots.
+[02:59:14] [Server thread/INFO]: [Not Secure] <Cody_B> Coho! Put him on ice.
+[02:59:21] [Server thread/INFO]: [Not Secure] <Cody_B> Need to re-tie that leader. Frayed from last trip.
+[02:59:24] [Server thread/INFO]: [Not Secure] <Cody_B> *adjusts hat*
+[02:59:29] [Server thread/INFO]: [Not Secure] <Cody_B> Rule number one: the fish don't care about your plans.
+[02:59:33] [Server thread/INFO]: [Not Secure] <Cody_B> Switched to a glow spoon. Low light conditions.
+[02:59:37] [Server thread/INFO]: [Not Secure] <Cody_B> *watches the water*
+[02:59:42] [Server thread/INFO]: [Not Secure] <Cody_B> Watch the birds. When they dive, the bait's up, and the fish follow.
+[02:59:50] [Server thread/INFO]: [Not Secure] <Cody_B> Clean catch. The river provides.
+[02:59:58] [Server thread/INFO]: [Not Secure] <Cody_B> Downrigger's at 45 feet. See what's down there.
+[03:00:04] [Server thread/INFO]: [Not Secure] <Cody_B> That's what a properly tuned setup gets you.
+[03:00:12] [Server thread/INFO]: [Not Secure] <Cody_B> Bar's choppy out past the breakwater. Careful.
+[03:00:18] [Server thread/INFO]: [Not Secure] <Cody_B> Kings running deep today. Downrigger was right.
+[03:00:22] [Server thread/INFO]: [Not Secure] <Cody_B> Clean catch. The river provides.
+[03:00:29] [Server thread/INFO]: [Not Secure] <Cody_B> Bait's washed out. Time to re-rig.
+[03:00:37] [Server thread/INFO]: [Not Secure] <Cody_B> That's a feeder king. Nice color.
+[03:00:43] [Server thread/INFO]: [Not Secure] <Cody_B> Bar's choppy out past the breakwater. Careful.
+[03:00:47] [Server thread/INFO]: [Not Secure] <Cody_B> Rule number one: the fish don't care about your plans.
+[03:00:55] [Server thread/INFO]: [Not Secure] <Cody_B> Clean catch. The river provides.
+[03:01:07] [Server thread/INFO]: [Not Secure] <Cody_B> Bright chromer. Ocean-bright. That's the money fish.
+[03:01:11] [Server thread/INFO]: [Not Secure] <Cody_B> Somebody asked me once why I still fish. I said "because I don't know how to stop."
+[03:01:19] [Server thread/INFO]: [Not Secure] <Cody_B> That's what a properly tuned setup gets you.
+[03:01:26] [Server thread/INFO]: [Not Secure] <Cody_B> Sometimes you just hold the line and watch the world.
+[03:01:32] [Server thread/INFO]: [Not Secure] <Cody_B> Reminds me of the winter of '89. Cold enough to freeze your line solid.
+[03:01:45] [Server thread/INFO]: [Not Secure] <Cody_B> Reminds me of the winter of '89. Cold enough to freeze your line solid.
+[03:01:52] [Server thread/INFO]: [Not Secure] <Cody_B> Tide's ebbing. Fish should be moving.
+[03:01:57] [Server thread/INFO]: [Not Secure] <Cody_B> Solid pull. Gear held.
+[03:02:11] [Server thread/INFO]: [Not Secure] <Cody_B> Need to check the bait roll. Might be spinning.
+[03:02:16] [Server thread/INFO]: [Not Secure] <Cody_B> Running a flasher and hoochie today. Classic setup.
+[03:02:21] [Server thread/INFO]: [Not Secure] <Cody_B> Gear might be fouled. Need to pull and check.
+[03:02:26] [Server thread/INFO]: [Not Secure] <Cody_B> Worst storm I ever fished in was '96. Lost three pots.
+[03:02:30] [Server thread/INFO]: [Not Secure] <Cody_B> Sharp hooks only. I check every pull.
+[03:02:33] [Server thread/INFO]: [Not Secure] <Cody_B> The light's changing. Silver hour coming.
+[03:02:41] [Server thread/INFO]: [Not Secure] <Cody_B> Good flash on that one. Wild, not hatchery.
+[03:02:47] [Server thread/INFO]: [Not Secure] <Cody_B> Water temp's 48 degrees. Right in the zone.
+[03:02:53] [Server thread/INFO]: [Not Secure] <Cody_B> That's what a properly tuned setup gets you.
+[03:03:00] [Server thread/INFO]: [Not Secure] <Cody_B> Switched to a glow spoon. Low light conditions.
+[03:03:03] [Server thread/INFO]: [Not Secure] <Cody_B> Reminds me of the winter of '89. Cold enough to freeze your line solid.
+[03:03:06] [Server thread/INFO]: [Not Secure] <Cody_B> Running a flasher and hoochie today. Classic setup.
+[03:03:11] [Server thread/INFO]: [Not Secure] <Cody_B> *adjusts hat*
+[03:03:19] [Server thread/INFO]: [Not Secure] <Cody_B> Good flash on that one. Wild, not hatchery.
+[03:03:24] [Server thread/INFO]: [Not Secure] <Cody_B> Current's wrong. Tomorrow maybe.
+[03:03:30] [Server thread/INFO]: [Not Secure] <Cody_B> Fifty years I've been standing on docks. This one's my favorite.
+[03:03:33] [Server thread/INFO]: [Not Secure] <Cody_B> Switched to a glow spoon. Low light conditions.
+[03:03:38] [Server thread/INFO]: [Not Secure] <Cody_B> Nothing. The water owes us nothing.
+[03:03:46] [Server thread/INFO]: [Not Secure] <Cody_B> Spring comes slow in Sitka. But it comes.
+[03:03:54] [Server thread/INFO]: [Not Secure] <Cody_B> The old hands still work. Not bad for an old man.
+[03:03:58] [Server thread/INFO]: [Not Secure] <Cody_B> Downrigger's at 45 feet. See what's down there.
+[03:04:03] [Server thread/INFO]: [Not Secure] <Cody_B> Bright chromer. Ocean-bright. That's the money fish.
+[03:04:11] [Server thread/INFO]: [Not Secure] <Cody_B> Kings running deep today. Downrigger was right.
+[03:04:17] [Server thread/INFO]: [Not Secure] <Cody_B> Switched to a glow spoon. Low light conditions.
+[03:04:28] [Server thread/INFO]: [Not Secure] <Cody_B> Let's see what's biting.
+[03:04:33] [Server thread/INFO]: [Not Secure] <Cody_B> *holds up catch*
+[03:04:36] [Server thread/INFO]: [Not Secure] <Cody_B> *checks line*
+[03:04:40] [Server thread/INFO]: [Not Secure] <Cody_B> Look at the color on that. Wild, no doubt.
+[03:04:43] [Server thread/INFO]: [Not Secure] <Cody_B> This is why I love it out here.
+[03:04:55] [Server thread/INFO]: [Not Secure] <Cody_B> Dry spell.
+[03:05:02] [Server thread/INFO]: [Not Secure] <Cody_B> Best bait? Patience. Second best? Fresh herring.
+[03:05:05] [Server thread/INFO]: [Not Secure] <Cody_B> *stretches* Getting stiff.
+[03:05:11] [Server thread/INFO]: [Not Secure] <Cody_B> *watches the water*
+[03:05:17] [Server thread/INFO]: [Not Secure] <Cody_B> Hey, check that out.
+[03:05:36] [Server thread/INFO]: [Not Secure] <Cody_B> I could do this all day.
+[03:05:45] [Server thread/INFO]: [Not Secure] <Cody_B> Dry spell.
+[03:05:49] [Server thread/INFO]: [Not Secure] <Cody_B> Quiet morning.
+[03:05:54] [Server thread/INFO]: [Not Secure] <Cody_B> Sometimes you just hold the line and watch the world.
+[03:06:01] [Server thread/INFO]: [Not Secure] <Cody_B> Nothing. Story of my life.
+[03:06:17] [Server thread/INFO]: [Not Secure] <Cody_B> Let's see what's biting.
+[03:06:21] [Server thread/INFO]: [Not Secure] <Cody_B> Still here though. Wouldn't be anywhere else.
+[03:06:25] [Server thread/INFO]: [Not Secure] <Cody_B> I could do this all day.
+[03:06:31] [Server thread/INFO]: [Not Secure] <Cody_B> *checks line*
+[03:06:35] [Server thread/INFO]: [Not Secure] <Cody_B> *watches the water*
+[03:06:40] [Server thread/INFO]: [Not Secure] <Cody_B> Fifty years I've been standing on docks. This one's my favorite.
+[03:06:46] [Server thread/INFO]: [Not Secure] <Cody_B> One more cast.
+[03:06:49] [Server thread/INFO]: [Not Secure] <Cody_B> *watches the water*
+[03:06:54] [Server thread/INFO]: [Not Secure] <Cody_B> Different kind of quiet today. The mountains feel closer.
+[03:06:58] [Server thread/INFO]: [Not Secure] <Cody_B> Hey, check that out.
+[03:07:01] [Server thread/INFO]: [Not Secure] <Cody_B> *checks line*
+[03:07:13] [Server thread/INFO]: [Not Secure] <Cody_B> Hmm. They moved on.
+[03:07:18] [Server thread/INFO]: [Not Secure] <Cody_B> Getting started.
+[03:07:25] [Server thread/INFO]: [Not Secure] <Cody_B> Watch the birds. When they dive, the bait's up, and the fish follow.
+[03:07:29] [Server thread/INFO]: [Not Secure] <Cody_B> Lines in.
+[03:07:39] [Server thread/INFO]: [Not Secure] <Cody_B> Dry spell.
+[03:07:48] [Server thread/INFO]: [Not Secure] <Cody_B> Clean catch. The river provides.
+[03:07:52] [Server thread/INFO]: [Not Secure] <Cody_B> Solid fish. Respect.
+[03:07:57] [Server thread/INFO]: [Not Secure] <Cody_B> *casts*
+[03:08:00] [Server thread/INFO]: [Not Secure] <Cody_B> Quiet morning.
+[03:08:04] [Server thread/INFO]: [Not Secure] <Cody_B> Patience. That's the whole secret right there.
+[03:08:09] [Server thread/INFO]: [Not Secure] <Cody_B> Quiet morning.
+[03:08:14] [Server thread/INFO]: [Not Secure] <Cody_B> Nice day for it though.
+[03:08:18] [Server thread/INFO]: [Not Secure] <Cody_B> *casts*
+[03:08:21] [Server thread/INFO]: [Not Secure] <Cody_B> Here we go.
+[03:08:30] [Server thread/INFO]: [Not Secure] <Cody_B> Let's see what's biting.
+[03:08:44] [Server thread/INFO]: [Not Secure] <Cody_B> The light's changing. Silver hour coming.
+[03:08:47] [Server thread/INFO]: [Not Secure] <Cody_B> Alright.
+[03:08:51] [Server thread/INFO]: [Not Secure] <Cody_B> Patience. The fish run on their schedule.
+[03:08:59] [Server thread/INFO]: [Not Secure] <Cody_B> Nice! That's a keeper.
+[03:09:12] [Server thread/INFO]: [Not Secure] <Cody_B> Takes a special kind of person to enjoy this.
+[03:09:16] [Server thread/INFO]: [Not Secure] <Cody_B> My grandpa used to fish these waters.
+[03:09:21] [Server thread/INFO]: [Not Secure] <Cody_B> Solid fish. Respect.
+[03:09:25] [Server thread/INFO]: [Not Secure] <Cody_B> *checks line*
+[03:09:28] [Server thread/INFO]: [Not Secure] <Cody_B> Patience is the game.
+[03:09:33] [Server thread/INFO]: [Not Secure] <Cody_B> Nice! That's a keeper.
+[03:09:38] [Server thread/INFO]: [Not Secure] <Cody_B> Quiet morning.
+[03:09:43] [Server thread/INFO]: [Not Secure] <Cody_B> Nice day for it though.
+[03:09:48] [Server thread/INFO]: [Not Secure] <Cody_B> Takes a special kind of person to enjoy this.
+[03:09:53] [Server thread/INFO]: [Not Secure] <Cody_B> My father used to say: a bad day fishing beats a good day working.
+[03:09:57] [Server thread/INFO]: [Not Secure] <Cody_B> Nice! That's a keeper.
+[03:10:00] [Server thread/INFO]: [Not Secure] <Cody_B> The light's changing. Silver hour coming.
+[03:10:06] [Server thread/INFO]: [Not Secure] <Cody_B> Here we go.
+[03:10:10] [Server thread/INFO]: [Not Secure] <Cody_B> Boom! First cast even.
+[03:10:14] [Server thread/INFO]: [Not Secure] <Cody_B> *stretches* Getting stiff.
+[03:10:17] [Server thread/INFO]: [Not Secure] <Cody_B> Quiet morning.
+[03:10:20] [Server thread/INFO]: [Not Secure] <Cody_B> One more cast.
+[03:10:24] [Server thread/INFO]: [Not Secure] <Cody_B> Getting started.
+[03:10:27] [Server thread/INFO]: [Not Secure] <Cody_B> Here we go.
+[03:10:30] [Server thread/INFO]: [Not Secure] <Cody_B> Alright.
+[03:10:35] [Server thread/INFO]: [Not Secure] <Cody_B> Nice! That's a keeper.
+[03:10:38] [Server thread/INFO]: [Not Secure] <Cody_B> Yes! Finally.
+[03:10:42] [Server thread/INFO]: [Not Secure] <Cody_B> *casts*
+[03:10:47] [Server thread/INFO]: [Not Secure] <Cody_B> *stretches* Getting stiff.
+[03:10:53] [Server thread/INFO]: [Not Secure] <Cody_B> Solid fish. Respect.
+[03:10:57] [Server thread/INFO]: [Not Secure] <Cody_B> Should've brought a thermos.
+[03:11:00] [Server thread/INFO]: [Not Secure] <Cody_B> The trick is patience. And coffee.
+[03:11:04] [Server thread/INFO]: [Not Secure] <Cody_B> Rule number one: the fish don't care about your plans.
+[03:11:10] [Server thread/INFO]: [Not Secure] <Cody_B> Getting started.
+[03:11:13] [Server thread/INFO]: [Not Secure] <Cody_B> Decent. I caught bigger back in the day, but this'll do.
+[03:11:19] [Server thread/INFO]: [Not Secure] <Cody_B> Quiet morning.
+[03:11:31] [Server thread/INFO]: [Not Secure] <Cody_B> *watches the water*
+[03:11:37] [Server thread/INFO]: [Not Secure] <Cody_B> Getting started.
+[03:11:43] [Server thread/INFO]: [Not Secure] <Cody_B> Lines in.
+[03:11:48] [Server thread/INFO]: [Not Secure] <Cody_B> *holds up catch*
+[03:11:51] [Server thread/INFO]: [Not Secure] <Cody_B> Yes! Finally.
+[03:11:54] [Server thread/INFO]: [Not Secure] <Cody_B> I could do this all day.
+[03:11:57] [Server thread/INFO]: [Not Secure] <Cody_B> Weather's looking good for halibut.
+[03:12:01] [Server thread/INFO]: [Not Secure] <Cody_B> *casts*
+[03:12:05] [Server thread/INFO]: [Not Secure] <Cody_B> Yes! Finally.
+[03:12:11] [Server thread/INFO]: [Not Secure] <Cody_B> *holds up catch*
+[03:12:20] [Server thread/INFO]: [Not Secure] <Cody_B> Let's see what's biting.
+[03:12:25] [Server thread/INFO]: [Not Secure] <Cody_B> I could do this all day.
+[03:12:28] [Server thread/INFO]: [Not Secure] <Cody_B> My grandpa used to fish these waters.
+[03:12:32] [Server thread/INFO]: [Not Secure] <Cody_B> I could do this all day.
+[03:12:35] [Server thread/INFO]: [Not Secure] <Cody_B> *looks at mountains* Never gets old.
+[03:12:39] [Server thread/INFO]: [Not Secure] <Cody_B> Alright.
+[03:12:47] [Server thread/INFO]: [Not Secure] <Cody_B> Solid fish. Respect.
+[03:12:50] [Server thread/INFO]: [Not Secure] <Cody_B> *checks line*
+[03:12:54] [Server thread/INFO]: [Not Secure] <Cody_B> Should've brought a thermos.
+[03:12:57] [Server thread/INFO]: [Not Secure] <Cody_B> Different kind of quiet today. The mountains feel closer.
+[03:13:00] [Server thread/INFO]: [Not Secure] <Cody_B> *casts*
+[03:13:04] [Server thread/INFO]: [Not Secure] <Cody_B> Hey, check that out.
+[03:13:08] [Server thread/INFO]: [Not Secure] <Cody_B> The trick is patience. And coffee.
+[03:13:12] [Server thread/INFO]: [Not Secure] <Cody_B> Here we go.
+[03:13:16] [Server thread/INFO]: [Not Secure] <Cody_B> Patience is the game.
+[03:13:22] [Server thread/INFO]: [Not Secure] <Cody_B> Hey, check that out.
+[03:13:26] [Server thread/INFO]: [Not Secure] <Cody_B> Here we go.
+[03:13:29] [Server thread/INFO]: [Not Secure] <Cody_B> Here we go.
+[03:13:34] [Server thread/INFO]: [Not Secure] <Cody_B> Hmm. They moved on.
+[03:13:38] [Server thread/INFO]: [Not Secure] <Cody_B> The trick is patience. And coffee.
+[03:13:41] [Server thread/INFO]: [Not Secure] <Cody_B> Let's see what's biting.
+[03:13:47] [Server thread/INFO]: [Not Secure] <Cody_B> Quiet morning.
+[03:13:54] [Server thread/INFO]: [Not Secure] <Cody_B> Somebody asked me once why I still fish. I said "because I don't know how to stop."
+[03:13:57] [Server thread/INFO]: [Not Secure] <Cody_B> There we go. Knew this spot was good.
+[03:14:01] [Server thread/INFO]: [Not Secure] <Cody_B> *holds up catch*
+[03:14:05] [Server thread/INFO]: [Not Secure] <Cody_B> Good spot here.
+[03:14:10] [Server thread/INFO]: [Not Secure] <Cody_B> Takes a special kind of person to enjoy this.
+[03:14:15] [Server thread/INFO]: [Not Secure] <Cody_B> Nothing. Story of my life.
+[03:14:20] [Server thread/INFO]: [Not Secure] <Cody_B> Getting started.
+[03:14:25] [Server thread/INFO]: [Not Secure] <Cody_B> This is why I love it out here.
+[03:14:29] [Server thread/INFO]: [Not Secure] <Cody_B> *watches the water*
+[03:14:33] [Server thread/INFO]: [Not Secure] <Cody_B> Here we go.
+[03:14:36] [Server thread/INFO]: [Not Secure] <Cody_B> Good spot here.
+[03:14:40] [Server thread/INFO]: [Not Secure] <Cody_B> Yes! Finally.
+[03:14:44] [Server thread/INFO]: [Not Secure] <Cody_B> Takes a special kind of person to enjoy this.
+[03:14:47] [Server thread/INFO]: [Not Secure] <Cody_B> Maybe I need a different bait.
+[03:14:50] [Server thread/INFO]: [Not Secure] <Cody_B> You know what they say about Sitka fishing...
+[03:14:58] [Server thread/INFO]: [Not Secure] <Cody_B> There we go. Knew this spot was good.
+[03:15:03] [Server thread/INFO]: [Not Secure] <Cody_B> Getting started.
+[03:15:06] [Server thread/INFO]: [Not Secure] <Cody_B> Good spot here.
+[03:15:09] [Server thread/INFO]: [Not Secure] <Cody_B> Getting started.
+[03:15:13] [Server thread/INFO]: [Not Secure] <Cody_B> Hey, check that out.
+[03:15:16] [Server thread/INFO]: [Not Secure] <Cody_B> Maybe I need a different bait.
+[03:15:21] [Server thread/INFO]: [Not Secure] <Cody_B> Nothing. Story of my life.
+[03:15:27] [Server thread/INFO]: [Not Secure] <Cody_B> Nice! That's a keeper.
+[03:15:31] [Server thread/INFO]: [Not Secure] <Cody_B> Got one! Not bad at all.
+[03:15:35] [Server thread/INFO]: [Not Secure] <Cody_B> *casts*
+[03:15:44] [Server thread/INFO]: [Not Secure] <Cody_B> Here we go.
+[03:15:49] [Server thread/INFO]: [Not Secure] <Cody_B> There we go. Knew this spot was good.
+[03:15:52] [Server thread/INFO]: [Not Secure] <Cody_B> Hmm. They moved on.
+[03:15:56] [Server thread/INFO]: [Not Secure] <Cody_B> Here we go.
+[03:16:01] [Server thread/INFO]: [Not Secure] <Cody_B> Solid fish. Respect.
+[03:16:04] [Server thread/INFO]: [Not Secure] <Cody_B> Hey, check that out.
+[03:16:08] [Server thread/INFO]: [Not Secure] <Cody_B> Clean catch. The river provides.
+[03:16:11] [Server thread/INFO]: [Not Secure] <Cody_B> Good spot here.
+[03:16:15] [Server thread/INFO]: [Not Secure] <Cody_B> Quiet morning.
+[03:16:19] [Server thread/INFO]: [Not Secure] <Cody_B> I could do this all day.
+[03:16:24] [Server thread/INFO]: [Not Secure] <Cody_B> Good spot here.
+[03:16:27] [Server thread/INFO]: [Not Secure] <Cody_B> Here we go.
+[03:16:32] [Server thread/INFO]: [Not Secure] <Cody_B> Dry spell.
+[03:16:35] [Server thread/INFO]: [Not Secure] <Cody_B> Caught my first king right here. Must've been... '72? No, '71.
+[03:16:44] [Server thread/INFO]: [Not Secure] <Cody_B> Getting started.
+[03:16:47] [Server thread/INFO]: [Not Secure] <Cody_B> One more cast.
+[03:16:50] [Server thread/INFO]: [Not Secure] <Cody_B> Different kind of quiet today. The mountains feel closer.
+[03:16:55] [Server thread/INFO]: [Not Secure] <Cody_B> Solid fish. Respect.
+[03:16:58] [Server thread/INFO]: [Not Secure] <Cody_B> The fish know something we don't. Clearly.
+[03:17:02] [Server thread/INFO]: [Not Secure] <Cody_B> Good spot here.
+[03:17:06] [Server thread/INFO]: [Not Secure] <Cody_B> Still here though. Wouldn't be anywhere else.
+[03:17:13] [Server thread/INFO]: [Not Secure] <Cody_B> This is why I love it out here.
+[03:17:18] [Server thread/INFO]: [Not Secure] <Cody_B> Hey, check that out.
+[03:17:22] [Server thread/INFO]: [Not Secure] <Cody_B> Hey, check that out.
+[03:17:35] [Server thread/INFO]: [Not Secure] <Cody_B> Hmm.
+[03:17:38] [Server thread/INFO]: [Not Secure] <Cody_B> Yes! Finally.
+[03:17:42] [Server thread/INFO]: [Not Secure] <Cody_B> Lines in.
+[03:17:46] [Server thread/INFO]: [Not Secure] <Cody_B> Alright.
+[03:17:50] [Server thread/INFO]: [Not Secure] <Cody_B> Should've brought a thermos.
+[03:17:56] [Server thread/INFO]: [Not Secure] <Cody_B> Boom! First cast even.
+[03:17:59] [Server thread/INFO]: [Not Secure] <Cody_B> *checks line*
+[03:18:04] [Server thread/INFO]: [Not Secure] <Cody_B> Alright.
+[03:18:11] [Server thread/INFO]: [Not Secure] <Cody_B> Still here though. Wouldn't be anywhere else.
+[03:18:15] [Server thread/INFO]: [Not Secure] <Cody_B> Spring comes slow in Sitka. But it comes.
+[03:18:21] [Server thread/INFO]: [Not Secure] <Cody_B> You ever try night fishing?
+[03:18:27] [Server thread/INFO]: [Not Secure] <Cody_B> You know what they say about Sitka fishing...
+[03:18:32] [Server thread/INFO]: [Not Secure] <Cody_B> Solid fish. Respect.
+[03:18:35] [Server thread/INFO]: [Not Secure] <Cody_B> Weather's looking good for halibut.
+[03:18:40] [Server thread/INFO]: [Not Secure] <Cody_B> Lines in.
+[03:18:45] [Server thread/INFO]: [Not Secure] <Cody_B> Weather's looking good for halibut.
+[03:18:48] [Server thread/INFO]: [Not Secure] <Cody_B> Weather's looking good for halibut.
+[03:18:52] [Server thread/INFO]: [Not Secure] <Cody_B> Lines in.
+[03:18:56] [Server thread/INFO]: [Not Secure] <Cody_B> Hmm. That one's got some weight. Respect.
+[03:19:00] [Server thread/INFO]: [Not Secure] <Cody_B> The trick is patience. And coffee.
+[03:19:09] [Server thread/INFO]: [Not Secure] <Cody_B> Patience is the game.
+[03:19:12] [Server thread/INFO]: [Not Secure] <Cody_B> If you're not losing gear occasionally, you're not fishing hard enough.
+[03:19:16] [Server thread/INFO]: [Not Secure] <Cody_B> You know what they say about Sitka fishing...
+[03:19:20] [Server thread/INFO]: [Not Secure] <Cody_B> Lines in.
+[03:19:23] [Server thread/INFO]: [Not Secure] <Cody_B> Got one! Not bad at all.
+[03:19:32] [Server thread/INFO]: [Not Secure] <Cody_B> *casts*
+[03:19:35] [Server thread/INFO]: [Not Secure] <Cody_B> Best bait? Patience. Second best? Fresh herring.
+[03:19:39] [Server thread/INFO]: [Not Secure] <Cody_B> *checks line*
+[03:19:43] [Server thread/INFO]: [Not Secure] <Cody_B> The old hands still work. Not bad for an old man.
+[03:19:49] [Server thread/INFO]: [Not Secure] <Cody_B> Nice! That's a keeper.
+[03:19:53] [Server thread/INFO]: [Not Secure] <Cody_B> My grandpa used to fish these waters.
+[03:19:56] [Server thread/INFO]: [Not Secure] <Cody_B> Let's see what's biting.
+[03:20:00] [Server thread/INFO]: [Not Secure] <Cody_B> Maybe I need a different bait.
+[03:20:03] [Server thread/INFO]: [Not Secure] <Cody_B> Solid fish. Respect.
+[03:20:07] [Server thread/INFO]: [Not Secure] <Cody_B> Dry spell.
+[03:20:10] [Server thread/INFO]: [Not Secure] <Cody_B> Nice! That's a keeper.
+[03:20:13] [Server thread/INFO]: [Not Secure] <Cody_B> Patience is the game.
+[03:20:18] [Server thread/INFO]: [Not Secure] <Cody_B> Alright.
+[03:20:22] [Server thread/INFO]: [Not Secure] <Cody_B> There we go. Knew this spot was good.
+[03:20:26] [Server thread/INFO]: [Not Secure] <Cody_B> My grandpa used to fish these waters.
+[03:20:30] [Server thread/INFO]: [Not Secure] <Cody_B> *casts*
+[03:20:33] [Server thread/INFO]: [Not Secure] <Cody_B> Hey, check that out.
+[03:20:37] [Server thread/INFO]: [Not Secure] <Cody_B> Alright.
+[03:20:44] [Server thread/INFO]: [Not Secure] <Cody_B> Maybe I need a different bait.
+[03:20:48] [Server thread/INFO]: [Not Secure] <Cody_B> *looks at mountains* Never gets old.
+[03:20:51] [Server thread/INFO]: [Not Secure] <Cody_B> Hmm. That one's got some weight. Respect.
+[03:20:54] [Server thread/INFO]: [Not Secure] <Cody_B> Lines in.
+[03:20:59] [Server thread/INFO]: [Not Secure] <Cody_B> I could do this all day.
+[03:21:05] [Server thread/INFO]: [Not Secure] <Cody_B> *checks line*
+[03:21:10] [Server thread/INFO]: [Not Secure] <Cody_B> There we go. Knew this spot was good.
+[03:21:14] [Server thread/INFO]: [Not Secure] <Cody_B> Here we go.
+[03:21:18] [Server thread/INFO]: [Not Secure] <Cody_B> Patience is the game.
+[03:21:25] [Server thread/INFO]: [Not Secure] <Cody_B> *looks at mountains* Never gets old.
+[03:21:28] [Server thread/INFO]: [Not Secure] <Cody_B> Nice day for it though.
+[03:21:32] [Server thread/INFO]: [Not Secure] <Cody_B> Getting started.
+[03:21:37] [Server thread/INFO]: [Not Secure] <Cody_B> The trick is patience. And coffee.
+[03:21:40] [Server thread/INFO]: [Not Secure] <Cody_B> You ever try night fishing?
+[03:21:44] [Server thread/INFO]: [Not Secure] <Cody_B> The light's changing. Silver hour coming.
+[03:21:47] [Server thread/INFO]: [Not Secure] <Cody_B> Quiet morning.
+[03:21:51] [Server thread/INFO]: [Not Secure] <Cody_B> *casts*
+[03:21:54] [Server thread/INFO]: [Not Secure] <Cody_B> *watches the water*
+[03:21:57] [Server thread/INFO]: [Not Secure] <Cody_B> Alright.
+[03:22:06] [Server thread/INFO]: [Not Secure] <Cody_B> There we go. Knew this spot was good.
+[03:22:09] [Server thread/INFO]: [Not Secure] <Cody_B> Nice! That's a keeper.
+[03:22:18] [Server thread/INFO]: [Not Secure] <Cody_B> Boom! First cast even.
+[03:22:21] [Server thread/INFO]: [Not Secure] <Cody_B> Still here though. Wouldn't be anywhere else.
+[03:22:26] [Server thread/INFO]: [Not Secure] <Cody_B> One more cast.
+[03:22:30] [Server thread/INFO]: [Not Secure] <Cody_B> Nice! That's a keeper.
+[03:22:33] [Server thread/INFO]: [Not Secure] <Cody_B> Solid fish. Respect.
+[03:22:36] [Server thread/INFO]: [Not Secure] <Cody_B> Fish on! This one's fighting.
+[03:22:40] [Server thread/INFO]: [Not Secure] <Cody_B> Let's see what's biting.
+[03:22:44] [Server thread/INFO]: [Not Secure] <Cody_B> The old hands still work. Not bad for an old man.
+[03:22:48] [Server thread/INFO]: [Not Secure] <Cody_B> *holds up catch*
+[03:22:51] [Server thread/INFO]: [Not Secure] <Cody_B> This is why I love it out here.
+[03:22:56] [Server thread/INFO]: [Not Secure] <Cody_B> Lines in.
+[03:23:00] [Server thread/INFO]: [Not Secure] <Cody_B> Solid fish. Respect.
+[03:23:05] [Server thread/INFO]: [Not Secure] <Cody_B> One more cast.
+[03:23:09] [Server thread/INFO]: [Not Secure] <Cody_B> *checks line*
+[03:23:12] [Server thread/INFO]: [Not Secure] <Cody_B> Nice! That's a keeper.
+[03:23:15] [Server thread/INFO]: [Not Secure] <Cody_B> There we go. Knew this spot was good.
+[03:23:18] [Server thread/INFO]: [Not Secure] <Cody_B> Nice! That's a keeper.
+[03:23:21] [Server thread/INFO]: [Not Secure] <Cody_B> There we go. Knew this spot was good.
+[03:23:25] [Server thread/INFO]: [Not Secure] <Cody_B> Boom! First cast even.
+[03:23:30] [Server thread/INFO]: [Not Secure] <Cody_B> Nice! That's a keeper.
+[03:23:34] [Server thread/INFO]: [Not Secure] <Cody_B> Quiet morning.
+[03:23:37] [Server thread/INFO]: [Not Secure] <Cody_B> Getting started.
+[03:23:40] [Server thread/INFO]: [Not Secure] <Cody_B> Learned more from one terrible season than ten good ones.
+[03:23:45] [Server thread/INFO]: [Not Secure] <Cody_B> Fish on! This one's fighting.
+[03:23:48] [Server thread/INFO]: [Not Secure] <Cody_B> Got one! Not bad at all.
+[03:23:51] [Server thread/INFO]: [Not Secure] <Cody_B> You ever try night fishing?
+[03:23:56] [Server thread/INFO]: [Not Secure] <Cody_B> Dry spell.
+[03:23:59] [Server thread/INFO]: [Not Secure] <Cody_B> *checks line*
+[03:24:08] [Server thread/INFO]: [Not Secure] <Cody_B> The trick is patience. And coffee.
+[03:24:13] [Server thread/INFO]: [Not Secure] <Cody_B> Boom! First cast even.
+[03:24:17] [Server thread/INFO]: [Not Secure] <Cody_B> Solid fish. Respect.
+[03:24:20] [Server thread/INFO]: [Not Secure] <Cody_B> Still here though. Wouldn't be anywhere else.
+[03:24:24] [Server thread/INFO]: [Not Secure] <Cody_B> Getting started.
+[03:24:29] [Server thread/INFO]: [Not Secure] <Cody_B> Dry spell.
+[03:24:33] [Server thread/INFO]: [Not Secure] <Cody_B> One more cast.
+[03:24:37] [Server thread/INFO]: [Not Secure] <Cody_B> Fish on! This one's fighting.
+[03:24:43] [Server thread/INFO]: [Not Secure] <Cody_B> Nothing. Story of my life.
+[03:24:49] [Server thread/INFO]: [Not Secure] <Cody_B> *casts*
+[03:24:53] [Server thread/INFO]: [Not Secure] <Cody_B> *holds up catch*
+[03:24:56] [Server thread/INFO]: [Not Secure] <Cody_B> You know what they say about Sitka fishing...
+[03:25:05] [Server thread/INFO]: [Not Secure] <Cody_B> Hmm. That one's got some weight. Respect.
+[03:25:08] [Server thread/INFO]: [Not Secure] <Cody_B> Patience is the game.
+[03:25:12] [Server thread/INFO]: [Not Secure] <Cody_B> Quiet morning.
+[03:25:16] [Server thread/INFO]: [Not Secure] <Cody_B> Weather's looking good for halibut.
+[03:25:20] [Server thread/INFO]: [Not Secure] <Cody_B> Current's wrong. Tomorrow maybe.
+[03:25:26] [Server thread/INFO]: [Not Secure] <Cody_B> *checks line*
+[03:25:30] [Server thread/INFO]: [Not Secure] <Cody_B> You know what they say about Sitka fishing...
+[03:25:34] [Server thread/INFO]: [Not Secure] <Cody_B> Here we go.
+[03:25:39] [Server thread/INFO]: [Not Secure] <Cody_B> Good spot here.
+[03:25:44] [Server thread/INFO]: [Not Secure] <Cody_B> Weather's looking good for halibut.
+[03:25:48] [Server thread/INFO]: [Not Secure] <Cody_B> The light's changing. Silver hour coming.
+[03:25:51] [Server thread/INFO]: [Not Secure] <Cody_B> Lines in.
+[03:25:55] [Server thread/INFO]: [Not Secure] <Cody_B> Takes a special kind of person to enjoy this.
+[03:26:00] [Server thread/INFO]: [Not Secure] <Cody_B> Good spot here.
+[03:26:05] [Server thread/INFO]: [Not Secure] <Cody_B> Boom! First cast even.
+[03:26:10] [Server thread/INFO]: [Not Secure] <Cody_B> Got one! Not bad at all.
+[03:26:16] [Server thread/INFO]: [Not Secure] <Cody_B> This is why I love it out here.
+[03:26:20] [Server thread/INFO]: [Not Secure] <Cody_B> One more cast.
+[03:26:25] [Server thread/INFO]: [Not Secure] <Cody_B> The light's changing. Silver hour coming.
+[03:26:29] [Server thread/INFO]: [Not Secure] <Cody_B> The trick is patience. And coffee.
+[03:26:33] [Server thread/INFO]: [Not Secure] <Cody_B> Lines in.
+[03:26:37] [Server thread/INFO]: [Not Secure] <Cody_B> Hey, check that out.
+[03:26:41] [Server thread/INFO]: [Not Secure] <Cody_B> Here we go.
+[03:26:44] [Server thread/INFO]: [Not Secure] <Cody_B> The light's changing. Silver hour coming.
+[03:26:47] [Server thread/INFO]: [Not Secure] <Cody_B> One more cast.
+[03:26:52] [Server thread/INFO]: [Not Secure] <Cody_B> Nice day for it though.
+[03:26:56] [Server thread/INFO]: [Not Secure] <Cody_B> Quiet morning.
+[03:27:00] [Server thread/INFO]: [Not Secure] <Cody_B> Dry spell.
+[03:27:04] [Server thread/INFO]: [Not Secure] <Cody_B> Let's see what's biting.
+[03:27:08] [Server thread/INFO]: [Not Secure] <Cody_B> Here we go.
+[03:27:13] [Server thread/INFO]: [Not Secure] <Cody_B> Getting started.
+[03:27:16] [Server thread/INFO]: [Not Secure] <Cody_B> Getting started.
+[03:27:23] [Server thread/INFO]: [Not Secure] <Cody_B> The old hands still work. Not bad for an old man.
+[03:27:26] [Server thread/INFO]: [Not Secure] <Cody_B> There we go. Knew this spot was good.
+[03:27:30] [Server thread/INFO]: [Not Secure] <Cody_B> Nice day for it though.
+[03:27:35] [Server thread/INFO]: [Not Secure] <Cody_B> Boom! First cast even.
+[03:27:38] [Server thread/INFO]: [Not Secure] <Cody_B> Now THAT's a fish. Haven't seen one like that in years.
+[03:27:42] [Server thread/INFO]: [Not Secure] <Cody_B> Let's see what's biting.
+[03:27:46] [Server thread/INFO]: [Not Secure] <Cody_B> Nice! That's a keeper.
+[03:27:49] [Server thread/INFO]: [Not Secure] <Cody_B> Yes! Finally.
+[03:27:53] [Server thread/INFO]: [Not Secure] <Cody_B> Nice! That's a keeper.
+[03:27:56] [Server thread/INFO]: [Not Secure] <Cody_B> Patience. That's the whole secret right there.
+[03:28:00] [Server thread/INFO]: [Not Secure] <Cody_B> Let's see what's biting.
+[03:28:03] [Server thread/INFO]: [Not Secure] <Cody_B> Here we go.
+[03:28:07] [Server thread/INFO]: [Not Secure] <Cody_B> Alright.
+[03:28:10] [Server thread/INFO]: [Not Secure] <Cody_B> One more cast.
+[03:28:14] [Server thread/INFO]: [Not Secure] <Cody_B> Yes! Finally.
+[03:28:18] [Server thread/INFO]: [Not Secure] <Cody_B> Lines in.
+[03:28:21] [Server thread/INFO]: [Not Secure] <Cody_B> One more cast.
+[03:28:24] [Server thread/INFO]: [Not Secure] <Cody_B> *casts*
+[03:28:29] [Server thread/INFO]: [Not Secure] <Cody_B> That's what showing up gets you.
+[03:28:32] [Server thread/INFO]: [Not Secure] <Cody_B> Got one! Not bad at all.
+[03:28:35] [Server thread/INFO]: [Not Secure] <Cody_B> You ever try night fishing?
+[03:28:41] [Server thread/INFO]: [Not Secure] <Cody_B> Weather's looking good for halibut.
+[03:28:45] [Server thread/INFO]: [Not Secure] <Cody_B> The trick isn't catching. It's knowing when to go home.
+[03:28:49] [Server thread/INFO]: [Not Secure] <Cody_B> *checks line*
+[03:28:54] [Server thread/INFO]: [Not Secure] <Cody_B> Quiet morning.
+[03:28:58] [Server thread/INFO]: [Not Secure] <Cody_B> This is why I love it out here.
+[03:29:02] [Server thread/INFO]: [Not Secure] <Cody_B> Look at the color on that. Wild, no doubt.
+[03:29:06] [Server thread/INFO]: [Not Secure] <Cody_B> This is why I love it out here.
+[03:29:10] [Server thread/INFO]: [Not Secure] <Cody_B> *checks line*
+[03:29:24] [Server thread/INFO]: [Not Secure] <Cody_B> I'm not saying I've caught every species in Sitka Sound. I'm saying I've caught almost every species.
+[03:29:41] [Server thread/INFO]: Cody_B was slain by Drowned
+[03:29:44] [Server thread/INFO]: [Not Secure] <Cody_B> 🎣 Sitka Sound — ☀️ Clear, ▲ High Tide. Type !help for commands, or just talk to me.
+[03:29:48] [Server thread/INFO]: [Not Secure] <Cody_B> Coho! Put him on ice.
+[03:29:52] [Server thread/INFO]: Cody_B lost connection: Disconnected
+[03:29:52] [Server thread/INFO]: Cody_B left the game
+[03:29:56] [Server thread/INFO]: Cody_B[/127.0.0.1:60624] logged in with entity id 6874 at (-2.1513294386796438, 65.0, 0.15086094520097018)
+[03:29:56] [Server thread/INFO]: Cody_B joined the game
+[03:29:58] [Server thread/INFO]: [Not Secure] <Cody_B> Hey! I spawned. Use !help for commands.
+[03:30:21] [Server thread/INFO]: [Not Secure] <Cody_B> The harbor master and I go back 30 years. Don't tell her I said that.
+[03:30:27] [Server thread/INFO]: [Not Secure] <Cody_B> That's nothing. You should've seen the one last Tuesday.
+[03:30:31] [Server thread/INFO]: [Not Secure] <Cody_B> Some questions only silence can answer.
+[03:30:34] [Server thread/INFO]: [Not Secure] <Cody_B> Oh! I forgot to tell you —
+[03:30:38] [Server thread/INFO]: [Not Secure] <Cody_B> Actually, I'll save that one for later.
+[03:30:43] [Server thread/INFO]: [Not Secure] <Cody_B> Hmm. Life finds a way.
+[03:30:52] [Server thread/INFO]: [Not Secure] <Cody_B> Hmm. Life finds a way.
+[03:30:58] [Server thread/INFO]: [Not Secure] <Cody_B> Biggest fish I ever caught was this thick. *holds hands wide apart* No, wider.
+[03:31:04] [Server thread/INFO]: [Not Secure] <Cody_B> Not bad. That one goes in the book.
+[03:31:08] [Server thread/INFO]: [Not Secure] <Cody_B> Maybe the point isn't the catch.
+[03:31:12] [Server thread/INFO]: [Not Secure] <Cody_B> Caught a fish so big it pulled me halfway to Juneau. Had to walk back.
+[03:31:20] [Server thread/INFO]: [Not Secure] <Cody_B> I wonder if the fish feel the same stillness.
+[03:31:26] [Server thread/INFO]: [Not Secure] <Cody_B> Biggest fish I ever caught was this thick. *holds hands wide apart* No, wider.
+[03:31:32] [Server thread/INFO]: [Not Secure] <Cody_B> The void stares back, and I smile.
+[03:31:36] [Server thread/INFO]: [Not Secure] <Cody_B> The void stares back, and I smile.
+[03:31:44] [Server thread/INFO]: [Not Secure] <Cody_B> Emptiness has its own truth.
+[03:31:54] [Server thread/INFO]: [Not Secure] <Cody_B> A gift from the deep.
+[03:32:01] [Server thread/INFO]: [Not Secure] <Cody_B> I'm not saying I've caught every species in Sitka Sound. I'm saying I've caught almost every species.
+[03:32:04] [Server thread/INFO]: [Not Secure] <Cody_B> Some things you can't rush.
+[03:32:20] [Server thread/INFO]: [Not Secure] <Cody_B> The river owes us nothing.
+[03:32:23] [Server thread/INFO]: [Not Secure] <Cody_B> Back in '09, I hooked a 60-pound halibut right off this dock. Took me 40 minutes.
+[03:32:28] [Server thread/INFO]: [Not Secure] <Cody_B> Nothing. But that's okay.
+[03:32:33] [Server thread/INFO]: [Not Secure] <Cody_B> Stillness isn't failure.
+[03:32:41] [Server thread/INFO]: [Not Secure] <Cody_B> The river owes us nothing.
+[03:32:49] [Server thread/INFO]: [Not Secure] <Cody_B> Stillness isn't failure.
+[03:32:54] [Server thread/INFO]: [Not Secure] <Cody_B> Actually, let me focus. I'm losing my edge.
+[03:33:07] [Server thread/INFO]: [Not Secure] <Cody_B> Makes you appreciate the small things.
+[03:33:18] [Server thread/INFO]: [Not Secure] <Cody_B> This spot's been good to me for 20 years.
+[03:33:26] [Server thread/INFO]: [Not Secure] <Cody_B> Sometimes the fish teach you patience.
+[03:33:31] [Server thread/INFO]: [Not Secure] <Cody_B> Sometimes the fish teach you patience.
+[03:33:39] [Server thread/INFO]: [Not Secure] <Cody_B> Beautiful. In its own quiet way.
+[03:33:44] [Server thread/INFO]: [Not Secure] <Cody_B> Makes you appreciate the small things.
+[03:33:49] [Server thread/INFO]: [Not Secure] <Cody_B> Actually, I'll save that one for later.
+[03:33:56] [Server thread/INFO]: [Not Secure] <Cody_B> Beautiful. In its own quiet way.
+[03:34:02] [Server thread/INFO]: [Not Secure] <Cody_B> The mountains don't judge.
+[03:34:07] [Server thread/INFO]: [Not Secure] <Cody_B> Decent. But I once caught three that size before breakfast.
+[03:34:11] [Server thread/INFO]: [Not Secure] <Cody_B> It's a long one. Maybe when the fish start biting.
+[03:34:15] [Server thread/INFO]: [Not Secure] <Cody_B> This is enough. This is more than enough.
+[03:34:21] [Server thread/INFO]: [Not Secure] <Cody_B> A gift from the deep.
+[03:34:30] [Server thread/INFO]: [Not Secure] <Cody_B> The water remembers everything.
+[03:34:36] [Server thread/INFO]: [Not Secure] <Cody_B> The void stares back, and I smile.
+[03:34:41] [Server thread/INFO]: [Not Secure] <Cody_B> The mountains don't judge.
+[03:34:46] [Server thread/INFO]: [Not Secure] <Cody_B> Used to sell fish off this dock. Now everyone wants organic whatever.
+[03:34:50] [Server thread/INFO]: [Not Secure] <Cody_B> Time moves differently out here.
+[03:34:58] [Server thread/INFO]: [Not Secure] <Cody_B> The river owes us nothing.
+[03:35:06] [Server thread/INFO]: [Not Secure] <Cody_B> Not bad. That one goes in the book.
+[03:35:13] [Server thread/INFO]: [Not Secure] <Cody_B> The water remembers everything.
+[03:35:18] [Server thread/INFO]: [Not Secure] <Cody_B> It's a long one. Maybe when the fish start biting.
+[03:35:23] [Server thread/INFO]: [Not Secure] <Cody_B> The fish don't know about our problems.
+[03:35:26] [Server thread/INFO]: [Not Secure] <Cody_B> Maybe the point isn't the catch.
+[03:35:30] [Server thread/INFO]: [Not Secure] <Cody_B> The mountains don't judge.
+[03:35:34] [Server thread/INFO]: [Not Secure] <Cody_B> The mountains don't judge.
+[03:35:37] [Server thread/INFO]: [Not Secure] <Cody_B> The void stares back, and I smile.
+[03:35:43] [Server thread/INFO]: [Not Secure] <Cody_B> This spot's been good to me for 20 years.
+[03:35:47] [Server thread/INFO]: [Not Secure] <Cody_B> The mountains don't judge.
+[03:35:51] [Server thread/INFO]: [Not Secure] <Cody_B> I've told you about the salmon, right? The one that got away? No? Good, because I'm telling you again.
+[03:35:57] [Server thread/INFO]: [Not Secure] <Cody_B> This spot's been good to me for 20 years.
+[03:36:01] [Server thread/INFO]: [Not Secure] <Cody_B> The river owes us nothing.
+[03:36:09] [Server thread/INFO]: [Not Secure] <Cody_B> Nothing. But that's okay.
+[03:36:13] [Server thread/INFO]: [Not Secure] <Cody_B> This dock used to be crowded every morning. Now it's just me and the seagulls.
+[03:36:19] [Server thread/INFO]: [Not Secure] <Cody_B> Every fish is a small miracle.
+[03:36:24] [Server thread/INFO]: [Not Secure] <Cody_B> Hmm. Life finds a way.
+[03:36:32] [Server thread/INFO]: [Not Secure] <Cody_B> The fish don't know about our problems.
+[03:36:37] [Server thread/INFO]: [Not Secure] <Cody_B> Never mind. You had to be there.
+[03:36:41] [Server thread/INFO]: [Not Secure] <Cody_B> This river has seen empires rise and fall.
+[03:36:45] [Server thread/INFO]: [Not Secure] <Cody_B> Some questions only silence can answer.
+[03:36:50] [Server thread/INFO]: [Not Secure] <Cody_B> I'm not saying I've caught every species in Sitka Sound. I'm saying I've caught almost every species.
+[03:36:55] [Server thread/INFO]: [Not Secure] <Cody_B> The water remembers everything.
+[03:37:02] [Server thread/INFO]: [Not Secure] <Cody_B> Hmm. Life finds a way.
+[03:37:05] [Server thread/INFO]: [Not Secure] <Cody_B> The void stares back, and I smile.
+[03:37:11] [Server thread/INFO]: [Not Secure] <Cody_B> Old Earl used to fish right where you're standing. Caught a 40-pound king on his last day.
+[03:37:16] [Server thread/INFO]: [Not Secure] <Cody_B> Not bad. That one goes in the book.
+[03:37:20] [Server thread/INFO]: [Not Secure] <Cody_B> The river owes us nothing.
+[03:37:24] [Server thread/INFO]: [Not Secure] <Cody_B> The water gives, and the water takes.
+[03:37:28] [Server thread/INFO]: [Not Secure] <Cody_B> Nothing. But that's okay.
+[03:37:32] [Server thread/INFO]: [Not Secure] <Cody_B> Maybe today isn't about catching.
+[03:37:37] [Server thread/INFO]: [Not Secure] <Cody_B> Every cast is a small act of hope.
+[03:37:44] [Server thread/INFO]: [Not Secure] <Cody_B> This is enough. This is more than enough.
+[03:37:49] [Server thread/INFO]: [Not Secure] <Cody_B> You know, fishing is a lot like life.
+[03:37:55] [Server thread/INFO]: [Not Secure] <Cody_B> Reminds me of a fish I caught in Ketchikan. Similar markings.
+[03:38:00] [Server thread/INFO]: [Not Secure] <Cody_B> Some questions only silence can answer.
+[03:38:03] [Server thread/INFO]: [Not Secure] <Cody_B> And just like that, patience is rewarded.
+[03:38:10] [Server thread/INFO]: [Not Secure] <Cody_B> That's nothing. You should've seen the one last Tuesday.
+[03:38:19] [Server thread/INFO]: [Not Secure] <Cody_B> I'm not saying I've caught every species in Sitka Sound. I'm saying I've caught almost every species.
+[03:38:24] [Server thread/INFO]: [Not Secure] <Cody_B> Didn't catch anything. But I got a good story out of it.
+[03:38:31] [Server thread/INFO]: [Not Secure] <Cody_B> The fish here are educated. I blame the schools.
+[03:38:38] [Server thread/INFO]: [Not Secure] <Cody_B> Add that to the tally. I'm keeping count.
+[03:38:42] [Server thread/INFO]: [Not Secure] <Cody_B> Every cast is a small act of hope.
+[03:38:45] [Server thread/INFO]: [Not Secure] <Cody_B> Time moves differently out here.
+[03:38:50] [Server thread/INFO]: [Not Secure] <Cody_B> Every cast is a small act of hope.
+[03:39:02] [Server thread/INFO]: [Not Secure] <Cody_B> My grandfather fished this same spot. Said the fish were bigger then. Said everything was bigger then.
+[03:39:07] [Server thread/INFO]: [Not Secure] <Cody_B> The river owes us nothing.
+[03:39:17] [Server thread/INFO]: [Not Secure] <Cody_B> Biggest fish I ever caught was this thick. *holds hands wide apart* No, wider.
+[03:39:21] [Server thread/INFO]: [Not Secure] <Cody_B> The water gives, and the water takes.
+[03:39:30] [Server thread/INFO]: [Not Secure] <Cody_B> That's nothing. You should've seen the one last Tuesday.
+[03:39:34] [Server thread/INFO]: [Not Secure] <Cody_B> The void stares back, and I smile.
+[03:39:39] [Server thread/INFO]: [Not Secure] <Cody_B> Used to sell fish off this dock. Now everyone wants organic whatever.
+[03:39:43] [Server thread/INFO]: [Not Secure] <Cody_B> The mountains don't judge.
+[03:39:47] [Server thread/INFO]: [Not Secure] <Cody_B> We ask too much and appreciate too little.
+[03:39:51] [Server thread/INFO]: [Not Secure] <Cody_B> Maybe today isn't about catching.
+[03:39:57] [Server thread/INFO]: [Not Secure] <Cody_B> Hmm. Life finds a way.
+[03:40:02] [Server thread/INFO]: [Not Secure] <Cody_B> Used to sell fish off this dock. Now everyone wants organic whatever.
+[03:40:05] [Server thread/INFO]: [Not Secure] <Cody_B> The water gives, and the water takes.
+[03:40:09] [Server thread/INFO]: [Not Secure] <Cody_B> Beautiful. In its own quiet way.
+[03:40:13] [Server thread/INFO]: [Not Secure] <Cody_B> Makes you appreciate the small things.
+[03:40:17] [Server thread/INFO]: [Not Secure] <Cody_B> Time moves differently out here.
+[03:40:21] [Server thread/INFO]: [Not Secure] <Cody_B> Time moves differently out here.
+[03:40:24] [Server thread/INFO]: [Not Secure] <Cody_B> The water gives, and the water takes.
+[03:40:29] [Server thread/INFO]: [Not Secure] <Cody_B> *sighs dramatically* The fish are conspiring against me.
+[03:40:33] [Server thread/INFO]: [Not Secure] <Cody_B> This is enough. This is more than enough.
+[03:40:42] [Server thread/INFO]: [Not Secure] <Cody_B> Makes you appreciate the small things.
+[03:40:48] [Server thread/INFO]: [Not Secure] <Cody_B> On second thought, some stories are better left to the imagination.
+[03:40:55] [Server thread/INFO]: [Not Secure] <Cody_B> Some questions only silence can answer.
+[03:40:58] [Server thread/INFO]: [Not Secure] <Cody_B> Emptiness has its own truth.
+[03:41:07] [Server thread/INFO]: [Not Secure] <Cody_B> The mountains don't judge.
+[03:41:18] [Server thread/INFO]: [Not Secure] <Cody_B> The void stares back, and I smile.
+[03:41:22] [Server thread/INFO]: [Not Secure] <Cody_B> I remember when you could catch dinner in 20 minutes. Now it's a sport.
+[03:41:29] [Server thread/INFO]: [Not Secure] <Cody_B> My grandfather fished this same spot. Said the fish were bigger then. Said everything was bigger then.
+[03:41:36] [Server thread/INFO]: [Not Secure] <Cody_B> This spot's been good to me for 20 years.
+[03:41:40] [Server thread/INFO]: [Not Secure] <Cody_B> I wonder if the fish feel the same stillness.
+[03:41:43] [Server thread/INFO]: [Not Secure] <Cody_B> Makes you appreciate the small things.
+[03:41:52] [Server thread/INFO]: [Not Secure] <Cody_B> My hands are shaking.
+[03:42:03] [Server thread/INFO]: [Not Secure] <Cody_B> *glances around nervously*
+[03:42:10] [Server thread/INFO]: [Not Secure] <Cody_B> How long have we been standing here?
+[03:42:16] [Server thread/INFO]: [Not Secure] <Cody_B> *wrings hands*
+[03:42:25] [Server thread/INFO]: [Not Secure] <Cody_B> I heard it again.
+[03:42:32] [Server thread/INFO]: [Not Secure] <Cody_B> Maybe we should move.
+[03:43:18] [Server thread/INFO]: [Not Secure] <Cody_B> I don't like this spot.
+[03:43:39] [Server thread/INFO]: [Not Secure] <Cody_B> GOT ONE— oh thank god it was just a fish.
+[03:43:43] [Server thread/INFO]: [Not Secure] <Cody_B> Nothing. Which is almost worse.
+[03:43:50] [Server thread/INFO]: [Not Secure] <Cody_B> Okay okay okay. Focus.
+[03:43:54] [Server thread/INFO]: [Not Secure] <Cody_B> *pacing*
+[03:43:59] [Server thread/INFO]: [Not Secure] <Cody_B> I don't like this spot.
+[03:44:13] [Server thread/INFO]: [Not Secure] <Cody_B> Did you hear that?
+[03:44:30] [Server thread/INFO]: [Not Secure] <Cody_B> Don't scare me like that!
+[03:44:38] [Server thread/INFO]: [Not Secure] <Cody_B> Nothing. Which is almost worse.
+[03:44:50] [Server thread/INFO]: [Not Secure] <Cody_B> I almost screamed. Almost.
+[03:45:03] [Server thread/INFO]: [Not Secure] <Cody_B> *wrings hands*
+[03:45:15] [Server thread/INFO]: [Not Secure] <Cody_B> Something is watching us. I know it.
+[03:45:22] [Server thread/INFO]: [Not Secure] <Cody_B> Okay okay okay. Focus.
+[03:45:25] [Server thread/INFO]: [Not Secure] <Cody_B> My gut says leave.
+[03:45:30] [Server thread/INFO]: [Not Secure] <Cody_B> Quick, reel it in before something else notices.
+[03:45:40] [Server thread/INFO]: [Not Secure] <Cody_B> Something is watching us. I know it.
+[03:45:45] [Server thread/INFO]: [Not Secure] <Cody_B> *looks behind them*
+[03:45:51] [Server thread/INFO]: [Not Secure] <Cody_B> Something moved over there.
+[03:45:59] [Server thread/INFO]: [Not Secure] <Cody_B> I need a second.
+[03:46:12] [Server thread/INFO]: [Not Secure] <Cody_B> Quick, reel it in before something else notices.
+[03:46:20] [Server thread/INFO]: [Not Secure] <Cody_B> Okay okay okay. Focus.
+[03:46:28] [Server thread/INFO]: [Not Secure] <Cody_B> Something moved over there.
+[03:46:32] [Server thread/INFO]: [Not Secure] <Cody_B> Okay okay okay. Focus.
+[03:46:36] [Server thread/INFO]: [Not Secure] <Cody_B> *pacing*
+[03:46:44] [Server thread/INFO]: [Not Secure] <Cody_B> *flinches* What— oh. Fish.
+[03:46:52] [Server thread/INFO]: [Not Secure] <Cody_B> I heard it again.
+[03:47:01] [Server thread/INFO]: [Not Secure] <Cody_B> *flinches* What— oh. Fish.
+[03:47:07] [Server thread/INFO]: [Not Secure] <Cody_B> I almost screamed. Almost.
+[03:47:12] [Server thread/INFO]: [Not Secure] <Cody_B> Quick, reel it in before something else notices.
+[03:47:16] [Server thread/INFO]: [Not Secure] <Cody_B> My gut says leave.
+[03:47:21] [Server thread/INFO]: [Not Secure] <Cody_B> Don't scare me like that!
+[03:47:32] [Server thread/INFO]: [Not Secure] <Cody_B> *pacing*
+[03:47:37] [Server thread/INFO]: [Not Secure] <Cody_B> Did you hear that?
+[03:47:46] [Server thread/INFO]: [Not Secure] <Cody_B> This isn't safe.
+[03:47:54] [Server thread/INFO]: [Not Secure] <Cody_B> Don't scare me like that!
+[03:48:04] [Server thread/INFO]: [Not Secure] <Cody_B> *looks behind them*
+[03:48:15] [Server thread/INFO]: [Not Secure] <Cody_B> *steps back from water*
+[03:48:24] [Server thread/INFO]: [Not Secure] <Cody_B> Too quiet.
+[03:48:32] [Server thread/INFO]: [Not Secure] <Cody_B> *wrings hands*
+[03:48:55] [Server thread/INFO]: [Not Secure] <Cody_B> Can we go somewhere brighter?
+[03:48:59] [Server thread/INFO]: [Not Secure] <Cody_B> Okay that was fast. Too fast.
+[03:49:05] [Server thread/INFO]: [Not Secure] <Cody_B> Something moved over there.
+[03:49:10] [Server thread/INFO]: [Not Secure] <Cody_B> Maybe we should move.
+[03:49:18] [Server thread/INFO]: [Not Secure] <Cody_B> *wrings hands*
+[03:49:26] [Server thread/INFO]: [Not Secure] <Cody_B> I don't like waiting here.
+[03:49:35] [Server thread/INFO]: [Not Secure] <Cody_B> Nothing. Which is almost worse.
+[03:49:40] [Server thread/INFO]: [Not Secure] <Cody_B> Don't scare me like that!
+[03:49:45] [Server thread/INFO]: [Not Secure] <Cody_B> Too quiet.
+[03:50:06] [Server thread/INFO]: [Not Secure] <Cody_B> Can we go somewhere brighter?
+[03:50:10] [Server thread/INFO]: [Not Secure] <Cody_B> I heard it again.
+[03:50:13] [Server thread/INFO]: [Not Secure] <Cody_B> Okay that was fast. Too fast.
+[03:50:24] [Server thread/INFO]: [Not Secure] <Cody_B> I heard it again.
+[03:50:28] [Server thread/INFO]: [Not Secure] <Cody_B> I almost screamed. Almost.
+[03:50:32] [Server thread/INFO]: [Not Secure] <Cody_B> *looks behind them*
+[03:50:51] [Server thread/INFO]: [Not Secure] <Cody_B> GOT ONE— oh thank god it was just a fish.
+[03:50:56] [Server thread/INFO]: [Not Secure] <Cody_B> GOT ONE— oh thank god it was just a fish.
+[03:51:07] [Server thread/INFO]: [Not Secure] <Cody_B> Is it getting dark?
+[03:51:15] [Server thread/INFO]: [Not Secure] <Cody_B> I don't like this spot.
+[03:51:25] [Server thread/INFO]: [Not Secure] <Cody_B> *steps back from water*
+[03:51:33] [Server thread/INFO]: [Not Secure] <Cody_B> Nothing. Which is almost worse.
+[03:51:39] [Server thread/INFO]: [Not Secure] <Cody_B> Is it getting dark?
+[03:51:46] [Server thread/INFO]: [Not Secure] <Cody_B> I don't like waiting here.
+[03:51:50] [Server thread/INFO]: [Not Secure] <Cody_B> *flinches* What— oh. Fish.
+[03:51:57] [Server thread/INFO]: [Not Secure] <Cody_B> Is it getting dark?
+[03:52:01] [Server thread/INFO]: [Not Secure] <Cody_B> Too quiet.
+[03:52:11] [Server thread/INFO]: [Not Secure] <Cody_B> I don't like this spot.
+[03:52:34] [Server thread/INFO]: [Not Secure] <Cody_B> I don't like this spot.
+[03:52:41] [Server thread/INFO]: [Not Secure] <Cody_B> *looks behind them*
+[03:52:46] [Server thread/INFO]: [Not Secure] <Cody_B> Don't scare me like that!
+[03:52:55] [Server thread/INFO]: [Not Secure] <Cody_B> Nothing. Which is almost worse.
+[03:53:02] [Server thread/INFO]: [Not Secure] <Cody_B> I don't like this spot.
+[03:53:11] [Server thread/INFO]: [Not Secure] <Cody_B> Is it getting dark?
+[03:53:19] [Server thread/INFO]: [Not Secure] <Cody_B> Did you hear that?
+[03:53:27] [Server thread/INFO]: [Not Secure] <Cody_B> I don't like this spot.
+[03:53:32] [Server thread/INFO]: [Not Secure] <Cody_B> You see anything?
+[03:53:36] [Server thread/INFO]: [Not Secure] <Cody_B> Something moved over there.
+[03:53:43] [Server thread/INFO]: [Not Secure] <Cody_B> Something is watching us. I know it.
+[03:53:52] [Server thread/INFO]: [Not Secure] <Cody_B> GOT ONE— oh thank god it was just a fish.
+[03:53:54] [Server thread/INFO]: Cody_B lost connection: Disconnected
+[03:53:54] [Server thread/INFO]: Cody_B left the game
+[03:54:02] [Server thread/INFO]: Cody_B[/127.0.0.1:49704] logged in with entity id 7937 at (822.6591385077683, 61.42587690800297, -628.6468773193561)
+[03:54:02] [Server thread/INFO]: Cody_B joined the game
+[03:54:04] [Server thread/INFO]: [Not Secure] <Cody_B> Hey! I spawned. Use !help for commands.
+[03:54:07] [Server thread/INFO]: [Not Secure] <Cody_B> They're just not biting today.
+[03:54:22] [Server thread/INFO]: [Not Secure] <Cody_B> My uncle swore by putting a penny in the bait. He caught nothing but he was very wealthy in spirit.
+[03:54:29] [Server thread/INFO]: [Not Secure] <Cody_B> I'm not drunk. I'm... maritimely enhanced.
+[03:54:39] [Server thread/INFO]: [Not Secure] <Cody_B> Morning! Or afternoon! Or evening! Who can tell in Alaska!
+[03:54:48] [Server thread/INFO]: [Not Secure] <Cody_B> Best bait? Regret. Fish can smell it.
+[03:54:54] [Server thread/INFO]: [Not Secure] <Cody_B> I'm not drunk. I'm... maritimely enhanced.
+[03:55:04] [Server thread/INFO]: [Not Secure] <Cody_B> You know what I love about fishing? No boss. No wife. No... wait, what was the third thing?
+[03:55:13] [Server thread/INFO]: [Not Secure] <Cody_B> You know who catches a lot of fish? Bears. I should be a bear.
+[03:55:25] [Server thread/INFO]: [Not Secure] <Cody_B> I'm not drunk. I'm... maritimely enhanced.
+[03:55:30] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[03:55:32] [RCON Client /127.0.0.1 #8/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[03:55:33] [Server thread/INFO]: [Not Secure] <Cody_B> Beautiful! That fish has good taste. It chose ME.
+[03:55:43] [Server thread/INFO]: [Not Secure] <Cody_B> Always fish on an empty stomach. Or a full one. Actually, stomach's not important.
+[03:55:53] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[03:55:53] [Server thread/INFO]: [Rcon: Gave 1 [Fishing Rod] to Cody_B]
+[03:55:53] [RCON Client /127.0.0.1 #9/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[03:56:01] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[03:56:01] [Server thread/INFO]: [Rcon: Teleported Cody_B to 0.500000, 63.000000, 0.500000]
+[03:56:01] [RCON Client /127.0.0.1 #10/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[03:56:01] [Server thread/INFO]: [Not Secure] <Cody_B> Getting my gear ready.
+[03:56:01] [Server thread/INFO]: [Not Secure] <Cody_B> Fishing. Don't jinx it.
+[03:56:04] [Server thread/INFO]: [Not Secure] <Cody_B> Hmm. Life finds a way.
+[03:56:08] [Server thread/INFO]: [Not Secure] <Cody_B> Patience.
+[03:56:23] [Server thread/INFO]: [Not Secure] <Cody_B> Getting my gear ready.
+[03:56:23] [Server thread/INFO]: [Not Secure] <Cody_B> Lines in the water. Now we wait.
+[03:56:23] [Server thread/INFO]: [Not Secure] <Cody_B> Patience.
+[03:56:24] [Server thread/INFO]: [Not Secure] <Cody_B> Getting my gear ready.
+[03:56:24] [Server thread/INFO]: [Not Secure] <Cody_B> Fishing. Don't jinx it.
+[03:56:24] [Server thread/INFO]: Cody_B drowned
+[03:56:24] [Server thread/INFO]: [Not Secure] <Cody_B> Patience.
+[03:56:27] [Server thread/INFO]: [Not Secure] <Cody_B> 🎣 Sitka Sound — ☁️ Overcast, ▲ High Tide. Type !help for commands, or just talk to me.
+[03:56:31] [Server thread/INFO]: [Not Secure] <Cody_B> I CAN'T BELIEVE IT!!!
+[03:56:43] [Server thread/INFO]: [Not Secure] <Cody_B> IT'S HUGE!!!
+[03:56:55] [Server thread/INFO]: [Not Secure] <Cody_B> This is gonna be SO COOL!
+[03:57:01] [Server thread/INFO]: [Not Secure] <Cody_B> My mom said I'd catch something big today!
+[03:57:04] [Server thread/INFO]: [Not Secure] <Cody_B> You know, fishing is a lot like life.
+[03:57:13] [Server thread/INFO]: [Not Secure] <Cody_B> Ready ready ready!
+[03:57:16] [Server thread/INFO]: [Not Secure] <Cody_B> My mom said I'd catch something big today!
+[03:57:21] [Server thread/INFO]: [Not Secure] <Cody_B> I could stay here FOREVER!
+[03:57:27] [Server thread/INFO]: [Not Secure] <Cody_B> DID YOU SEE THAT?!?!
+[03:57:33] [Server thread/INFO]: [Not Secure] <Cody_B> The fish don't know about our problems.
+[03:57:37] [Server thread/INFO]: [Not Secure] <Cody_B> The fish are HIDING from me!
+[03:57:50] [Server thread/INFO]: [Not Secure] <Cody_B> And just like that, patience is rewarded.
+[03:58:37] [Server thread/INFO]: [Not Secure] <Cody_B> We ask too much and appreciate too little.
+[03:59:10] [Server thread/INFO]: [Not Secure] <Cody_B> Beautiful. In its own quiet way.
+[03:59:14] [Server thread/INFO]: [Not Secure] <Cody_B> Time moves differently out here.
+[03:59:21] [Server thread/INFO]: [Not Secure] <Cody_B> Makes you appreciate the small things.
+[04:00:00] [Server thread/INFO]: [Not Secure] <Cody_B> The void stares back, and I smile.
+[04:00:16] [Server thread/INFO]: [Not Secure] <Cody_B> And just like that, patience is rewarded.
+[04:00:30] [Server thread/INFO]: [Not Secure] <Cody_B> Time moves differently out here.
+[04:00:33] [Server thread/INFO]: [Not Secure] <Cody_B> Every fish is a small miracle.
+[04:00:40] [Server thread/INFO]: [Not Secure] <Cody_B> Some things you can't rush.
+[04:00:48] [Server thread/INFO]: [Not Secure] <Cody_B> The mountains don't judge.
+[04:00:56] [Server thread/INFO]: [Not Secure] <Cody_B> Beautiful. In its own quiet way.
+[04:01:07] [Server thread/INFO]: [Not Secure] <Cody_B> The fish don't know about our problems.
+[04:01:24] [Server thread/INFO]: [Not Secure] <Cody_B> The sea doesn't care about your plans.
+[04:01:27] [Server thread/INFO]: [Not Secure] <Cody_B> This is enough. This is more than enough.
+[04:01:34] [Server thread/INFO]: [Not Secure] <Cody_B> Every fish is a small miracle.
+[04:01:43] [Server thread/INFO]: [Not Secure] <Cody_B> Maybe today isn't about catching.
+[04:01:54] [Server thread/INFO]: [Not Secure] <Cody_B> This is enough. This is more than enough.
+[04:02:02] [Server thread/INFO]: [Not Secure] <Cody_B> Every fish is a small miracle.
+[04:02:18] [Server thread/INFO]: [Not Secure] <Cody_B> Sometimes the fish teach you patience.
+[04:02:35] [Server thread/INFO]: [Not Secure] <Cody_B> We ask too much and appreciate too little.
+[04:02:44] [Server thread/INFO]: [Not Secure] <Cody_B> This is enough. This is more than enough.
+[04:02:54] [Server thread/INFO]: [Not Secure] <Cody_B> Time moves differently out here.
+[04:03:02] [Server thread/INFO]: [Not Secure] <Cody_B> Stillness isn't failure.
+[04:03:13] [Server thread/INFO]: [Not Secure] <Cody_B> The sea doesn't care about your plans.
+[04:03:19] [Server thread/INFO]: [Not Secure] <Cody_B> I wonder if the fish feel the same stillness.
+[04:03:27] [Server thread/INFO]: [Not Secure] <Cody_B> Emptiness has its own truth.
+[04:03:35] [Server thread/INFO]: [Not Secure] <Cody_B> A gift from the deep.
+[04:03:44] [Server thread/INFO]: [Not Secure] <Cody_B> Beautiful. In its own quiet way.
+[04:03:49] [Server thread/INFO]: [Not Secure] <Cody_B> Sometimes the fish teach you patience.
+[04:03:53] [Server thread/INFO]: [Not Secure] <Cody_B> The water gives, and the water takes.
+[04:04:13] [Server thread/INFO]: [Not Secure] <Cody_B> I wonder if the fish feel the same stillness.
+[04:04:22] [Server thread/INFO]: [Not Secure] <Cody_B> Emptiness has its own truth.
+[04:04:31] [Server thread/INFO]: [Not Secure] <Cody_B> Emptiness has its own truth.
+[04:04:39] [Server thread/INFO]: [Not Secure] <Cody_B> Hmm. Life finds a way.
+[04:04:44] [Server thread/INFO]: [Not Secure] <Cody_B> Some questions only silence can answer.
+[04:04:54] [Server thread/INFO]: [Not Secure] <Cody_B> Makes you appreciate the small things.
+[04:04:59] [Server thread/INFO]: [Not Secure] <Cody_B> Nothing. But that's okay.
+[04:05:07] [Server thread/INFO]: [Not Secure] <Cody_B> Beautiful. In its own quiet way.
+[04:05:13] [Server thread/INFO]: [Not Secure] <Cody_B> The fish don't know about our problems.
+[04:05:33] [Server thread/INFO]: [Not Secure] <Cody_B> Hmm. Life finds a way.
+[04:05:46] [Server thread/INFO]: [Not Secure] <Cody_B> Beautiful. In its own quiet way.
+[04:05:57] [Server thread/INFO]: [Not Secure] <Cody_B> Time moves differently out here.
+[04:06:06] [Server thread/INFO]: [Not Secure] <Cody_B> Time moves differently out here.
+[04:06:13] [Server thread/INFO]: [Not Secure] <Cody_B> Every fish is a small miracle.
+[04:06:27] [Server thread/INFO]: [Not Secure] <Cody_B> The water gives, and the water takes.
+[04:06:31] [Server thread/INFO]: [Not Secure] <Cody_B> A gift from the deep.
+[04:06:37] [Server thread/INFO]: [Not Secure] <Cody_B> A gift from the deep.
+[04:06:51] [Server thread/INFO]: [Not Secure] <Cody_B> Every fish is a small miracle.
+[04:06:58] [Server thread/INFO]: [Not Secure] <Cody_B> Emptiness has its own truth.
+[04:07:11] [Server thread/INFO]: [Not Secure] <Cody_B> We ask too much and appreciate too little.
+[04:07:17] [Server thread/INFO]: [Not Secure] <Cody_B> Some things you can't rush.
+[04:07:26] [Server thread/INFO]: [Not Secure] <Cody_B> We ask too much and appreciate too little.
+[04:07:36] [Server thread/INFO]: [Not Secure] <Cody_B> Silence teaches you things noise never could.
+[04:07:42] [Server thread/INFO]: [Not Secure] <Cody_B> A gift from the deep.
+[04:07:45] [Server thread/INFO]: [Not Secure] <Cody_B> We ask too much and appreciate too little.
+[04:07:53] [Server thread/INFO]: [Not Secure] <Cody_B> Time moves differently out here.
+[04:07:57] [Server thread/INFO]: [Not Secure] <Cody_B> Some questions only silence can answer.
+[04:08:07] [Server thread/INFO]: [Not Secure] <Cody_B> I wonder if the fish feel the same stillness.
+[04:08:11] [Server thread/INFO]: [Not Secure] <Cody_B> The water remembers everything.
+[04:08:14] [Server thread/INFO]: [Not Secure] <Cody_B> The sea doesn't care about your plans.
+[04:08:19] [Server thread/INFO]: [Not Secure] <Cody_B> Silence teaches you things noise never could.
+[04:08:28] [Server thread/INFO]: [Not Secure] <Cody_B> Every cast is a small act of hope.
+[04:08:33] [Server thread/INFO]: [Not Secure] <Cody_B> Getting out of here!
+[04:08:33] [Server thread/INFO]: Cody_B lost connection: Disconnected
+[04:08:33] [Server thread/INFO]: Cody_B left the game
+[04:09:33] [Server thread/INFO]: Server empty for 60 seconds, pausing

@@ -3,9 +3,26 @@
   "places": {},
   "builds": {},
   "resources": {},
-  "deaths": 0,
-  "deathCauses": [],
+  "deaths": 4,
+  "deathCauses": [
+    {
+      "cause": "death event",
+      "timestamp": "2026-03-26T08:51:04.661Z"
+    },
+    {
+      "cause": "death event",
+      "timestamp": "2026-03-26T09:36:30.761Z"
+    },
+    {
+      "cause": "death event",
+      "timestamp": "2026-03-26T11:29:41.062Z"
+    },
+    {
+      "cause": "death event",
+      "timestamp": "2026-03-26T11:56:24.801Z"
+    }
+  ],
   "meta": {},
-  "lastSession": "2026-03-26T06:38:21.656Z",
+  "lastSession": "2026-03-26T12:08:02.211Z",
   "scriptHistory": []
 }

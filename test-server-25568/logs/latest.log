@@ -1,266 +1,86 @@
-[21:33:47] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[21:33:54] [ServerMain/INFO]: Loaded 1370 recipes
-[21:33:54] [ServerMain/INFO]: Loaded 1481 advancements
-[21:33:54] [Server thread/INFO]: Starting minecraft server version 1.21.4
-[21:33:54] [Server thread/INFO]: Loading properties
-[21:33:54] [Server thread/INFO]: Default game type: SURVIVAL
-[21:33:54] [Server thread/INFO]: Generating keypair
-[21:33:55] [Server thread/INFO]: Starting Minecraft server on *:25568
-[21:33:55] [Server thread/INFO]: Using epoll channel type
-[21:33:55] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[21:33:55] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[21:33:55] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[21:33:55] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[21:33:56] [Server thread/INFO]: Preparing level "craftmind"
-[21:33:57] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[21:34:03] [Worker-Main-1/INFO]: Preparing spawn area: 0%
-[21:34:03] [Worker-Main-1/INFO]: Preparing spawn area: 0%
-[21:34:03] [Worker-Main-1/INFO]: Preparing spawn area: 0%
-[21:34:03] [Worker-Main-1/INFO]: Preparing spawn area: 0%
-[21:34:03] [Worker-Main-1/INFO]: Preparing spawn area: 0%
-[21:34:03] [Worker-Main-1/INFO]: Preparing spawn area: 0%
-[21:34:03] [Worker-Main-1/INFO]: Preparing spawn area: 0%
-[21:34:03] [Worker-Main-1/INFO]: Preparing spawn area: 0%
-[21:34:03] [Worker-Main-1/INFO]: Preparing spawn area: 0%
-[21:34:03] [Worker-Main-1/INFO]: Preparing spawn area: 0%
-[21:34:03] [Worker-Main-1/INFO]: Preparing spawn area: 0%
-[21:34:03] [Worker-Main-1/INFO]: Preparing spawn area: 0%
-[21:34:03] [Worker-Main-1/INFO]: Preparing spawn area: 0%
-[21:34:03] [Worker-Main-1/INFO]: Preparing spawn area: 0%
-[21:34:04] [Worker-Main-3/INFO]: Preparing spawn area: 32%
-[21:34:05] [Worker-Main-2/INFO]: Preparing spawn area: 71%
-[21:34:05] [Worker-Main-2/INFO]: Preparing spawn area: 71%
-[21:34:06] [Worker-Main-2/INFO]: Preparing spawn area: 71%
-[21:34:06] [Worker-Main-2/INFO]: Preparing spawn area: 71%
-[21:34:06] [Worker-Main-2/INFO]: Preparing spawn area: 71%
-[21:34:07] [Worker-Main-2/INFO]: Preparing spawn area: 71%
-[21:34:08] [Worker-Main-2/INFO]: Preparing spawn area: 71%
-[21:34:08] [Worker-Main-4/INFO]: Preparing spawn area: 71%
-[21:34:08] [Worker-Main-5/INFO]: Preparing spawn area: 71%
-[21:34:11] [Worker-Main-3/INFO]: Preparing spawn area: 71%
-[21:34:11] [Worker-Main-3/INFO]: Preparing spawn area: 71%
-[21:34:11] [Worker-Main-4/INFO]: Preparing spawn area: 71%
-[21:34:11] [Worker-Main-4/INFO]: Preparing spawn area: 71%
-[21:34:11] [Worker-Main-2/INFO]: Preparing spawn area: 71%
-[21:34:12] [Worker-Main-5/INFO]: Preparing spawn area: 71%
-[21:34:12] [Worker-Main-5/INFO]: Preparing spawn area: 71%
-[21:34:12] [Worker-Main-5/INFO]: Preparing spawn area: 71%
-[21:34:13] [Worker-Main-5/INFO]: Preparing spawn area: 71%
-[21:34:13] [Worker-Main-5/INFO]: Preparing spawn area: 71%
-[21:34:14] [Worker-Main-3/INFO]: Preparing spawn area: 71%
-[21:34:15] [Worker-Main-4/INFO]: Preparing spawn area: 81%
-[21:34:15] [Worker-Main-2/INFO]: Preparing spawn area: 81%
-[21:34:15] [Worker-Main-2/INFO]: Preparing spawn area: 81%
-[21:34:16] [Worker-Main-3/INFO]: Preparing spawn area: 81%
-[21:34:16] [Worker-Main-1/INFO]: Preparing spawn area: 81%
-[21:34:17] [Server thread/INFO]: Time elapsed: 19687 ms
-[21:34:17] [Server thread/INFO]: Done (21.049s)! For help, type "help"
-[21:34:17] [Server thread/INFO]: Starting remote control listener
-[21:34:17] [Server thread/INFO]: Thread RCON Listener started
-[21:34:17] [Server thread/INFO]: RCON running on 0.0.0.0:25578
-[21:34:58] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
-[21:34:58] [Server thread/INFO]: [Rcon: Set the time to 6000]
-[21:34:58] [RCON Client /127.0.0.1 #2/INFO]: Thread RCON Client /127.0.0.1 shutting down
-[21:35:13] [Server thread/INFO]: Cody_C[/127.0.0.1:40122] logged in with entity id 2 at (0.5, 63.0, 0.5)
-[21:35:13] [Server thread/INFO]: Cody_C joined the game
-[21:35:14] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2057ms or 41 ticks behind
-[21:35:15] [Server thread/INFO]: [Not Secure] <Cody_C> Hey! I spawned. Use !help for commands.
-[21:35:21] [Server thread/INFO]: [Not Secure] <Cody_C> *adjusts gear*
-[21:35:41] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 11537ms or 230 ticks behind
-[21:36:05] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 8847ms or 176 ticks behind
-[21:37:50] [Server thread/INFO]: [Not Secure] <Cody_C> They're just not biting today.
-[21:37:52] [Server thread/INFO]: Cody_C drowned
-[21:37:55] [Server thread/INFO]: [Not Secure] <Cody_C> 🎣 Sitka Sound — ☁️ Overcast, ▲ High Tide. Type !help for commands, or just talk to me.
-[21:37:58] [Server thread/INFO]: [Not Secure] <Cody_C> Nothing.
-[21:38:04] [Server thread/INFO]: [Not Secure] <Cody_C> Here we go.
-[21:38:34] [Server thread/INFO]: [Not Secure] <Cody_C> Nothing.
-[21:38:46] [Server thread/INFO]: [Not Secure] <Cody_C> *gets rod ready*
-[21:39:03] [Server thread/INFO]: [Not Secure] <Cody_C> Here we go.
-[21:39:08] [Server thread/INFO]: [Not Secure] <Cody_C> Lines in.
-[21:39:27] [Server thread/INFO]: [Not Secure] <Cody_C> Nothing.
-[21:39:48] [Server thread/INFO]: [Not Secure] <Cody_C> Patience.
-[21:39:52] [Server thread/INFO]: [Not Secure] <Cody_C> Patience.
-[21:40:03] [Server thread/INFO]: [Not Secure] <Cody_C> Here we go.
-[21:40:27] [Server thread/INFO]: [Not Secure] <Cody_C> Nothing.
-[21:40:31] [Server thread/INFO]: [Not Secure] <Cody_C> *checks line*
-[21:40:37] [Server thread/INFO]: [Not Secure] <Cody_C> Lines in.
-[21:40:44] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
-[21:40:45] [Server thread/INFO]: [Rcon: Successfully filled 28 block(s)]
-[21:40:45] [Server thread/INFO]: [Rcon: Successfully filled 28 block(s)]
-[21:40:45] [Server thread/INFO]: [Rcon: Set spawn point to 0, 65, 1 [0.0] in minecraft:overworld for Cody_C]
-[21:40:45] [Server thread/INFO]: [Rcon: Changed the block at -2, 65, 1]
-[21:40:45] [Server thread/INFO]: [Rcon: Gave 2 [Fishing Rod] to Cody_C]
-[21:40:45] [Server thread/INFO]: [Rcon: Gave 64 [Bread] to Cody_C]
-[21:40:45] [Server thread/INFO]: [Rcon: Gave 1 [Iron Sword] to Cody_C]
-[21:40:45] [Server thread/INFO]: Cody_C has made the advancement [Suit Up]
-[21:40:45] [Server thread/INFO]: [Rcon: Gave 1 [Iron Helmet] to Cody_C]
-[21:40:45] [Server thread/INFO]: [Rcon: Gave 1 [Iron Chestplate] to Cody_C]
-[21:40:45] [Server thread/INFO]: [Rcon: Gave 1 [Iron Leggings] to Cody_C]
-[21:40:45] [Server thread/INFO]: [Rcon: Gave 1 [Iron Boots] to Cody_C]
-[21:40:45] [Server thread/INFO]: [Rcon: Gave 1 [Shield] to Cody_C]
-[21:40:45] [Server thread/INFO]: [Rcon: Gave 1 [Oak Boat] to Cody_C]
-[21:40:45] [Server thread/INFO]: [Rcon: Set [💰 Money] for Cody_C to 50]
-[21:40:45] [Server thread/INFO]: [Rcon: Set the time to 6000]
-[21:40:45] [Server thread/INFO]: [Rcon: Gamerule doDaylightCycle is now set to: false]
-[21:40:45] [Server thread/INFO]: [Rcon: Gamerule doMobSpawning is now set to: false]
-[21:40:45] [Server thread/INFO]: [Rcon: Teleported Cody_C to 0.500000, 65.000000, 1.500000]
-[21:40:45] [RCON Client /127.0.0.1 #3/INFO]: Thread RCON Client /127.0.0.1 shutting down
-[21:40:55] [Server thread/INFO]: [Not Secure] <Cody_C> This spot's been good to me.
-[21:41:05] [Server thread/INFO]: [Not Secure] <Cody_C> Getting my gear ready.
-[21:41:05] [Server thread/INFO]: [Not Secure] <Cody_C> Here we go.
-[21:41:05] [Server thread/INFO]: [Not Secure] <Cody_C> Patience.
-[21:41:05] [Server thread/INFO]: [Not Secure] <Cody_C> Getting my gear ready.
-[21:41:05] [Server thread/INFO]: [Not Secure] <Cody_C> Lines in the water. Now we wait.
-[21:41:09] [Server thread/INFO]: [Not Secure] <Cody_C> Patience.
-[21:41:10] [Server thread/INFO]: [Not Secure] <Cody_C> Patience.
-[21:41:21] [Server thread/INFO]: Cody_C has made the advancement [Fishy Business]
-[21:41:22] [Server thread/INFO]: [Not Secure] <Cody_C> Not bad.
-[21:41:25] [Server thread/INFO]: [Not Secure] <Cody_C> Getting my gear ready.
-[21:41:25] [Server thread/INFO]: [Not Secure] <Cody_C> Fishing. Don't jinx it.
-[21:41:30] [Server thread/INFO]: [Not Secure] <Cody_C> Nothing biting.
-[21:41:30] [Server thread/INFO]: [Not Secure] <Cody_C> Fish on!
-[21:42:01] [Server thread/INFO]: Cody_C lost connection: Disconnected
-[21:42:01] [Server thread/INFO]: Cody_C left the game
-[21:42:26] [Server thread/INFO]: Cody_C[/127.0.0.1:51598] logged in with entity id 1394 at (-73.12566164340427, 62.63400517656685, -55.7978480914514)
-[21:42:26] [Server thread/INFO]: Cody_C joined the game
-[21:42:29] [Server thread/INFO]: [Not Secure] <Cody_C> Hey! I spawned. Use !help for commands.
-[21:42:32] [Server thread/INFO]: [Not Secure] <Cody_C> Getting my gear ready.
-[21:42:32] [Server thread/INFO]: [Not Secure] <Cody_C> Fishing. Don't jinx it.
-[21:42:33] [Server thread/INFO]: [Not Secure] <Cody_C> Nothing biting.
-[21:42:33] [Server thread/INFO]: [Not Secure] <Cody_C> Getting my gear ready.
-[21:42:33] [Server thread/INFO]: [Not Secure] <Cody_C> Lines in the water. Now we wait.
-[21:42:34] [Server thread/INFO]: [Not Secure] <Cody_C> Dry run.
-[21:42:34] [Server thread/INFO]: [Not Secure] <Cody_C> Getting my gear ready.
-[21:42:34] [Server thread/INFO]: [Not Secure] <Cody_C> Lines in the water. Now we wait.
-[21:42:36] [Server thread/INFO]: [Not Secure] <Cody_C> Dry run.
-[21:42:36] [Server thread/INFO]: [Not Secure] <Cody_C> Getting my gear ready.
-[21:42:36] [Server thread/INFO]: [Not Secure] <Cody_C> Lines in the water. Now we wait.
-[21:42:37] [Server thread/INFO]: [Not Secure] <Cody_C> Dry run.
-[21:42:37] [Server thread/INFO]: [Not Secure] <Cody_C> Getting my gear ready.
-[21:42:37] [Server thread/INFO]: [Not Secure] <Cody_C> Fishing. Don't jinx it.
-[21:42:39] [Server thread/INFO]: [Not Secure] <Cody_C> Patience.
-[21:56:58] [Server thread/INFO]: Cody_C lost connection: Disconnected
-[21:56:58] [Server thread/INFO]: Cody_C left the game
-[21:57:56] [Server thread/INFO]: Cody_C[/127.0.0.1:45704] logged in with entity id 2215 at (340.10275166916216, 61.47384310057563, -86.39950540257614)
-[21:57:56] [Server thread/INFO]: Cody_C joined the game
-[21:57:59] [Server thread/INFO]: [Not Secure] <Cody_C> Hey! I spawned. Use !help for commands.
-[22:02:41] [Server thread/INFO]: Cody_C lost connection: You logged in from another location
-[22:02:41] [Server thread/INFO]: Cody_C left the game
-[22:02:42] [Server thread/WARN]: handleDisconnection() called twice
-[22:02:42] [Server thread/INFO]: Cody_C[/127.0.0.1:40632] logged in with entity id 2520 at (715.9899985113, 62.04805365555255, -390.78699617697146)
-[22:02:42] [Server thread/INFO]: Cody_C joined the game
-[22:02:44] [Server thread/INFO]: [Not Secure] <Cody_C> Hey! I spawned. Use !help for commands.
-[22:02:48] [Server thread/INFO]: [Not Secure] <Cody_C> Getting my gear ready.
-[22:02:48] [Server thread/INFO]: [Not Secure] <Cody_C> Lines in the water. Now we wait.
-[22:02:48] [Server thread/INFO]: [Not Secure] <Cody_C> Dry run.
-[22:02:49] [Server thread/INFO]: [Not Secure] <Cody_C> Getting my gear ready.
-[22:02:49] [Server thread/INFO]: [Not Secure] <Cody_C> Here we go.
-[22:02:50] [Server thread/INFO]: [Not Secure] <Cody_C> Patience.
-[22:02:50] [Server thread/INFO]: [Not Secure] <Cody_C> Getting my gear ready.
-[22:02:50] [Server thread/INFO]: [Not Secure] <Cody_C> Here we go.
-[22:02:51] [Server thread/INFO]: [Not Secure] <Cody_C> Dry run.
-[22:02:51] [Server thread/INFO]: [Not Secure] <Cody_C> Getting my gear ready.
-[22:02:51] [Server thread/INFO]: [Not Secure] <Cody_C> Lines in the water. Now we wait.
-[22:02:53] [Server thread/INFO]: [Not Secure] <Cody_C> Patience.
-[22:02:53] [Server thread/INFO]: [Not Secure] <Cody_C> Suppose I should fish.
-[22:11:00] [Server thread/INFO]: Cody_C lost connection: Disconnected
-[22:11:00] [Server thread/INFO]: Cody_C left the game
-[22:11:19] [Server thread/INFO]: Cody_C[/127.0.0.1:41678] logged in with entity id 3100 at (116.04650901087626, 61.981321449044906, -628.1532079992941)
-[22:11:19] [Server thread/INFO]: Cody_C joined the game
-[22:11:22] [Server thread/INFO]: [Not Secure] <Cody_C> Hey! I spawned. Use !help for commands.
-[22:11:25] [Server thread/INFO]: [Not Secure] <Cody_C> Getting my gear ready.
-[22:11:25] [Server thread/INFO]: [Not Secure] <Cody_C> Lines in the water. Now we wait.
-[22:11:26] [Server thread/INFO]: [Not Secure] <Cody_C> Dry run.
-[22:11:26] [Server thread/INFO]: [Not Secure] <Cody_C> Getting my gear ready.
-[22:11:26] [Server thread/INFO]: [Not Secure] <Cody_C> Here we go.
-[22:11:28] [Server thread/INFO]: [Not Secure] <Cody_C> Dry run.
-[22:11:28] [Server thread/INFO]: [Not Secure] <Cody_C> Getting my gear ready.
-[22:11:28] [Server thread/INFO]: [Not Secure] <Cody_C> Here we go.
-[22:11:29] [Server thread/INFO]: [Not Secure] <Cody_C> Nothing biting.
-[22:11:29] [Server thread/INFO]: [Not Secure] <Cody_C> Getting my gear ready.
-[22:11:29] [Server thread/INFO]: [Not Secure] <Cody_C> Lines in the water. Now we wait.
-[22:11:31] [Server thread/INFO]: [Not Secure] <Cody_C> Dry run.
-[22:15:20] [Server thread/INFO]: Cody_C lost connection: Disconnected
-[22:15:20] [Server thread/INFO]: Cody_C left the game
-[22:16:20] [Server thread/INFO]: Server empty for 60 seconds, pausing
-[22:21:08] [Server thread/INFO]: Cody_C[/127.0.0.1:35428] logged in with entity id 3352 at (108.40233626820591, 63.0, -815.4301467798385)
-[22:21:08] [Server thread/INFO]: Cody_C joined the game
-[22:21:11] [Server thread/INFO]: [Not Secure] <Cody_C> Hey! I spawned. Use !help for commands.
-[22:21:14] [Server thread/INFO]: [Not Secure] <Cody_C> Getting my gear ready.
-[22:21:14] [Server thread/INFO]: [Not Secure] <Cody_C> Lines in the water. Now we wait.
-[22:21:15] [Server thread/INFO]: [Not Secure] <Cody_C> Dry run.
-[22:21:15] [Server thread/INFO]: [Not Secure] <Cody_C> Getting my gear ready.
-[22:21:15] [Server thread/INFO]: [Not Secure] <Cody_C> Here we go.
-[22:21:16] [Server thread/INFO]: [Not Secure] <Cody_C> Nothing biting.
-[22:21:16] [Server thread/INFO]: [Not Secure] <Cody_C> Getting my gear ready.
-[22:21:16] [Server thread/INFO]: [Not Secure] <Cody_C> Here we go.
-[22:21:18] [Server thread/INFO]: [Not Secure] <Cody_C> Dry run.
-[22:21:18] [Server thread/INFO]: [Not Secure] <Cody_C> Getting my gear ready.
-[22:21:18] [Server thread/INFO]: [Not Secure] <Cody_C> Fishing. Don't jinx it.
-[22:21:19] [Server thread/INFO]: [Not Secure] <Cody_C> Nothing biting.
-[22:21:26] [Server thread/INFO]: [Not Secure] <Cody_C> *adjusts hat*
-[22:21:29] [Server thread/INFO]: [Not Secure] <Cody_C> Harbor's half-empty. Everyone's out on the water already.
-[22:26:15] [Server thread/INFO]: [Not Secure] <Cody_C> Getting my gear ready.
-[22:26:15] [Server thread/INFO]: [Not Secure] <Cody_C> Fishing. Don't jinx it.
-[22:26:16] [Server thread/INFO]: [Not Secure] <Cody_C> Patience.
-[22:26:16] [Server thread/INFO]: [Not Secure] <Cody_C> Getting my gear ready.
-[22:26:16] [Server thread/INFO]: [Not Secure] <Cody_C> Here we go.
-[22:26:18] [Server thread/INFO]: [Not Secure] <Cody_C> Dry run.
-[22:26:18] [Server thread/INFO]: [Not Secure] <Cody_C> Getting my gear ready.
-[22:26:18] [Server thread/INFO]: [Not Secure] <Cody_C> Lines in the water. Now we wait.
-[22:26:19] [Server thread/INFO]: [Not Secure] <Cody_C> Patience.
-[22:26:19] [Server thread/INFO]: [Not Secure] <Cody_C> Getting my gear ready.
-[22:26:19] [Server thread/INFO]: [Not Secure] <Cody_C> Fishing. Don't jinx it.
-[22:26:19] [Server thread/INFO]: [Not Secure] <Cody_C> Patience.
-[22:26:19] [Server thread/INFO]: [Not Secure] <Cody_C> Getting my gear ready.
-[22:26:19] [Server thread/INFO]: [Not Secure] <Cody_C> Fishing. Don't jinx it.
-[22:26:19] [Server thread/INFO]: Cody_C lost connection: Kicked for spamming
-[22:26:19] [Server thread/INFO]: Cody_C left the game
-[22:26:19] [Server thread/WARN]: handleDisconnection() called twice
-[22:27:19] [Server thread/INFO]: Server empty for 60 seconds, pausing
-[22:36:22] [Server thread/INFO]: Cody_C[/127.0.0.1:53758] logged in with entity id 3764 at (155.55832117890284, 62.269053086218335, -552.0615854911846)
-[22:36:22] [Server thread/INFO]: Cody_C joined the game
-[22:36:25] [Server thread/INFO]: [Not Secure] <Cody_C> Hey! I spawned. Use !help for commands.
-[22:36:28] [Server thread/INFO]: [Not Secure] <Cody_C> Getting my gear ready.
-[22:36:28] [Server thread/INFO]: [Not Secure] <Cody_C> Lines in the water. Now we wait.
-[22:36:28] [Server thread/INFO]: [Not Secure] <Cody_C> Dry run.
-[22:36:28] [Server thread/INFO]: [Not Secure] <Cody_C> Getting my gear ready.
-[22:36:28] [Server thread/INFO]: [Not Secure] <Cody_C> Lines in the water. Now we wait.
-[22:36:29] [Server thread/INFO]: [Not Secure] <Cody_C> Dry run.
-[22:36:29] [Server thread/INFO]: [Not Secure] <Cody_C> Getting my gear ready.
-[22:36:29] [Server thread/INFO]: [Not Secure] <Cody_C> Here we go.
-[22:36:30] [Server thread/INFO]: [Not Secure] <Cody_C> Nothing biting.
-[22:36:30] [Server thread/INFO]: [Not Secure] <Cody_C> Getting my gear ready.
-[22:36:30] [Server thread/INFO]: [Not Secure] <Cody_C> Here we go.
-[22:36:32] [Server thread/INFO]: [Not Secure] <Cody_C> Patience.
-[22:36:32] [Server thread/INFO]: [Not Secure] <Cody_C> Getting my gear ready.
-[22:36:32] [Server thread/INFO]: [Not Secure] <Cody_C> Fishing. Don't jinx it.
-[22:36:32] [Server thread/INFO]: Cody_C lost connection: Kicked for spamming
-[22:36:32] [Server thread/INFO]: Cody_C left the game
-[22:37:32] [Server thread/INFO]: Server empty for 60 seconds, pausing
-[22:38:53] [Server thread/INFO]: Cody_C[/127.0.0.1:58994] logged in with entity id 3818 at (151.43843733893743, 60.86179161356858, -555.0025428857394)
-[22:38:53] [Server thread/INFO]: Cody_C joined the game
-[22:38:55] [Server thread/INFO]: [Not Secure] <Cody_C> Hey! I spawned. Use !help for commands.
-[22:38:59] [Server thread/INFO]: [Not Secure] <Cody_C> Getting my gear ready.
-[22:38:59] [Server thread/INFO]: [Not Secure] <Cody_C> Lines in the water. Now we wait.
-[22:38:59] [Server thread/INFO]: [Not Secure] <Cody_C> Nothing biting.
-[22:38:59] [Server thread/INFO]: [Not Secure] <Cody_C> Getting my gear ready.
-[22:38:59] [Server thread/INFO]: [Not Secure] <Cody_C> Lines in the water. Now we wait.
-[22:39:01] [Server thread/INFO]: [Not Secure] <Cody_C> Patience.
-[22:39:01] [Server thread/INFO]: [Not Secure] <Cody_C> Getting my gear ready.
-[22:39:01] [Server thread/INFO]: [Not Secure] <Cody_C> Lines in the water. Now we wait.
-[22:39:02] [Server thread/INFO]: [Not Secure] <Cody_C> Nothing biting.
-[22:39:02] [Server thread/INFO]: [Not Secure] <Cody_C> Getting my gear ready.
-[22:39:02] [Server thread/INFO]: [Not Secure] <Cody_C> Lines in the water. Now we wait.
-[22:39:03] [Server thread/INFO]: [Not Secure] <Cody_C> A bald eagle just took a fish not fifty yards from here!
-[22:39:03] [Server thread/INFO]: [Not Secure] <Cody_C> Nothing biting.
-[22:39:17] [Server thread/INFO]: [Not Secure] <Cody_C> The tide is pulling out fast. Revealing a lot of beach.
-[22:39:37] [Server thread/INFO]: [Not Secure] <Cody_C> Salmon on! Pink run maybe?
-[22:45:14] [Server thread/INFO]: [Not Secure] <Cody_C> Getting out of here!
-[22:45:14] [Server thread/INFO]: Cody_C lost connection: Disconnected
-[22:45:14] [Server thread/INFO]: Cody_C left the game
-[22:45:38] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
-[22:45:38] [RCON Client /127.0.0.1 #4/INFO]: Thread RCON Client /127.0.0.1 shutting down
-[22:45:58] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
-[22:45:58] [RCON Client /127.0.0.1 #5/INFO]: Thread RCON Client /127.0.0.1 shutting down
-[22:46:14] [Server thread/INFO]: Server empty for 60 seconds, pausing
+[03:55:06] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[03:55:09] [ServerMain/INFO]: Loaded 1370 recipes
+[03:55:09] [ServerMain/INFO]: Loaded 1481 advancements
+[03:55:10] [Server thread/INFO]: Starting minecraft server version 1.21.4
+[03:55:10] [Server thread/INFO]: Loading properties
+[03:55:10] [Server thread/INFO]: Default game type: SURVIVAL
+[03:55:10] [Server thread/INFO]: Generating keypair
+[03:55:10] [Server thread/INFO]: Starting Minecraft server on *:25568
+[03:55:10] [Server thread/INFO]: Using epoll channel type
+[03:55:10] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[03:55:10] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[03:55:10] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[03:55:10] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[03:55:10] [Server thread/INFO]: Preparing level "craftmind"
+[03:55:11] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[03:55:13] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[03:55:13] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[03:55:13] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[03:55:13] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[03:55:13] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[03:55:13] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[03:55:14] [Server thread/INFO]: Time elapsed: 2798 ms
+[03:55:14] [Server thread/INFO]: Done (3.567s)! For help, type "help"
+[03:55:14] [Server thread/INFO]: Starting remote control listener
+[03:55:14] [Server thread/INFO]: Thread RCON Listener started
+[03:55:14] [Server thread/INFO]: RCON running on 0.0.0.0:25578
+[03:55:28] [Server thread/WARN]: handleDisconnection() called twice
+[03:56:13] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[03:56:13] [RCON Client /127.0.0.1 #2/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[03:56:14] [Server thread/INFO]: Server empty for 60 seconds, pausing
+[03:56:25] [Server thread/INFO]: Cody_C[/127.0.0.1:42808] logged in with entity id 2 at (9.70549375956104, 61.86697428989822, -2.12436948001111)
+[03:56:25] [Server thread/INFO]: Cody_C joined the game
+[03:56:27] [Server thread/INFO]: [Not Secure] <Cody_C> Hey! I spawned. Use !help for commands.
+[03:57:47] [Server thread/INFO]: [Not Secure] <Cody_C> Wait.
+[03:58:33] [Server thread/INFO]: [Not Secure] <Cody_C> Here.
+[03:59:29] [Server thread/INFO]: [Not Secure] <Cody_C> Quiet.
+[04:00:33] [Server thread/INFO]: [Not Secure] <Cody_C> One.
+[04:02:06] [Server thread/INFO]: [Not Secure] <Cody_C> Yes.
+[04:02:16] [Server thread/INFO]: [Not Secure] <Cody_C> Wait.
+[04:02:22] [Server thread/INFO]: [Not Secure] <Cody_C> Hm.
+[04:02:42] [Server thread/INFO]: [Not Secure] <Cody_C> Cold.
+[04:04:30] [Server thread/INFO]: [Not Secure] <Cody_C> Wait.
+[04:05:36] [Server thread/INFO]: [Not Secure] <Cody_C> Done.
+[04:08:05] [Server thread/INFO]: [Not Secure] <Cody_C> More.
+[04:08:43] [Server thread/INFO]: [Not Secure] <Cody_C> No.
+[04:10:12] [Server thread/INFO]: [Not Secure] <Cody_C> Wait.
+[04:10:30] [Server thread/INFO]: [Not Secure] <Cody_C> Ah.
+[04:10:34] [Server thread/INFO]: [Not Secure] <Cody_C> Two.
+[04:10:54] [Server thread/INFO]: [Not Secure] <Cody_C> Deep.
+[04:11:46] [Server thread/INFO]: [Not Secure] <Cody_C> One.
+[04:11:57] [Server thread/INFO]: [Not Secure] <Cody_C> Cold.
+[04:12:21] [Server thread/INFO]: [Not Secure] <Cody_C> Two.
+[04:13:04] [Server thread/INFO]: [Not Secure] <Cody_C> More.
+[04:14:06] [Server thread/INFO]: [Not Secure] <Cody_C> Deep.
+[04:14:11] [Server thread/INFO]: [Not Secure] <Cody_C> Right.
+[04:14:33] [Server thread/INFO]: [Not Secure] <Cody_C> One.
+[04:16:20] [Server thread/INFO]: [Not Secure] <Cody_C> Here.
+[04:16:30] [Server thread/INFO]: [Not Secure] <Cody_C> More.
+[04:17:00] [Server thread/INFO]: [Not Secure] <Cody_C> Cold.
+[04:17:26] [Server thread/INFO]: [Not Secure] <Cody_C> Now.
+[04:17:51] [Server thread/INFO]: [Not Secure] <Cody_C> Quiet.
+[04:19:33] [Server thread/INFO]: [Not Secure] <Cody_C> Two.
+[04:21:37] [Server thread/INFO]: [Not Secure] <Cody_C> Here.
+[04:23:06] [Server thread/INFO]: [Not Secure] <Cody_C> Good.
+[04:23:40] [Server thread/INFO]: [Not Secure] <Cody_C> More.
+[04:24:21] [Server thread/INFO]: [Not Secure] <Cody_C> No.
+[04:24:34] [Server thread/INFO]: [Not Secure] <Cody_C> Hm.
+[04:25:13] [Server thread/INFO]: [Not Secure] <Cody_C> Good.
+[04:27:17] [Server thread/INFO]: [Not Secure] <Cody_C> Fish tastes the same whether you're wet or dry.
+[04:27:21] [Server thread/INFO]: Cody_C drowned
+[04:27:24] [Server thread/INFO]: [Not Secure] <Cody_C> 🎣 Sitka Sound — ☁️ Overcast, ▼ Low Tide. Type !help for commands, or just talk to me.
+[04:27:31] [Server thread/INFO]: [Not Secure] <Cody_C> Reminds me of '89.
+[04:27:39] [Server thread/INFO]: [Not Secure] <Cody_C> I remember when you could catch dinner in 20 minutes. Now it's a sport.
+[04:27:48] [Server thread/INFO]: [Not Secure] <Cody_C> Once fought a seal for a fish. We both lost. The fish won.
+[04:27:56] [Server thread/INFO]: [Not Secure] <Cody_C> Good weight on that one. Healthy stock.
+[04:28:01] [Server thread/INFO]: [Not Secure] <Cody_C> I've fished every inlet from here to Ketchikan.
+[04:28:13] [Server thread/INFO]: [Not Secure] <Cody_C> Patience. The fish don't run on your schedule.
+[04:28:17] [Server thread/INFO]: [Not Secure] <Cody_C> Not bad. That one goes in the book.
+[04:28:26] [Server thread/INFO]: [Not Secure] <Cody_C> Best fish I ever caught? Didn't even want to eat it.
+[04:28:36] [Server thread/INFO]: [Not Secure] <Cody_C> Always keep your line wet. Always.
+[04:28:51] [Server thread/INFO]: [Not Secure] <Cody_C> Worse season than '04.
+[04:29:05] [Server thread/INFO]: [Not Secure] <Cody_C> Best fish I ever caught? Didn't even want to eat it.
+[04:29:18] [Server thread/INFO]: [Not Secure] <Cody_C> Add that to the tally. I'm keeping count.
+[04:29:23] [Server thread/INFO]: [Not Secure] <Cody_C> The water's too warm. Changes everything.
+[04:29:31] [Server thread/INFO]: [Not Secure] <Cody_C> Not bad. Not bad at all.
+[04:29:40] [Server thread/INFO]: [Not Secure] <Cody_C> Used to sell fish off this dock. Now everyone wants organic whatever.

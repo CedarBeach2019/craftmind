@@ -3,14 +3,38 @@
   "places": {},
   "builds": {},
   "resources": {},
-  "deaths": 1,
+  "deaths": 7,
   "deathCauses": [
     {
       "cause": "death event",
       "timestamp": "2026-03-26T05:37:52.691Z"
+    },
+    {
+      "cause": "death event",
+      "timestamp": "2026-03-26T09:40:31.526Z"
+    },
+    {
+      "cause": "death event",
+      "timestamp": "2026-03-26T10:08:22.867Z"
+    },
+    {
+      "cause": "death event",
+      "timestamp": "2026-03-26T10:22:43.381Z"
+    },
+    {
+      "cause": "death event",
+      "timestamp": "2026-03-26T10:52:04.377Z"
+    },
+    {
+      "cause": "death event",
+      "timestamp": "2026-03-26T11:48:44.522Z"
+    },
+    {
+      "cause": "death event",
+      "timestamp": "2026-03-26T12:27:21.775Z"
     }
   ],
   "meta": {},
-  "lastSession": "2026-03-26T06:26:08.267Z",
+  "lastSession": "2026-03-26T12:29:24.583Z",
   "scriptHistory": []
 }
