@@ -303,3 +303,44 @@
 [22:22:37] [Server thread/INFO]: Cody_A lost connection: Kicked for spamming
 [22:22:37] [Server thread/INFO]: Cody_A left the game
 [22:23:37] [Server thread/INFO]: Server empty for 60 seconds, pausing
+[22:36:22] [Server thread/INFO]: Cody_A[/127.0.0.1:48692] logged in with entity id 3062 at (69.92351133326706, 56.43925648775693, -740.4873617538308)
+[22:36:22] [Server thread/INFO]: Cody_A joined the game
+[22:36:25] [Server thread/INFO]: [Not Secure] <Cody_A> Hey! I spawned. Use !help for commands.
+[22:36:28] [Server thread/INFO]: [Not Secure] <Cody_A> Getting my gear ready.
+[22:36:28] [Server thread/INFO]: [Not Secure] <Cody_A> Lines in the water. Now we wait.
+[22:36:29] [Server thread/INFO]: [Not Secure] <Cody_A> Dry run.
+[22:36:29] [Server thread/INFO]: [Not Secure] <Cody_A> Getting my gear ready.
+[22:36:29] [Server thread/INFO]: [Not Secure] <Cody_A> Lines in the water. Now we wait.
+[22:36:30] [Server thread/INFO]: [Not Secure] <Cody_A> Dry run.
+[22:36:30] [Server thread/INFO]: [Not Secure] <Cody_A> Getting my gear ready.
+[22:36:30] [Server thread/INFO]: [Not Secure] <Cody_A> Here we go.
+[22:36:32] [Server thread/INFO]: [Not Secure] <Cody_A> One more cast.
+[22:36:33] [Server thread/INFO]: [Not Secure] <Cody_A> Nothing biting.
+[22:36:36] [Server thread/WARN]: Cody_A moved wrongly!
+[22:36:46] [Server thread/INFO]: [Not Secure] <Cody_A> Boom! First cast even.
+[22:36:59] [Server thread/INFO]: [Not Secure] <Cody_A> Getting started.
+[22:37:03] [Server thread/INFO]: [Not Secure] <Cody_A> Boom! First cast even.
+[22:37:07] [Server thread/INFO]: [Not Secure] <Cody_A> Hey, check that out.
+[22:38:39] [Server thread/INFO]: Cody_A lost connection: Disconnected
+[22:38:39] [Server thread/INFO]: Cody_A left the game
+[22:38:52] [Server thread/INFO]: Cody_A[/127.0.0.1:42844] logged in with entity id 3123 at (56.7, 62.1237856, -755.3)
+[22:38:52] [Server thread/INFO]: Cody_A joined the game
+[22:38:54] [Server thread/INFO]: [Not Secure] <Cody_A> Hey! I spawned. Use !help for commands.
+[22:38:58] [Server thread/INFO]: [Not Secure] <Cody_A> Getting my gear ready.
+[22:38:58] [Server thread/INFO]: [Not Secure] <Cody_A> Here we go.
+[22:38:59] [Server thread/INFO]: [Not Secure] <Cody_A> Dry run.
+[22:38:59] [Server thread/INFO]: [Not Secure] <Cody_A> Getting my gear ready.
+[22:38:59] [Server thread/INFO]: [Not Secure] <Cody_A> Fishing. Don't jinx it.
+[22:39:00] [Server thread/INFO]: [Not Secure] <Cody_A> Nothing biting.
+[22:39:00] [Server thread/INFO]: [Not Secure] <Cody_A> Getting my gear ready.
+[22:39:00] [Server thread/INFO]: [Not Secure] <Cody_A> Here we go.
+[22:39:02] [Server thread/INFO]: [Not Secure] <Cody_A> Nothing biting.
+[22:39:02] [Server thread/INFO]: [Not Secure] <Cody_A> Getting my gear ready.
+[22:39:02] [Server thread/INFO]: [Not Secure] <Cody_A> Fishing. Don't jinx it.
+[22:39:02] [Server thread/INFO]: [Not Secure] <Cody_A> Nothing biting.
+[22:39:04] [Server thread/INFO]: [Not Secure] <Cody_A> Sun's out but that east wind's still chilly.
+[22:43:49] [Server thread/INFO]: /127.0.0.1:40860 lost connection: Internal Exception: io.netty.handler.codec.DecoderException: Failed to decode packet 'serverbound/minecraft:hello'
+[22:45:38] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[22:45:38] [RCON Client /127.0.0.1 #4/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[22:45:58] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[22:45:58] [RCON Client /127.0.0.1 #5/INFO]: Thread RCON Client /127.0.0.1 shutting down

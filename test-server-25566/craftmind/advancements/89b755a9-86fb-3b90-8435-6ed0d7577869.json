@@ -158,5 +158,17 @@
     },
     "done": true
   },
+  "minecraft:husbandry/balanced_diet": {
+    "criteria": {
+      "bread": "2026-03-25 22:36:39 -0800"
+    },
+    "done": false
+  },
+  "minecraft:husbandry/root": {
+    "criteria": {
+      "consumed_item": "2026-03-25 22:36:39 -0800"
+    },
+    "done": true
+  },
   "DataVersion": 4189
 }
