@@ -1,32 +1,52 @@
-[04:59:43] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[04:59:44] [ServerMain/INFO]: Loaded 1370 recipes
-[04:59:44] [ServerMain/INFO]: Loaded 1481 advancements
-[04:59:44] [Server thread/INFO]: Starting minecraft server version 1.21.4
-[04:59:44] [Server thread/INFO]: Loading properties
-[04:59:44] [Server thread/INFO]: Default game type: CREATIVE
-[04:59:44] [Server thread/INFO]: Generating keypair
-[04:59:44] [Server thread/INFO]: Starting Minecraft server on *:25566
-[04:59:45] [Server thread/INFO]: Using epoll channel type
-[04:59:45] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[04:59:45] [Server thread/WARN]: The server will make n[04:59:55] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[04:59:55] [ServerMain/ERROR]: Failed to start the minecraft server
-ayf$a: /home/lucineer/projects/craftmind/test-server-25566/./craftmind/session.lock: already locked (possibly by other Minecraft instance?)
-	at ayf$a.a(SourceFile:95) ~[server-1.21.4.jar:?]
-	at ayf.a(SourceFile:41) ~[server-1.21.4.jar:?]
-	at evg$c.<init>(SourceFile:374) ~[server-1.21.4.jar:?]
-	at evg.d(SourceFile:353) ~[server-1.21.4.jar:?]
-	at net.minecraft.server.Main.main(SourceFile:139) ~[server-1.21.4.jar:?]
-	at net.minecraft.bundler.Main.lambda$run$0(Main.java:54) ~[?:?]
-	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
-area: 0%
-[04:59:49] [Worker-Main-1/INFO]: Preparing spawn area: 0%
-[04:59:49] [Worker-Main-1/INFO]: Preparing spawn area: 0%
-[04:59:49] [Worker-Main-1/INFO]: Preparing spawn area: 0%
-[04:59:49] [Worker-Main-1/INFO]: Preparing spawn area: 0%
-[04:59:50] [Server thread/INFO]: Time elapsed: 4260 ms
-[04:59:50] [Server thread/INFO]: Done (4.920s)! For help, type "help"
-[04:59:50] [Server thread/INFO]: Starting remote control listener
-[04:59:50] [Server thread/INFO]: Thread RCON Listener started
-[04:59:50] [Server thread/INFO]: RCON running on 0.0.0.0:35566
-[05:00:50] [Server thread/INFO]: Server empty for 60 seconds, pausing
-[05:40:42] [Server thread/WARN]: handleDisconnection() called twice
+[11:36:02] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[11:36:10] [ServerMain/INFO]: Loaded 1370 recipes
+[11:36:10] [ServerMain/INFO]: Loaded 1481 advancements
+[11:36:10] [Server thread/INFO]: Starting minecraft server version 1.21.4
+[11:36:10] [Server thread/INFO]: Loading properties
+[11:36:10] [Server thread/INFO]: Default game type: CREATIVE
+[11:36:10] [Server thread/INFO]: Generating keypair
+[11:36:10] [Server thread/INFO]: Starting Minecraft server on *:25566
+[11:36:11] [Server thread/INFO]: Using epoll channel type
+[11:36:11] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[11:36:11] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[11:36:11] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[11:36:11] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[11:36:11] [Server thread/INFO]: Preparing level "craftmind"
+[11:36:13] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[11:36:21] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[11:36:21] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[11:36:21] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[11:36:21] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[11:36:21] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[11:36:21] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[11:36:21] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[11:36:21] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[11:36:21] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[11:36:21] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[11:36:21] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[11:36:21] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[11:36:21] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[11:36:21] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[11:36:21] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[11:36:21] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[11:36:21] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[11:36:22] [Server thread/INFO]: Time elapsed: 8710 ms
+[11:36:22] [Server thread/INFO]: Done (10.344s)! For help, type "help"
+[11:36:22] [Server thread/INFO]: Starting remote control listener
+[11:36:22] [Server thread/INFO]: Thread RCON Listener started
+[11:36:22] [Server thread/INFO]: RCON running on 0.0.0.0:35566
+[11:37:22] [Server thread/INFO]: Cody_A[/127.0.0.1:51434] logged in with entity id 2 at (-120.7, 60.41070779690363, 41.3)
+[11:37:22] [Server thread/INFO]: Cody_A joined the game
+[11:37:23] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2033ms or 40 ticks behind
+[11:37:25] [Server thread/INFO]: [Not Secure] <Cody_A> Hey! I spawned. Use !help for commands.
+[11:37:28] [Server thread/INFO]: [Not Secure] <Cody_A> Getting my gear ready.
+[11:37:28] [Server thread/INFO]: [Not Secure] <Cody_A> Here we go.
+[11:37:36] [Server thread/INFO]: [Not Secure] <Cody_A> Patience.
+[11:38:04] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[11:38:04] [RCON Client /127.0.0.1 #2/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[11:38:24] [Server thread/INFO]: [Not Secure] <Cody_A> DID YOU SEE THAT?!?!
+[11:38:57] [Server thread/INFO]: [Not Secure] <Cody_A> They're just playing hard to get!
+[11:39:10] [Server thread/INFO]: [Not Secure] <Cody_A> IT'S SO BIG!!!
+[11:39:32] [Server thread/INFO]: [Not Secure] <Cody_A> I CAN'T BELIEVE IT!!!
+[11:39:57] [Server thread/INFO]: [Not Secure] <Cody_A> It's okay I'M NOT GIVING UP!
+[11:40:26] [Server thread/INFO]: [Not Secure] <Cody_A> Come onnnn fish!

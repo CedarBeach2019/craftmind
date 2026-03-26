@@ -1,28 +1,56 @@
-[05:00:32] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[05:00:32] [ServerMain/ERROR]: Failed to start the minecraft server
-ayf$a: /home/lucineer/projects/craftmind/test-server-25568/./craftmind/session.lock: already locked (possibly by other Minecraft instance?)
-	at ayf$a.a(SourceFile:95) ~[server-1.21.4.jar:?]
-	at ayf.a(SourceFile:41) ~[server-1.21.4.jar:?]
-	at evg$c.<init>(SourceFile:374) ~[server-1.21.4.jar:?]
-	at evg.d(SourceFile:353) ~[server-1.21.4.jar:?]
-	at net.minecraft.server.Main.main(SourceFile:139) ~[server-1.21.4.jar:?]
-	at net.minecraft.bundler.Main.lambda$run$0(Main.java:54) ~[?:?]
-	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
-o attempt to authenticate usernames. Beware.
-[05:00:29] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[05:00:29] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[05:00:29] [Server thread/INFO]: Preparing level "craftmind"
-[05:00:29] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[05:00:32] [Worker-Main-1/INFO]: Preparing spawn area: 0%
-[05:00:32] [Worker-Main-1/INFO]: Preparing spawn area: 0%
-[05:00:32] [Worker-Main-1/INFO]: Preparing spawn area: 0%
-[05:00:32] [Worker-Main-1/INFO]: Preparing spawn area: 0%
-[05:00:32] [Worker-Main-1/INFO]: Preparing spawn area: 0%
-[05:00:32] [Worker-Main-1/INFO]: Preparing spawn area: 0%
-[05:00:32] [Worker-Main-1/INFO]: Preparing spawn area: 0%
-[05:00:33] [Server thread/INFO]: Time elapsed: 3252 ms
-[05:00:33] [Server thread/INFO]: Done (3.849s)! For help, type "help"
-[05:00:33] [Server thread/INFO]: Starting remote control listener
-[05:00:33] [Server thread/INFO]: Thread RCON Listener started
-[05:00:33] [Server thread/INFO]: RCON running on 0.0.0.0:35568
-[05:01:33] [Server thread/INFO]: Server empty for 60 seconds, pausing
+[11:36:01] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[11:36:08] [ServerMain/INFO]: Loaded 1370 recipes
+[11:36:08] [ServerMain/INFO]: Loaded 1481 advancements
+[11:36:08] [Server thread/INFO]: Starting minecraft server version 1.21.4
+[11:36:08] [Server thread/INFO]: Loading properties
+[11:36:08] [Server thread/INFO]: Default game type: CREATIVE
+[11:36:08] [Server thread/INFO]: Generating keypair
+[11:36:09] [Server thread/INFO]: Starting Minecraft server on *:25568
+[11:36:09] [Server thread/INFO]: Using epoll channel type
+[11:36:10] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[11:36:10] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[11:36:10] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[11:36:10] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[11:36:10] [Server thread/INFO]: Preparing level "craftmind"
+[11:36:11] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[11:36:18] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[11:36:18] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[11:36:18] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[11:36:18] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[11:36:18] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[11:36:18] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[11:36:18] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[11:36:18] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[11:36:18] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[11:36:18] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[11:36:18] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[11:36:18] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[11:36:18] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[11:36:18] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[11:36:18] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[11:36:18] [Server thread/INFO]: Time elapsed: 7486 ms
+[11:36:18] [Server thread/INFO]: Done (8.641s)! For help, type "help"
+[11:36:18] [Server thread/INFO]: Starting remote control listener
+[11:36:18] [Server thread/INFO]: Thread RCON Listener started
+[11:36:18] [Server thread/INFO]: RCON running on 0.0.0.0:35568
+[11:37:18] [Server thread/INFO]: Server empty for 60 seconds, pausing
+[11:37:22] [Server thread/INFO]: Cody_C[/127.0.0.1:42826] logged in with entity id 2 at (-409.7, 62.2, -506.7)
+[11:37:22] [Server thread/INFO]: Cody_C joined the game
+[11:37:23] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2009ms or 40 ticks behind
+[11:37:25] [Server thread/INFO]: [Not Secure] <Cody_C> Hey! I spawned. Use !help for commands.
+[11:37:28] [Server thread/INFO]: [Not Secure] <Cody_C> Getting my gear ready.
+[11:37:28] [Server thread/INFO]: [Not Secure] <Cody_C> Here we go.
+[11:37:35] [Server thread/INFO]: [Not Secure] <Cody_C> Sun's barely up and I'm already here. Dedicated.
+[11:37:37] [Server thread/INFO]: [Not Secure] <Cody_C> Nothing biting.
+[11:37:45] [Server thread/INFO]: [Not Secure] <Cody_C> Sun's barely up and I'm already here. Dedicated.
+[11:38:04] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[11:38:04] [RCON Client /127.0.0.1 #2/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[11:38:20] [Server thread/INFO]: [Not Secure] <Cody_C> No rush.
+[11:38:35] [Server thread/INFO]: [Not Secure] <Cody_C> Perfect start to the day.
+[11:38:55] [Server thread/INFO]: [Not Secure] <Cody_C> Quiet out here.
+[11:39:09] [Server thread/INFO]: [Not Secure] <Cody_C> Good morning to me!
+[11:39:30] [Server thread/INFO]: [Not Secure] <Cody_C> Good morning to me!
+[11:39:37] [Server thread/INFO]: [Not Secure] <Cody_C> Nothing like dawn on the water.
+[11:39:51] [Server thread/INFO]: [Not Secure] <Cody_C> The fish are sleeping in too.
+[11:39:58] [Server thread/INFO]: [Not Secure] <Cody_C> Fresh start.
+[11:40:21] [Server thread/INFO]: [Not Secure] <Cody_C> Worth getting up for.

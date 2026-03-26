@@ -67,6 +67,7 @@
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
+      "minecraft:flower_forest": "2026-03-26 07:50:30 -0800",
       "minecraft:old_growth_birch_forest": "2026-03-26 03:44:25 -0800",
       "minecraft:beach": "2026-03-25 22:14:29 -0800",
       "minecraft:forest": "2026-03-26 03:46:56 -0800",
@@ -384,6 +385,12 @@
   "minecraft:recipes/food/dried_kelp_from_campfire_cooking": {
     "criteria": {
       "has_kelp": "2026-03-26 04:11:17 -0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/conduit": {
+    "criteria": {
+      "has_nautilus_shell": "2026-03-26 08:11:55 -0800"
     },
     "done": true
   },
