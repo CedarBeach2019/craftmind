@@ -11,21 +11,53 @@ const { Rcon } = require('/home/lucineer/projects/craftmind/node_modules/rcon-cl
  * @param {object} options
  * @param {number} [options.rodCount=3]
  * @param {number} [options.breadCount=32]
+ * @param {number} [options.maxRetries=3] - Max retry attempts
+ * @param {number} [options.retryDelay=5000] - Delay between retries (ms)
  * @returns {Promise<void>}
  */
 async function giveSupplies(port, playerName, options = {}) {
-  const { rodCount = 3, breadCount = 32 } = options;
+  const { rodCount = 3, breadCount = 32, maxRetries = 3, retryDelay = 5000 } = options;
   if (port < 30000) {
-    const rcon = await Rcon.connect({ host: 'localhost', port, password: 'fishing42', timeout: 5000 });
-    try {
-      await rcon.send(`clear ${playerName}`);
-      await rcon.send(`gamemode creative ${playerName}`);
-      await rcon.send(`give ${playerName} fishing_rod ${rodCount}`);
-      await rcon.send(`give ${playerName} bread ${breadCount}`);
-      console.log(`[RCON] Supplies given to ${playerName} (port ${port})`);
-    } finally {
-      await rcon.end();
+    let lastError;
+
+    for (let attempt = 1; attempt <= maxRetries; attempt++) {
+      try {
+        const rcon = await Rcon.connect({
+          host: 'localhost',
+          port,
+          password: 'fishing42',
+          timeout: 5000
+        });
+
+        try {
+          await rcon.send(`clear ${playerName}`);
+          await rcon.send(`gamemode creative ${playerName}`);
+          await rcon.send(`give ${playerName} fishing_rod ${rodCount}`);
+          await rcon.send(`give ${playerName} bread ${breadCount}`);
+
+          if (attempt > 1) {
+            console.log(`[RCON] Supplies given to ${playerName} (port ${port}) on attempt ${attempt}/${maxRetries}`);
+          } else {
+            console.log(`[RCON] Supplies given to ${playerName} (port ${port})`);
+          }
+          return; // Success, exit retry loop
+        } finally {
+          await rcon.end();
+        }
+      } catch (error) {
+        lastError = error;
+        console.warn(`[RCON] Attempt ${attempt}/${maxRetries} failed for ${playerName}: ${error.message}`);
+
+        if (attempt < maxRetries) {
+          // Wait before retry
+          await new Promise(resolve => setTimeout(resolve, retryDelay));
+        }
+      }
     }
+
+    // All retries exhausted
+    console.error(`[RCON] Failed to give supplies to ${playerName} after ${maxRetries} attempts: ${lastError?.message}`);
+    throw lastError || new Error('RCON supplies failed');
   }
 }
 

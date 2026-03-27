@@ -2,19 +2,29 @@
   "players": {
     "cody_c": {
       "firstMet": "2026-03-27T00:47:13.101Z",
-      "lastSeen": "2026-03-27T01:48:52.923Z",
-      "interactions": 732
+      "lastSeen": "2026-03-27T02:34:36.785Z",
+      "interactions": 1212
     },
     "cody_b": {
       "firstMet": "2026-03-27T00:47:13.257Z",
       "lastSeen": "2026-03-27T00:47:13.257Z",
+      "interactions": 1
+    },
+    "jetsonplayer": {
+      "firstMet": "2026-03-27T03:27:35.677Z",
+      "lastSeen": "2026-03-27T03:35:31.130Z",
+      "interactions": 4
+    },
+    "rcon": {
+      "firstMet": "2026-03-27T03:33:44.208Z",
+      "lastSeen": "2026-03-27T03:33:44.208Z",
       "interactions": 1
     }
   },
   "places": {},
   "builds": {},
   "resources": {},
-  "deaths": 8,
+  "deaths": 10,
   "deathCauses": [
     {
       "cause": "death event",
@@ -47,9 +57,17 @@
     {
       "cause": "death event",
       "timestamp": "2026-03-26T22:55:35.402Z"
+    },
+    {
+      "cause": "death event",
+      "timestamp": "2026-03-27T02:15:00.630Z"
+    },
+    {
+      "cause": "death event",
+      "timestamp": "2026-03-27T03:29:06.321Z"
     }
   ],
   "meta": {},
-  "lastSession": "2026-03-27T01:48:57.666Z",
+  "lastSession": "2026-03-27T05:10:42.654Z",
   "scriptHistory": []
 }
