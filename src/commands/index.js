@@ -28,7 +28,7 @@ class CommandRegistry {
   register(def) {
     const name = def.name.toLowerCase();
     if (this._commands.has(name)) {
-      throw new Error(`Command "${name}" is already registered`);
+      return; // Already registered (plugin may load twice due to reconnect)
     }
     this._commands.set(name, {
       name,
