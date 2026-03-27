@@ -33,6 +33,8 @@
  * @property {import('../state-machine').BotStateMachine} stateMachine - State machine.
  * @property {import('mineflayer').Bot} bot - The mineflayer bot instance.
  * @property {import('../actions').ActionRegistry} actions - Action registry.
+ * @property {import('../knowledge').KnowledgeBase} knowledge - Knowledge base.
+ * @property {import('../communication').BotMessenger} messenger - Bot messenger.
  * @property {function(string, function): void} registerMethod - Register custom bot method.
  * @property {function(string, string, number): void} addPromptFragment - Add brain prompt fragment.
  * @property {function(string, Object): void} addInventoryHook - Register inventory hook.
@@ -66,10 +68,12 @@ class PluginManager {
    * @param {import('../commands').CommandRegistry} commands
    * @param {import('mineflayer').Bot} bot
    * @param {import('../actions').ActionRegistry} [actions] - Action registry (optional)
+   * @param {import('../knowledge').KnowledgeBase} [knowledge] - Knowledge base (optional)
+   * @param {import('../communication').BotMessenger} [messenger] - Bot messenger (optional)
    * @returns {boolean} `false` if already loaded.
    * @throws {Error} If the plugin is invalid.
    */
-  load(plugin, events, commands, bot, actions) {
+  load(plugin, events, commands, bot, actions, knowledge, messenger) {
     if (!plugin || (!plugin.load && !plugin.init)) {
       throw new Error('Plugin must have a load() or init() function');
     }
@@ -103,6 +107,8 @@ class PluginManager {
       stateMachine: bot?.craftmind?._stateMachine || null,
       bot,
       actions,
+      knowledge,
+      messenger,
       /**
        * Register a custom method accessible via `bot.craftmind.<methodName>()`.
        * @param {string} methodName

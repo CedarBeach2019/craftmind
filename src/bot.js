@@ -31,6 +31,8 @@ const { BotMemory } = require('./memory');
 const { loadConfig, validateConfig } = require('./config');
 const logger = require('./log');
 const { ActionRegistry, BUILTIN_ACTIONS } = require('./actions');
+const { KnowledgeBase } = require('./knowledge');
+const { BotMessenger } = require('./communication');
 
 // Built-in plugins (loaded from src/plugins/ directory)
 const fs = require('fs');
@@ -95,6 +97,8 @@ function createBot(options = {}) {
   const plugins = new PluginManager();
   const memory = new BotMemory(config.username, options.memoryDir || './memory');
   const actionRegistry = new ActionRegistry();
+  const knowledge = new KnowledgeBase();
+  const messenger = new BotMessenger(config.username, config.port);
 
   // Register built-in commands
   for (const cmd of builtinCommands) {
@@ -341,6 +345,32 @@ function createBot(options = {}) {
     moves.allowParkour = config.pathfinding?.allowParkour !== false;
     bot.pathfinder.setMovements(moves);
 
+    // Load knowledge base
+    try {
+      const knowledgeDir = path.join(__dirname, 'knowledge', 'data');
+      const loaded = knowledge.loadFromDirectory(knowledgeDir);
+      if (loaded > 0) {
+        log.info(`Loaded knowledge from ${loaded} file(s)`);
+      }
+    } catch (err) {
+      log.warn(`Failed to load knowledge base: ${err.message}`);
+    }
+
+    // Load bot-specific learned facts
+    try {
+      const learnedPath = path.join(options.memoryDir || './memory', `${config.username}-knowledge.json`);
+      if (fs.existsSync(learnedPath)) {
+        const learnedData = JSON.parse(fs.readFileSync(learnedPath, 'utf8'));
+        knowledge.importLearnedFacts(learnedData);
+        log.info('Loaded learned facts');
+      }
+    } catch (err) {
+      log.warn(`Failed to load learned facts: ${err.message}`);
+    }
+
+    // Start messenger state sync
+    messenger.startStateSync();
+
     // Load built-in + custom plugins (skip bad ones gracefully)
     const skipSet = new Set(options.skipPlugins || []);
     for (const plugin of BUILTIN_PLUGINS) {
@@ -349,14 +379,14 @@ function createBot(options = {}) {
         continue;
       }
       try {
-        plugins.load(plugin, events, commands, bot, actionRegistry);
+        plugins.load(plugin, events, commands, bot, actionRegistry, knowledge, messenger);
       } catch (err) {
         log.warn(`Failed to load plugin ${plugin.name}: ${err.message}`);
       }
     }
     for (const plugin of (options.plugins || [])) {
       try {
-        plugins.load(plugin, events, commands, bot, actionRegistry);
+        plugins.load(plugin, events, commands, bot, actionRegistry, knowledge, messenger);
       } catch (err) {
         log.warn(`Failed to load extra plugin ${plugin.name}: ${err.message}`);
       }
@@ -370,6 +400,11 @@ function createBot(options = {}) {
     inventory.sync();
     world.sync();
 
+    // Announce presence to other bots
+    messenger.announcePresence({
+      position: { x: Math.floor(bot.entity.position.x), y: Math.floor(bot.entity.position.y), z: Math.floor(bot.entity.position.z) }
+    }, (msg) => bot.chat(msg));
+
     if (options.onStart) options.onStart(bot);
   });
 
@@ -380,6 +415,9 @@ function createBot(options = {}) {
   bot.on('chat', (username, message) => {
     if (username === bot.username) return;
     log.info(`[CHAT] <${username}> ${message}`);
+
+    // Process inter-bot communication messages
+    messenger.handleChat(username, message);
 
     // Track player
     events.emit('PLAYER_SEEN', username);
@@ -404,8 +442,8 @@ function createBot(options = {}) {
       }
     }
 
-    // Brain handles non-command chat
-    if (brain && !message.startsWith('!')) {
+    // Brain handles non-command chat (skip BOT_MSG messages)
+    if (brain && !message.startsWith('!') && !message.startsWith('BOT_MSG:')) {
       brain.handleChat(username, message);
     }
 
@@ -645,6 +683,10 @@ function createBot(options = {}) {
     _world: world,
     /** @type {ActionRegistry} */
     _actions: actionRegistry,
+    /** @type {KnowledgeBase} */
+    _knowledge: knowledge,
+    /** @type {BotMessenger} */
+    _messenger: messenger,
   };
 
   // ── Attach Brain ──────────────────────────────────────────────────────────
@@ -686,8 +728,23 @@ function createBot(options = {}) {
   const saveAndQuit = () => {
     clearInterval(syncInterval);
     if (brain) brain.llm.stopHealthCheck();
+    messenger.stopStateSync();
     memory.save();
-    log.info('Memory saved, shutting down');
+
+    // Save learned facts
+    try {
+      const learnedPath = path.join(options.memoryDir || './memory', `${config.username}-knowledge.json`);
+      const learnedData = knowledge.exportLearnedFacts();
+      if (Object.keys(learnedData).length > 0) {
+        fs.writeFileSync(learnedPath, JSON.stringify(learnedData, null, 2));
+        log.info('Learned facts saved');
+      }
+    } catch (err) {
+      log.warn(`Failed to save learned facts: ${err.message}`);
+    }
+
+    messenger.shutdown();
+    log.info('Memory and knowledge saved, shutting down');
   };
 
   process.on('SIGINT', () => {

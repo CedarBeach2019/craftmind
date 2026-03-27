@@ -1,0 +1,475 @@
+{
+  "facts": {
+    "water_blocks": [
+      "water",
+      "flowing_water",
+      "seagrass",
+      "tall_seagrass",
+      "kelp",
+      "kelp_plant"
+    ],
+    "wood_blocks": [
+      "oak_log",
+      "spruce_log",
+      "birch_log",
+      "jungle_log",
+      "acacia_log",
+      "dark_oak_log",
+      "mangrove_log",
+      "cherry_log"
+    ],
+    "stone_blocks": [
+      "stone",
+      "andesite",
+      "diorite",
+      "granite",
+      "deepslate",
+      "tuff",
+      "cobblestone",
+      "mossy_cobblestone"
+    ],
+    "ore_blocks": [
+      "coal_ore",
+      "iron_ore",
+      "copper_ore",
+      "gold_ore",
+      "diamond_ore",
+      "emerald_ore",
+      "redstone_ore",
+      "lapis_ore"
+    ],
+    "hostile_mobs": [
+      "zombie",
+      "skeleton",
+      "spider",
+      "cave_spider",
+      "creeper",
+      "enderman",
+      "witch",
+      "slime",
+      "phantom",
+      "drowned",
+      "husk",
+      "stray"
+    ],
+    "passive_mobs": [
+      "cow",
+      "pig",
+      "sheep",
+      "chicken",
+      "rabbit",
+      "horse",
+      "donkey",
+      "mule",
+      "llama",
+      "trader_llama",
+      "fox",
+      "turtle",
+      "axolotl",
+      "frog",
+      "goat",
+      "panda",
+      "bee",
+      "cat",
+      "ocelot",
+      "parrot",
+      "wolf"
+    ],
+    "tools": [
+      "wooden_pickaxe",
+      "stone_pickaxe",
+      "iron_pickaxe",
+      "golden_pickaxe",
+      "diamond_pickaxe",
+      "netherite_pickaxe",
+      "wooden_axe",
+      "stone_axe",
+      "iron_axe",
+      "golden_axe",
+      "diamond_axe",
+      "netherite_axe",
+      "wooden_shovel",
+      "stone_shovel",
+      "iron_shovel",
+      "golden_shovel",
+      "diamond_shovel",
+      "netherite_shovel",
+      "wooden_sword",
+      "stone_sword",
+      "iron_sword",
+      "golden_sword",
+      "diamond_sword",
+      "netherite_sword",
+      "fishing_rod"
+    ],
+    "weapons": [
+      "wooden_sword",
+      "stone_sword",
+      "iron_sword",
+      "golden_sword",
+      "diamond_sword",
+      "netherite_sword",
+      "bow",
+      "crossbow",
+      "trident"
+    ],
+    "armor": [
+      "leather_helmet",
+      "leather_chestplate",
+      "leather_leggings",
+      "leather_boots",
+      "iron_helmet",
+      "iron_chestplate",
+      "iron_leggings",
+      "iron_boots",
+      "golden_helmet",
+      "golden_chestplate",
+      "golden_leggings",
+      "golden_boots",
+      "diamond_helmet",
+      "diamond_chestplate",
+      "diamond_leggings",
+      "diamond_boots",
+      "netherite_helmet",
+      "netherite_chestplate",
+      "netherite_leggings",
+      "netherite_boots"
+    ],
+    "food_items": [
+      "apple",
+      "baked_potato",
+      "beef",
+      "bread",
+      "carrot",
+      "chicken",
+      "cod",
+      "cooked_beef",
+      "cooked_chicken",
+      "cooked_cod",
+      "cooked_porkchop",
+      "cooked_salmon",
+      "cookie",
+      "golden_apple",
+      "golden_carrot",
+      "melon_slice",
+      "mushroom_stew",
+      "porkchop",
+      "potato",
+      "pumpkin_pie",
+      "rabbit",
+      "rabbit_stew",
+      "salmon"
+    ],
+    "day_length": 24000,
+    "day_start": 0,
+    "day_end": 12000,
+    "night_start": 13000,
+    "night_end": 23000,
+    "hostile_spawn_light": 7,
+    "build_height": 320,
+    "min_y": -64,
+    "sea_level": 62,
+    "lava_level": 10,
+    "respawn_anchor_blocks": [
+      "respawn_anchor"
+    ],
+    "bed_spawn_blocks": [
+      "white_bed",
+      "orange_bed",
+      "magenta_bed",
+      "light_blue_bed",
+      "yellow_bed",
+      "lime_bed",
+      "pink_bed",
+      "gray_bed",
+      "light_gray_bed",
+      "cyan_bed",
+      "purple_bed",
+      "blue_bed",
+      "brown_bed",
+      "green_bed",
+      "red_bed",
+      "black_bed"
+    ],
+    "flammable_blocks": [
+      "oak_planks",
+      "spruce_planks",
+      "birch_planks",
+      "jungle_planks",
+      "acacia_planks",
+      "dark_oak_planks",
+      "oak_log",
+      "spruce_log",
+      "birch_log",
+      "jungle_log",
+      "acacia_log",
+      "dark_oak_log",
+      "oak_leaves",
+      "spruce_leaves",
+      "birch_leaves",
+      "jungle_leaves",
+      "acacia_leaves",
+      "dark_oak_leaves"
+    ],
+    "biome_properties": {
+      "minecraft:plains": {
+        "resources": ["grass", "dirt", "oak_log", "flowers"],
+        "mobs": ["cow", "sheep", "pig", "chicken"],
+        "description": "Flat grassy terrain, good for building"
+      },
+      "minecraft:forest": {
+        "resources": ["oak_log", "birch_log", "saplings"],
+        "mobs": ["wolf", "sheep"],
+        "description": "Dense tree coverage"
+      },
+      "minecraft:desert": {
+        "resources": ["sand", "sandstone", "cactus"],
+        "mobs": ["rabbit"],
+        "description": "Sand dunes, no rain"
+      },
+      "minecraft:beach": {
+        "resources": ["sand", "water", "seagrass"],
+        "mobs": ["turtle"],
+        "description": "Sand near water"
+      },
+      "minecraft:ocean": {
+        "resources": ["water", "seagrass", "kelp", "cod", "salmon"],
+        "mobs": ["cod", "salmon", "drowned"],
+        "description": "Deep water"
+      },
+      "minecraft:river": {
+        "resources": ["water", "clay", "sand", "gravel"],
+        "mobs": ["salmon", "cod"],
+        "description": "Flowing water"
+      },
+      "minecraft:mountains": {
+        "resources": ["stone", "andesite", "coal_ore", "iron_ore"],
+        "mobs": ["llama", "goat"],
+        "description": "High elevation, stone terrain"
+      },
+      "minecraft:swamp": {
+        "resources": ["water", "lily_pad", "clay", "oak_log"],
+        "mobs": ["frog", "slime"],
+        "description": "Waterlogged terrain"
+      },
+      "minecraft:taiga": {
+        "resources": ["spruce_log", "sweet_berries", "podzol"],
+        "mobs": ["wolf", "fox", "rabbit"],
+        "description": "Cold coniferous forest"
+      },
+      "minecraft:snowy_plains": {
+        "resources": ["snow_block", "ice", "spruce_log"],
+        "mobs": ["polar_bear", "rabbit"],
+        "description": "Snow-covered flat terrain"
+      },
+      "minecraft:warm_ocean": {
+        "resources": ["coral", "sea_pickle", "tropical_fish"],
+        "mobs": ["tropical_fish", "dolphin", "pufferfish"],
+        "description": "Warm water with coral"
+      },
+      "minecraft:frozen_ocean": {
+        "resources": ["ice", "snow_block", "packed_ice"],
+        "mobs": ["polar_bear", "cod"],
+        "description": "Frozen water surface"
+      },
+      "minecraft:mushroom_fields": {
+        "resources": ["mycelium", "red_mushroom", "brown_mushroom"],
+        "mobs": ["mooshroom"],
+        "description": "Mushroom island, no hostile mobs"
+      }
+    }
+  },
+  "rules": {
+    "is_night": {
+      "condition": "timeOfDay",
+      "conclusion": "night_time_active",
+      "priority": 1
+    },
+    "needs_light": {
+      "condition": "blockUnder",
+      "conclusion": "place_torch",
+      "priority": 0
+    }
+  },
+  "recipes": {
+    "planks": {
+      "ingredients": [
+        { "item": "oak_log", "count": 1 }
+      ],
+      "result": "oak_planks",
+      "count": 4
+    },
+    "sticks": {
+      "ingredients": [
+        { "item": "oak_planks", "count": 2 }
+      ],
+      "result": "stick",
+      "count": 4
+    },
+    "crafting_table": {
+      "ingredients": [
+        { "item": "oak_planks", "count": 4 }
+      ],
+      "result": "crafting_table",
+      "count": 1
+    },
+    "furnace": {
+      "ingredients": [
+        { "item": "cobblestone", "count": 8 }
+      ],
+      "result": "furnace",
+      "count": 1
+    },
+    "wooden_pickaxe": {
+      "ingredients": [
+        { "item": "oak_planks", "count": 3 },
+        { "item": "stick", "count": 2 }
+      ],
+      "result": "wooden_pickaxe",
+      "count": 1
+    },
+    "stone_pickaxe": {
+      "ingredients": [
+        { "item": "cobblestone", "count": 3 },
+        { "item": "stick", "count": 2 }
+      ],
+      "result": "stone_pickaxe",
+      "count": 1
+    },
+    "iron_pickaxe": {
+      "ingredients": [
+        { "item": "iron_ingot", "count": 3 },
+        { "item": "stick", "count": 2 }
+      ],
+      "result": "iron_pickaxe",
+      "count": 1
+    },
+    "fishing_rod": {
+      "ingredients": [
+        { "item": "stick", "count": 3 },
+        { "item": "string", "count": 2 }
+      ],
+      "result": "fishing_rod",
+      "count": 1
+    },
+    "bread": {
+      "ingredients": [
+        { "item": "wheat", "count": 3 }
+      ],
+      "result": "bread",
+      "count": 1
+    },
+    "torch": {
+      "ingredients": [
+        { "item": "stick", "count": 1 },
+        { "item": "coal", "count": 1 }
+      ],
+      "result": "torch",
+      "count": 4
+    },
+    "bed": {
+      "ingredients": [
+        { "item": "oak_planks", "count": 3 },
+        { "item": "white_wool", "count": 3 }
+      ],
+      "result": "white_bed",
+      "count": 1
+    },
+    "chest": {
+      "ingredients": [
+        { "item": "oak_planks", "count": 8 }
+      ],
+      "result": "chest",
+      "count": 1
+    },
+    "bow": {
+      "ingredients": [
+        { "item": "stick", "count": 3 },
+        { "item": "string", "count": 3 }
+      ],
+      "result": "bow",
+      "count": 1
+    },
+    "arrow": {
+      "ingredients": [
+        { "item": "flint", "count": 1 },
+        { "item": "stick", "count": 1 },
+        { "item": "feather", "count": 1 }
+      ],
+      "result": "arrow",
+      "count": 4
+    },
+    "shield": {
+      "ingredients": [
+        { "item": "oak_planks", "count": 6 },
+        { "item": "iron_ingot", "count": 1 }
+      ],
+      "result": "shield",
+      "count": 1
+    },
+    "boat": {
+      "ingredients": [
+        { "item": "oak_planks", "count": 5 }
+      ],
+      "result": "oak_boat",
+      "count": 1
+    },
+    "door": {
+      "ingredients": [
+        { "item": "oak_planks", "count": 6 }
+      ],
+      "result": "oak_door",
+      "count": 3
+    },
+    "ladder": {
+      "ingredients": [
+        { "item": "stick", "count": 7 }
+      ],
+      "result": "ladder",
+      "count": 3
+    },
+    "bucket": {
+      "ingredients": [
+        { "item": "iron_ingot", "count": 3 }
+      ],
+      "result": "bucket",
+      "count": 1
+    },
+    "iron_ingot": {
+      "ingredients": [
+        { "item": "iron_ore", "count": 1 },
+        { "item": "coal", "count": 1 }
+      ],
+      "result": "iron_ingot",
+      "count": 1,
+      "requires_furnace": true
+    },
+    "gold_ingot": {
+      "ingredients": [
+        { "item": "gold_ore", "count": 1 },
+        { "item": "coal", "count": 1 }
+      ],
+      "result": "gold_ingot",
+      "count": 1,
+      "requires_furnace": true
+    },
+    "cooked_cod": {
+      "ingredients": [
+        { "item": "cod", "count": 1 },
+        { "item": "coal", "count": 1 }
+      ],
+      "result": "cooked_cod",
+      "count": 1,
+      "requires_furnace": true
+    },
+    "cooked_salmon": {
+      "ingredients": [
+        { "item": "salmon", "count": 1 },
+        { "item": "coal", "count": 1 }
+      ],
+      "result": "cooked_salmon",
+      "count": 1,
+      "requires_furnace": true
+    }
+  }
+}
