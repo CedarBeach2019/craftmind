@@ -61,9 +61,20 @@ fn.call(plugin, ctx);  // NOT await fn.call(plugin, ctx)
 ```
 **This means:** Any event handler registered AFTER the first `await` in `async load(ctx)` will MISS the SPAWN event. Always register critical handlers at the TOP of load() before any awaits.
 
+**Plugin API**: Plugins can use either `load(ctx)` (new) or `init(ctx)` (legacy) methods. Both receive a context object with:
+- `ctx.bot` - The mineflayer bot instance
+- `ctx.events` - Event emitter for subscribing to events
+- `ctx.commands` - Command registry for registering commands
+- `ctx.stateMachine` - State machine instance
+- `ctx.registerMethod(name, handler)` - Register custom bot methods
+- `ctx.addPromptFragment(key, text, priority)` - Add brain prompt fragments
+- `ctx.addInventoryHook(category, opts)` - Register inventory tracking hooks
+- `ctx.registerCrewRole(role, handler)` - Register crew coordination roles
+
 ### Module Systems
 - **craftmind/** uses CommonJS (`require`/`module.exports`)
 - **craftmind-fishing/** uses ESM (`import`/`export`, `"type": "module"` in package.json)
+- The plugin system supports BOTH CJS and ESM plugins
 - When craftmind-fishing needs CJS modules (like rcon-client), use:
   ```javascript
   const { createRequire } = await import('node:module');
@@ -131,14 +142,39 @@ node -e "const {Rcon}=require('/home/lucineer/projects/craftmind/node_modules/rc
 - Version: Minecraft 1.21.4, creative mode
 - Java server in: /home/lucineer/projects/craftmind/test-server-{port}/
 
+## Current State (March 2026)
+
+### Recent Improvements
+- **Chat Rate Limiting**: Implemented global rate limiting (3s base + 1.5s random jitter) to prevent spam kicks
+- **RCON Helper**: Added CJS RCON helper utility for server management
+- **Bot Memory**: Implemented persistent memory system for personality and conversation data
+- **Plugin System**: Enhanced with silent duplicate command registration
+- **Documentation**: Comprehensive README, CHANGELOG, and updated CLAUDE.md
+
+### Completed Features
+- ✅ 159 passing tests covering all modules
+- ✅ Agent framework with 9 modules and 142 tests
+- ✅ State machine with 13 built-in states
+- ✅ Plugin system with 9 built-in plugins
+- ✅ Command registry with 12 built-in commands
+- ✅ LLM brain with 4 personalities and graceful degradation
+- ✅ Multi-bot orchestrator
+- ✅ Persistent memory system
+- ✅ Event system with 25+ events
+
+### Known Issues
+- RCON spawn handler needs optimization (createRequire approach can hang)
+- Chat rate limiter may be too conservative for natural conversation
+- ESM/CJS module system complexity in plugin loading
+
 ## What to Build (Priority Order)
 
 ### Phase 1: Stability
-1. **Fix RCON spawn handler** — The createRequire approach hangs. Try synchronous require via a preload script, or move RCON to the startup wrapper script
-2. **Stuck detection** — Track position/fish count over time. If no progress in 60s, recover (re-pathfind, switch script, re-request rod)
+1. **Fix RCON spawn handler** — The createRequire approach can hang. Try synchronous require via a preload script, or move RCON to the startup wrapper script
+2. **Stuck detection** — Track position/activity over time. If no progress in 60s, recover (re-pathfind, switch activity, re-evaluate)
 3. **Script pinning** — Lock specific scripts to specific bots for proper A/B testing. Remove random rotation.
-4. **Night-shift daemon** — Rewrite as CJS (the ESM imports are broken). Must detect dead bots, restart them, give rods.
-5. **Fix chat rate limiter** — 3s+1.5s is too slow for natural conversation. Target: 1.5s + 0.5s jitter.
+4. **Night-shift daemon** — Rewrite as CJS (the ESM imports are broken). Must detect dead bots, restart them, initialize properly.
+5. **Fix chat rate limiter** — 3s+1.5s may be too slow for natural conversation. Target: 1.5s + 0.5s jitter.
 
 ### Phase 2: Coordination
 6. **Blackboard system** — Shared file (JSON) where bots publish discoveries. Other bots read and react.
@@ -187,3 +223,25 @@ Its CLAUDE.md has the full orchestrator documentation. Read it when you need to 
 - Contract Net protocol for multi-agent coordination
 - HTN planner for task decomposition
 - Skill learning system (System 1/System 2)
+
+## Testing Strategy
+- **Unit Tests**: Test individual modules in isolation
+- **Integration Tests**: Test module interactions
+- **Edge Case Tests**: Test boundary conditions and error cases
+- **Live Testing**: Run bots on test servers and observe behavior
+- **Syntax Validation**: Always run `node -c <file>` after edits
+
+## Development Workflow
+1. Make changes to source files
+2. Run `node -c <file>` to validate syntax
+3. Run `npm test` to ensure tests pass
+4. Test on live server if applicable
+5. Commit with descriptive message
+6. Push to remote repository
+
+## Documentation Standards
+- **JSDoc**: Comprehensive JSDoc comments on all public APIs
+- **README**: User-facing documentation in README.md
+- **CHANGELOG**: Track all changes in CHANGELOG.md
+- **CLAUDE.md**: Agent-facing documentation (this file)
+- **Examples**: Practical examples in examples/ directory
