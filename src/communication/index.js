@@ -411,9 +411,8 @@ class BotMessenger {
       if (fs.existsSync(this._stateFile)) {
         const data = fs.readFileSync(this._stateFile, 'utf8');
         const state = JSON.parse(data);
-        // Merge with local state
+        // Merge with local state (silent — don't log every sync)
         Object.assign(this.sharedState, state);
-        console.log(`[BotMessenger] Loaded shared state from ${this._stateFile}`);
       }
     } catch (err) {
       console.warn(`[BotMessenger] Failed to load shared state: ${err.message}`);
