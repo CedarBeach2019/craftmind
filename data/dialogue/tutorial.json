@@ -1,0 +1,148 @@
+{
+  "description": "Tutorial dialogue strings for the onboarding system",
+  "version": "1.0.0",
+  "stages": {
+    "welcome": [
+      "Welcome to Sitka Cove! Walk to the dock and talk to Gustav.",
+      "Ahoy, newcomer! Head to the dock - the old fisherman waits.",
+      "You've arrived at Sitka Cove. Find Gustav at the dock to begin.",
+      "Fresh face on the dock! Go meet Gustav - he's the grumpy one.",
+      "Welcome, traveler. The dock awaits, and so does Gustav.",
+      "The sea calls to you! Find Gustav at the dock to start your journey."
+    ],
+    "meet_gustav": [
+      "Nice! Gustav can be grumpy but he knows his fish. Try /cast to fish.",
+      "You found him! Gustav will show you the ropes. Use /cast to start fishing.",
+      "Good, you met Gustav. He's... an acquired taste. Try casting your line!",
+      "Gustav the grumpy! He gave you a rod? Try /cast in the water.",
+      "The old fisherman accepts you! Now try catching something. /cast",
+      "Gustav's not so bad once you know him. Cast your line and fish!"
+    ],
+    "first_cast": [
+      "Your line is in the water! Wait for a bite...",
+      "Casting... Now watch the bobber. When it dips, you've got one!",
+      "Line cast! Patience, angler. The fish will come.",
+      "Perfect cast! Now wait for the bobber to dip underwater.",
+      "The hook is set. Watch carefully - fish are sneaky!",
+      "Line out! Stay focused on that bobber."
+    ],
+    "first_catch": [
+      "Your first catch! Take it to Gustav - he'll buy it.",
+      "A fish! Show Gustav at the dock. He pays fair prices.",
+      "Nice catch for a beginner! Gustav trades fish for credits.",
+      "You caught one! Gustav at the dock will buy it from you.",
+      "First fish landed! Take it to Gustav to earn your first credits.",
+      "The sea provides! Sell your catch to Gustav to continue."
+    ],
+    "sell_fish": [
+      "Great! You're earning credits now. The tutorial is almost done.",
+      "First sale complete! You're ready to fish on your own.",
+      "Credits earned! Talk to Gustav for tips, or explore the village.",
+      "Your first earnings! You're nearly a full angler now.",
+      "Gustav paid up! You're learning the trade. Almost done!",
+      "Transaction complete! You've mastered the basics."
+    ],
+    "tutorial_complete": [
+      "Tutorial complete! You're now a Sitka Cove angler. Good luck out there!",
+      "Well done, angler! You've learned the basics. The sea awaits!",
+      "You've got the hang of it! Fish, trade, and explore. Welcome to Sitka Cove!",
+      "Congratulations! You're officially an angler. Go catch them all!",
+      "Tutorial finished! The cove is yours to explore. Tight lines!",
+      "You've graduated! Gustav might even smile at you now. Maybe."
+    ]
+  },
+  "returning": {
+    "welcome": [
+      "Back again? Let's get you settled. Talk to Gustav at the dock.",
+      "Returning player? Find Gustav to continue your journey.",
+      "Welcome back! The dock and Gustav await."
+    ],
+    "meet_gustav": [
+      "Still need to meet Gustav? He's at the dock.",
+      "Go find Gustav at the dock to continue.",
+      "Gustav the fisherman awaits at the dock."
+    ],
+    "first_cast": [
+      "Ready to fish? Use /cast or right-click with your rod!",
+      "Time to cast! Use your fishing rod in the water.",
+      "The fish are waiting. Cast your line!"
+    ],
+    "first_catch": [
+      "Still looking for that first catch? Keep trying!",
+      "Your first fish is out there. Keep casting!",
+      "Don't give up! Every angler started with zero catches."
+    ],
+    "sell_fish": [
+      "Take your catch to Gustav to complete the tutorial.",
+      "Sell your fish to Gustav to finish your training.",
+      "Almost done! Gustav will buy that fish."
+    ],
+    "tutorial_complete": [
+      "You've already completed the tutorial!",
+      "You're a full angler now. Go fish!",
+      "Tutorial done! Enjoy the cove."
+    ]
+  },
+  "nudges": {
+    "welcome": [
+      "Psst... the dock is that way. Look for the guy in the raincoat.",
+      "Not sure where to go? Follow the path to the water.",
+      "The dock is east of here. Gustav waits.",
+      "Yellow raincoat. Grumpy expression. You can't miss him."
+    ],
+    "meet_gustav": [
+      "Gustav won't bite. Talk to him with !talk Gustav",
+      "The old fisherman has rods to spare. Ask him!",
+      "Try saying hello to Gustav. Use !talk Gustav",
+      "Gustav's at the dock. He's... mostly friendly."
+    ],
+    "first_cast": [
+      "Try /cast to throw your line, or right-click with a fishing rod.",
+      "The fish are waiting! Cast your line into the water.",
+      "Equip your rod and cast! /cast or right-click.",
+      "Water + rod + patience = fish. Start with /cast"
+    ],
+    "first_catch": [
+      "Keep trying! Fish bite more at certain times.",
+      "Patience is key. Watch the bobber closely.",
+      "The fish will come. Trust the process.",
+      "Every cast is a chance. Don't give up!"
+    ],
+    "sell_fish": [
+      "Gustav buys fish! Talk to him to sell your catch.",
+      "Need credits? Gustav at the dock pays for fish.",
+      "Sell your catch to Gustav to earn credits.",
+      "Fish in inventory? Sell to Gustav at the dock!"
+    ],
+    "tutorial_complete": []
+  },
+  "gustav_comments": {
+    "first_catch_common": [
+      "A fish. It is a start.",
+      "Common, but it counts.",
+      "Small beginnings."
+    ],
+    "first_catch_uncommon": [
+      "Better than most beginners catch.",
+      "A step up from the usual trash.",
+      "Not bad. Not bad at all."
+    ],
+    "first_catch_rare": [
+      "A rare one? For your first? Impressive.",
+      "Perhaps I underestimated you.",
+      "That is... actually good."
+    ],
+    "first_catch_legendary": [
+      "A LEGENDARY? For your first catch? I... what?",
+      "This is unprecedented. I have no words.",
+      "Okay. You have my attention now."
+    ]
+  },
+  "celebration_announcements": [
+    "{{player}} caught their first fish: {{fish}}!",
+    "A new angler is born! {{player}}'s first catch: {{fish}}",
+    "The sea has accepted {{player}}. First fish: {{fish}}",
+    "Welcome to the trade, {{player}}! First catch: {{fish}}",
+    "{{player}} has joined the ranks of anglers! First catch: {{fish}}"
+  ]
+}
