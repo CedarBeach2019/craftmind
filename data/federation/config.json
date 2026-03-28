@@ -1,0 +1,157 @@
+{
+  "version": "1.0.0",
+  "description": "CraftMind Federation Configuration",
+  "lastUpdated": "2026-03-27T00:00:00Z",
+
+  "thisServer": {
+    "id": "alpha",
+    "name": "Alpha Server",
+    "region": "us-west",
+    "priority": 1
+  },
+
+  "servers": [
+    {
+      "id": "alpha",
+      "name": "Alpha Server",
+      "endpoint": "http://localhost:3001",
+      "region": "us-west",
+      "priority": 1,
+      "enabled": true,
+      "auth": {
+        "type": "apikey",
+        "keyRef": "FEDERATION_ALPHA_KEY"
+      },
+      "sync": {
+        "playerData": true,
+        "leaderboards": true,
+        "marketListings": true
+      }
+    },
+    {
+      "id": "beta",
+      "name": "Beta Server",
+      "endpoint": "http://localhost:3002",
+      "region": "us-east",
+      "priority": 2,
+      "enabled": true,
+      "auth": {
+        "type": "apikey",
+        "keyRef": "FEDERATION_BETA_KEY"
+      },
+      "sync": {
+        "playerData": true,
+        "leaderboards": true,
+        "marketListings": true
+      }
+    },
+    {
+      "id": "gamma",
+      "name": "Gamma Server",
+      "endpoint": "http://localhost:3003",
+      "region": "eu-west",
+      "priority": 3,
+      "enabled": true,
+      "auth": {
+        "type": "apikey",
+        "keyRef": "FEDERATION_GAMMA_KEY"
+      },
+      "sync": {
+        "playerData": true,
+        "leaderboards": true,
+        "marketListings": false
+      }
+    }
+  ],
+
+  "syncSettings": {
+    "syncIntervalMs": 60000,
+    "retryDelayMs": 5000,
+    "maxRetries": 3,
+    "batchSize": 100,
+    "timeoutMs": 30000,
+    "conflictStrategy": "last_write_wins"
+  },
+
+  "syncPriorities": {
+    "player_data": {
+      "intervalMs": 30000,
+      "strategy": "last_write_wins",
+      "description": "Player profiles and stats sync frequently"
+    },
+    "economy_stats": {
+      "intervalMs": 60000,
+      "strategy": "merge",
+      "description": "Economy stats merge across servers"
+    },
+    "leaderboard": {
+      "intervalMs": 120000,
+      "strategy": "merge",
+      "description": "Leaderboards merge, keeping best scores"
+    },
+    "market_listings": {
+      "intervalMs": 15000,
+      "strategy": "last_write_wins",
+      "description": "Market listings sync frequently for real-time trading"
+    },
+    "tournament_results": {
+      "intervalMs": 300000,
+      "strategy": "server_priority",
+      "description": "Tournament results from host server win"
+    },
+    "fish_records": {
+      "intervalMs": 60000,
+      "strategy": "merge",
+      "description": "Fish records merge, keeping biggest catches"
+    },
+    "achievements": {
+      "intervalMs": 300000,
+      "strategy": "merge",
+      "description": "Achievements merge across all servers"
+    }
+  },
+
+  "conflictResolution": {
+    "defaultStrategy": "last_write_wins",
+    "strategies": {
+      "last_write_wins": {
+        "description": "Most recent update wins",
+        "useFor": ["player_data", "market_listings"]
+      },
+      "merge": {
+        "description": "Combine data where possible",
+        "useFor": ["leaderboard", "economy_stats", "fish_records", "achievements"]
+      },
+      "server_priority": {
+        "description": "Designated server's data wins",
+        "useFor": ["tournament_results"],
+        "priorityServer": "host"
+      },
+      "manual": {
+        "description": "Flag for manual review",
+        "useFor": []
+      }
+    }
+  },
+
+  "security": {
+    "requireAuth": true,
+    "allowedOrigins": ["localhost"],
+    "rateLimit": {
+      "maxRequests": 100,
+      "windowMs": 60000
+    },
+    "encryption": {
+      "enabled": false,
+      "algorithm": "aes-256-gcm"
+    }
+  },
+
+  "monitoring": {
+    "logLevel": "info",
+    "logSuccessfulSyncs": false,
+    "logFailedSyncs": true,
+    "alertOnConflict": true,
+    "metricsEnabled": true
+  }
+}
