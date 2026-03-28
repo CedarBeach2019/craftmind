@@ -1,0 +1,155 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CraftMind Game Configuration",
+  "description": "Central configuration for all game systems",
+
+  "server": {
+    "ports": [25566, 25567, 25568],
+    "rconPortOffset": 10000,
+    "rconPassword": "fishing42",
+    "version": "1.21.4"
+  },
+
+  "economy": {
+    "enabled": true,
+    "startingBalance": 100,
+    "currency": "coins",
+    "dailyBonus": 50,
+    "streakBonus": {
+      "3": 1.15,
+      "5": 1.3,
+      "10": 1.5
+    },
+    "sellTaxPercent": 5
+  },
+
+  "fishing": {
+    "enabled": true,
+    "baseBiteTime": 15000,
+    "biteTimeVariance": 5000,
+    "rarityWeights": {
+      "common": 68,
+      "uncommon": 20,
+      "rare": 8,
+      "epic": 3,
+      "legendary": 0.5
+    },
+    "weatherMultipliers": {
+      "rain": { "uncommon": 1.3, "rare": 1.5 },
+      "thunder": { "rare": 1.5, "epic": 1.8, "legendary": 1.5 }
+    }
+  },
+
+  "quests": {
+    "enabled": true,
+    "dailyQuestCount": 3,
+    "weeklyQuestCount": 5,
+    "questTypes": ["catch_species", "catch_rarity", "sell_value", "reach_location"],
+    "xpRewardMultiplier": 1.0
+  },
+
+  "challenges": {
+    "enabled": true,
+    "dailyChallengeReset": "00:00 UTC",
+    "weeklyChallengeReset": "Monday 00:00 UTC",
+    "participationReward": 10,
+    "completionReward": 50
+  },
+
+  "tournaments": {
+    "enabled": true,
+    "schedule": {
+      "weekend": { "start": "Saturday 12:00", "end": "Sunday 12:00", "type": "catch_count" },
+      "monthly": { "start": "1st 00:00", "end": "last 23:59", "type": "biggest_catch" }
+    },
+    "prizePool": {
+      "first": 500,
+      "second": 250,
+      "third": 100
+    }
+  },
+
+  "market": {
+    "enabled": true,
+    "maxListings": 10,
+    "listingDuration": 86400000,
+    "minPrice": 1,
+    "maxPrice": 10000,
+    "transactionFeePercent": 10
+  },
+
+  "npc": {
+    "enabled": true,
+    "spawnPositions": {
+      "Gustav": { "x": 100, "y": 66, "z": 97, "world": "sitka" },
+      "Riley": { "x": 95, "y": 66, "z": 100, "world": "sitka" },
+      "Nana Kiko": { "x": 105, "y": 66, "z": 94, "world": "sitka" }
+    },
+    "interactionRadius": 30,
+    "greetingCooldown": 60000
+  },
+
+  "leaderboard": {
+    "enabled": true,
+    "categories": ["total_catch", "biggest_fish", "rarest_catch", "total_sold", "species_collected"],
+    "updateInterval": 60000,
+    "maxEntries": 100
+  },
+
+  "collection": {
+    "enabled": true,
+    "encyclopedia": true,
+    "discoveryBonus": 50,
+    "completionReward": 1000
+  },
+
+  "analytics": {
+    "enabled": true,
+    "collectMetrics": true,
+    "retentionDays": 30,
+    "aggregationInterval": 3600000
+  },
+
+  "onboarding": {
+    "enabled": true,
+    "welcomeDock": { "x": 100, "y": 65, "z": 100 },
+    "tutorialTimeout": 300000,
+    "stages": ["welcome", "meet_gustav", "first_cast", "first_catch", "sell_fish", "tutorial_complete"]
+  },
+
+  "social": {
+    "enabled": true,
+    "maxFriends": 50,
+    "maxPartySize": 4,
+    "partyBonuses": {
+      "fishing": 1.1
+    }
+  },
+
+  "pluginControl": {
+    "enabledPlugins": [],
+    "disabledPlugins": [],
+    "loadOrder": [
+      "rate-limiter",
+      "fishing-bridge",
+      "npc-system",
+      "onboarding",
+      "economy",
+      "quest-engine",
+      "collection",
+      "leaderboard",
+      "challenges",
+      "tournament",
+      "market",
+      "social",
+      "analytics"
+    ]
+  },
+
+  "rateLimiter": {
+    "maxPerWindow": 7,
+    "windowMs": 30000,
+    "maxBurst": 3,
+    "burstMs": 3000
+  }
+}

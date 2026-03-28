@@ -392,6 +392,30 @@ function createBot(options = {}) {
       }
     }
 
+    // Load game system plugins via game-registry (Phase 1-4 systems)
+    if (options.loadGamePlugins !== false) {
+      try {
+        const { loadGamePlugins } = require('./plugins/game-registry');
+        const gameConfig = options.gameConfig || {};
+        const loadResult = loadGamePlugins(
+          plugins,
+          events,
+          commands,
+          bot,
+          actionRegistry,
+          knowledge,
+          messenger,
+          gameConfig
+        );
+        log.info(`Game plugins: ${loadResult.loaded.length} loaded, ${loadResult.failed.length} failed`);
+        if (loadResult.failed.length > 0) {
+          log.warn(`Failed game plugins: ${loadResult.failed.join(', ')}`);
+        }
+      } catch (err) {
+        log.warn(`Failed to load game registry: ${err.message}`);
+      }
+    }
+
     stateMachine.reset();
     reconnectAttempts = 0;
     events.emit('SPAWN');

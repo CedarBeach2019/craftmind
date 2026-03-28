@@ -100,6 +100,41 @@ module.exports = {
     /** @type {Map<string, NodeJS.Timeout>} Nudge timers for stuck players */
     const nudgeTimers = new Map();
 
+    // ── CRITICAL: Hook into mineflayer events BEFORE any await ─────────────────
+    // The mineflayer bot emits 'playerJoined' directly, we need to handle it
+    // AND also emit our own internal event for other plugins
+
+    /**
+     * Handle player join from mineflayer - must be synchronous
+     * @param {Object} player - Mineflayer player object
+     */
+    function handlePlayerJoin(player) {
+      const username = typeof player === 'string' ? player : player.username;
+      const uuid = typeof player === 'string' ? username : (player.uuid || username);
+
+      console.log(`[onboarding] Player joined: ${username} (${uuid})`);
+
+      // Emit internal event for other plugins
+      events.emit('playerJoined', { username, uuid, player });
+
+      if (isNewPlayer(uuid)) {
+        console.log(`[onboarding] New player detected: ${username}`);
+        initializePlayer(uuid, username);
+      } else {
+        const progress = getPlayerProgress(uuid);
+        if (progress && !progress.completed) {
+          // Resume tutorial
+          const msg = tutorial.sendStep(username, progress.stage, { returning: true });
+          setTimeout(() => bot.chat(msg), 2000);
+        }
+      }
+    }
+
+    // Register mineflayer event listener immediately (before any await)
+    if (bot && bot.on) {
+      bot.on('playerJoined', handlePlayerJoin);
+    }
+
     /**
      * Check if a player is new.
      * @param {string} uuid
@@ -284,25 +319,7 @@ module.exports = {
       },
     });
 
-    // Handle player join - MUST be before any await
-    events.on('playerJoined', (player) => {
-      const username = typeof player === 'string' ? player : player.username;
-      const uuid = typeof player === 'string' ? username : player.uuid;
-
-      if (isNewPlayer(uuid)) {
-        console.log(`[onboarding] New player detected: ${username}`);
-        initializePlayer(uuid, username);
-      } else {
-        const progress = getPlayerProgress(uuid);
-        if (progress && !progress.completed) {
-          // Resume tutorial
-          const msg = tutorial.sendStep(username, progress.stage, { returning: true });
-          setTimeout(() => bot.chat(msg), 2000);
-        }
-      }
-    });
-
-    // Handle chat - check for Gustav interaction
+    // Handle chat - also hook directly into mineflayer chat event for reliability - check for Gustav interaction
     events.on('chat', (username, message) => {
       if (username === bot.username) return;
 
@@ -378,7 +395,11 @@ module.exports = {
       getPlayerProgress,
       advanceStage,
       getStages: () => [...TUTORIAL_STAGES],
+      handlePlayerJoin, // Expose for manual triggering if needed
     };
+
+    // Store handler reference for cleanup
+    this._handlePlayerJoin = handlePlayerJoin;
 
     console.log('[onboarding] Plugin loaded');
   },
@@ -388,6 +409,10 @@ module.exports = {
    * @param {Object} ctx
    */
   destroy(ctx) {
+    // Clean up mineflayer event listener
+    if (ctx?.bot?.off && this._handlePlayerJoin) {
+      ctx.bot.off('playerJoined', this._handlePlayerJoin);
+    }
     console.log('[onboarding] Plugin destroyed');
   },
 };
